@@ -1,5 +1,5 @@
 Liam Rathke
-http://a1-charlieroberts.glitch.me
+https://diligent-glimmer-psychiatrist.glitch.me/
 
 This project shows that I am familiar with web technologies such as HTML and CSS. I modified the starter document to include links (in addition to my personal information). I also created a color palette using the recommended Adobe tool, and styled the page accordingly. Finally, I added the Rampart One font from Google Fonts.
 
