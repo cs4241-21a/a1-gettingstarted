@@ -1,0 +1,30 @@
+body {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    padding: 10px 50px;
+    background-color: #d6e7ea;
+}
+
+h1 {
+    color: #a598eb;
+    font-size: 32px;
+    -webkit-text-stroke: 1px black;
+}
+
+h2 {
+    color: #9fa8f5;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+a:visited {
+    color: #9fd3f5;
+}
+
+a:hover {
+    color: #9bb3de;
+}
