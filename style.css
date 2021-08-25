@@ -1,14 +1,16 @@
 body {
     font-family: 'Comic Neue', cursive;
+    background-color: #C4A7DE;
+    color: #392B45;
 }
 
 h1 {
     text-align: center;
-    border: 2px solid mediumpurple;
+    border: 2px solid #6B06C4;
 }
 
 #para1 {
-    color: deeppink;
+    color: #260245;
 }
 
 h2 {
