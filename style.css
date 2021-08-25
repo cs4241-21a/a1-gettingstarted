@@ -1,0 +1,22 @@
+body {
+    font-family: 'Comic Neue', cursive;
+}
+
+h1 {
+    text-align: center;
+    border: 2px solid mediumpurple;
+}
+
+#para1 {
+    color: deeppink;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: auto;
+}
+
+img {
+    height: auto;
+    width: 50%;
+}
