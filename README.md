@@ -112,3 +112,4 @@ font-family. Added a custom font and applied it to the body tag. Overall the mos
 
 ### Design Achievements
 - **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Created Color Profile from color.adobe.com**: Created and used a color profile.
