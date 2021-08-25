@@ -1,28 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <style>
+      html {
+        padding: 0;
+      }
+      body {
+        background-color: #f4f5a4;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+      }
+      .page {
+        margin: 0;
+        max-width: 600pt;
+        background-color: #e1faf4;
+        padding: 20pt;
+        display: flex;
+        flex-direction: column;
+      }
+      .centered {
+        display: flex;
+        justify-content: center;
+      }
+      h1 {
+        font-family: "Impact";
+        text-transform: uppercase;
+        color: white;
+        font-size: 30pt;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+          -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+          -2px 0px 0 #000, 2px 2px 5px #000;
+      }
+      h2 {
+        font-family: "Impact";
+        text-transform: uppercase;
+        color: white;
+        font-size: 24pt;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+          -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+          -2px 0px 0 #000, 2px 2px 5px #000;
+      }
+      p,
+      li,
+      b {
+        font-family: "Comic Sans", "Comic Sans MS", cursive;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="page">
+      <span class="centered">
+        <h1>Information about Jack Sullivan</h1>
+      </span>
+      <span class="centered">
+        <div>
+          <canvas
+            id="drawing"
+            width="200"
+            height="100"
+            style="border: 1px solid black"
+          ></canvas>
+        </div>
+        <div>
+          <img src="https://c.tenor.com/L4DgAFBQTuoAAAAi/twerking-thanos.gif" />
+        </div>
+        <script>
+          const c = document.getElementById("drawing");
+          const ctx = c.getContext("2d");
+          let i = 20;
+          let v = 2;
+          setInterval(() => {
+            ctx.clearRect(0, 0, c.width, c.height);
+            ctx.beginPath();
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+            ctx.arc(i, 50, 20, 0, 2 * Math.PI);
+            ctx.stroke();
+            if (i <= 20) {
+              v = 2;
+            }
+            if (i >= c.width - 20) {
+              v = -2;
+            }
+            i += v;
+          }, 40);
+        </script>
+      </span>
+      <p>
+        I'm 20 years old and I'm from Needham, MA. I live in an apartment near
+        campus, and I like lifting, cooking, and history. Currently I'm in a
+        weird phase where I'm simultaneously obsessed with Rome (the Republic to
+        Empire transition, so basically Caesar and a few decades after him --
+        especially the life of Augustus, his successor), and the Soviet Union.
+      </p>
+      <p>
+        I'm a junior year CS major, but I might go for a math minor. I'm still
+        not sure it's worth it. Last year I TA'd for Calc 4 and Diffeq, but I'm
+        taking this semester off since it's my first in-person term since
+        freshman year and I want some time to enjoy life.
+      </p>
+      <p>
+        I have taken an bunch of CS classes at WPI, but my favorites so far have
+        been soft eng, software security engineering, and assembly.
+      </p>
+      <h2>Experience</h2>
+      <b>Work Experience</b>
+      <ul>
+        <li>Dominos Pizza</li>
+        <li>Research Assistant (for Prof. Yousefi)</li>
+      </ul>
+      <b>Technology Experience</b>
+      <ul>
+        <li>HTML ✅</li>
+        <li>CSS ✅</li>
+        <li>Java ✅</li>
+        <li>JavaScript ✅</li>
+        <li>Ruby ❌</li>
+        <li>Python ✅</li>
+        <li>Unit Testing ✅ (only JUnit)</li>
+      </ul>
+    </div>
   </body>
 </html>
