@@ -1,25 +1,19 @@
-const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+const http = require("http"),
+  fs = require("fs");
 
-const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
-  }
-})
+const port = 3000;
 
-server.listen( process.env.PORT || port )
+const server = http.createServer((request, response) => {
+  sendFile(
+    response,
+    request.url === "/" ? "index.html" : request.url.substring(1)
+  );
+});
 
-const sendFile = function( response, filename ) {
-   fs.readFile( filename, function( err, content ) {
-     file = content
-     response.end( content, 'utf-8' )
-   })
-}
+server.listen(process.env.PORT || port);
+
+const sendFile = function (response, filename) {
+  fs.readFile(filename, function (err, content) {
+    response.end(content, "utf-8");
+  });
+};
