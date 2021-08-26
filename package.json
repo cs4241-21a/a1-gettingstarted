@@ -6,6 +6,5 @@
   "scripts": {
     "start": "node server.js"
   },
-  "type": "module",
   "dependencies": {}
 }

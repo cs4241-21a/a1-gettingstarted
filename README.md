@@ -19,4 +19,4 @@ I only made a color wheel, and I didn't use all the colors since I didn't want t
 
 ## Random
 
-I made the project an npm module so that I could replace `require` with `import`. I also tweaked the server slightly based on the suggestions you gave in class.
+I also tweaked the server slightly based on the suggestions you gave in class.
