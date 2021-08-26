@@ -2,7 +2,7 @@
 Nathan Klingensmith
 https://a1-iamparadoxdotexe.glitch.me/
 
-This project shows who I am as a student and as a professional. It includes the experience, education, and skills I have accumulated over my career.
+This project is a website that shows who I am as a student and a professional. It includes the experience, education, and skills I have accumulated over my career.
 
 ### Technical Achievements
 * **Mustache Templating**:  Implemented [Mustache.js](https://www.npmjs.com/package/mustache) for dynamic component templating. 
