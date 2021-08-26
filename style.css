@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+body {
+    font-family: 'Roboto';
+    font-size: large;
+    background-color: grey;
+} 
+
+p {
+    color: #F59207;
+}
+
+li {
+    color: #E07246;
+}
+
+ul ul li{
+    color: #FF6568;
+}
+
+h1 {
+    color: #FFFD47;
+}
+
+h2 {
+    color: #DEB728
+}
+
+button {
+    margin: 10px 10px 20px 20px;
+    padding: 40px;
+}
