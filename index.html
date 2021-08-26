@@ -10,6 +10,7 @@
     <script src="data/roles.js"></script>
     <script src="data/courses.js"></script>
     <script src="data/headers.js"></script>
+    <script src="data/skills.js"></script>
 
     <script>
       const renderTemplate = (template, id, data) =>
@@ -20,12 +21,14 @@
                 .then(template => {
                   renderTemplate(template, 'roles', roles);
                   renderTemplate(template, 'courses', courses);
+                  renderTemplate(template, 'skills', skills);
                 });
 
         fetch('templates/header.mustache').then(response => response.text())
                 .then(template => {
                   renderTemplate(template, 'roles-header', headers.readme);
                   renderTemplate(template, 'courses-header', headers.education);
+                  renderTemplate(template, 'skills-header', headers.skills);
                 });
       }
     </script>
@@ -41,6 +44,9 @@
 
         <div id="courses-header"></div>
         <div class="page__cards" id="courses"></div>
+
+        <div id="skills-header"></div>
+        <div class="page__cards" id="skills"></div>
       </div>
     </div>
   </body>

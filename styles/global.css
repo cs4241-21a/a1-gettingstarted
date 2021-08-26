@@ -28,10 +28,10 @@
 
 .page .page__framework .page__cards {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: var(--gap-md);
 }
 
-#courses {
-    grid-template-columns: 1fr 1fr;
+#roles {
+    grid-template-columns: 1fr;
 }
