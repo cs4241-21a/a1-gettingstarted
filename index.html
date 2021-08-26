@@ -1,28 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <style>
+      @font-face {
+        font-family: ComicNeue;
+        font-weight: normal;
+        src: url("/fonts/Comic_Neue/ComicNeue-Regular.ttf");
+      }
+      @font-face {
+        font-family: ComicNeue;
+        font-weight: bold;
+        src: url("/fonts/Comic_Neue/ComicNeue-Bold.ttf");
+      }
+      @font-face {
+        font-family: ComicNeue;
+        font-style: italic;
+        src: url("/fonts/Comic_Neue/ComicNeue-Italic.ttf");
+      }
+      @font-face {
+        font-family: ComicNeue;
+        font-weight: bold;
+        font-style: italic;
+        src: url("/fonts/ComicNeue-BoldItalic.ttf");
+      }
+      @font-face {
+        font-family: ComicNeue;
+        font-weight: lighter;
+        src: url("/fonts/ComicNeue-Light.ttf");
+      }
+      @font-face {
+        font-family: ComicNeue;
+        font-weight: lighter;
+        font-style: italic;
+        src: url("/fonts/ComicNeue-LightItalic.ttf");
+      }
+
+      h1 {
+        font-family: ComicNeue, bold, italic;
+        font-size: 2.5em;
+        color: #a3cdd9;
+      }
+      h2 {
+        font-family: ComicNeue, bold;
+        font-size: 2em;
+        color: #f2cc39;
+      }
+      p {
+        font-family: ComicNeue;
+        color: black;
+      }
+      ul {
+        font-family: ComicNeue, italic;
+        font-size: 1.5em;
+        color: #506ad4;
+      }
+      li {
+        font-family: ComicNeue, lighter;
+        color: #c2b8ad;
+      }
+      body {
+        background-color: #fffce6;
+        margin-left: 20px;
+      }
+    </style>
+
+    <script>
+      function onClickWally() {
+        document.getElementById("wally").style.display = "block";
+      }
+    </script>
   </head>
+
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1>Information about Ezra Werlinich</h1>
+    <p></p>
+    <h2>About</h2>
+    <p>Computer Science major, class of 2022</p>
+    <p>CS classes I've taken</p>
+    <ul>
+      <li>Computer Architecture</li>
+      <li>Algorithms</li>
+      <li>Social Implications of Information Processing</li>
+      <li>Computer Networks</li>
+      <li>Operating Systems</li>
+      <li>Human-Computer Interaction</li>
+      <li>Systems Programming Concepts</li>
+      <li>Intro to Machine Organization & Assembly Language</li>
+      <li>Object-Oriented Design Concepts</li>
+    </ul>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <p>Programming Experience</p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML: A bit (far more with XML)</li>
+      <li>CSS: A little</li>
+      <li>Java: A lot</li>
+      <li>JavaScript: Some</li>
+      <li>Ruby: None</li>
+      <li>Python: None</li>
+      <li>Unit testing: Some</li>
     </ul>
+    <p>Working experience</p>
+    <ul>
+      <li>Support Technician at Novus Insight</li>
+    </ul>
+
+    <br />
+    <br />
+    <br />
+
+    <button onclick="onClickWally()">Enjoy ;)</button>
+
+    <img
+      id="wally"
+      src="images/wally.gif"
+      alt="You should be seeing wally"
+      style="display: none"
+    />
   </body>
 </html>
