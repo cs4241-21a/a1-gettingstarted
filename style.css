@@ -1,0 +1,37 @@
+/* 
+ * f4f1de
+ * e07a5f
+ * 3d405b
+ * 81b29a
+ * f2cc8f
+ */
+
+ @import url("https://fonts.google.com/specimen/Montserrat?category=Sans+Serif");
+ @import url("https://fonts.google.com/specimen/Lemon?query=lemon#standard-styles");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f1de;
+}
+
+h1 {
+    font-family: "Lemon";
+}
+
+button {
+    /* background-color: #4CAF50; */
+    border: none;
+    /* color: white; */
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+    font-family: "Monteserrat", sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.experience-button {
+    color: #f4f1de;
+    background-color: #3d405b;
+}
