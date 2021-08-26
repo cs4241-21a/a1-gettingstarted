@@ -8,12 +8,12 @@ const skills = [
   {
     title: 'HTML',
     subtitle: Experience.HIGH,
-    tag: 5
+    tag: 4
   },
   {
     title: 'CSS/SCSS',
     subtitle: Experience.HIGH,
-    tag: 5
+    tag: 4
   },
   {
     title: 'Javascript/Typescript',

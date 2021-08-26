@@ -1,7 +1,7 @@
 const headers = {
     readme: {
         path: 'C:\\Users\\Nathan\\README.md',
-        title: 'Hello, I\'m Nathan Klingensmith',
+        title: 'I\'m Nathan Klingensmith',
         subtitle: 'I am a UI/UX designer, full stack developer, and team leader.'
     },
     education: {
