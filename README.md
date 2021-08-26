@@ -1,4 +1,5 @@
-Winnie Ly 
+Winnie Ly https://a1-theaniartist.glitch.me
+
 
 This project shows the creation of my website that introduces myself through the use of HTML and CSS. I have added a Google Font (Hina Mincho) as well as a color palette from Adobe which I provided a screenshot in this repo. 
 
