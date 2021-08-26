@@ -1,6 +1,6 @@
 # Assignment 1
 
-Jack Sullivan
+Jack Sullivan https://a1-jhsul.glitch.me/
 
 This is my first project in CS 4241, and it shows that I can do a basic project combining HTML, CSS, and javascript.
 
