@@ -6,14 +6,14 @@ This project shows a basic introduction page and an example of external CSS desi
 ## Technical Achievements
 font-family. Added a custom font and applied it to the body tag. Overall the most challenging part was including the API and testing it thoroughly.
 
-**Styled page with CSS**: Added external CSS page. 
+**Styled page with CSS**: Added external CSS page. This was mainly challenging because I've never made an external CSS file and had to learn how to add routes to the basic server.js file.
 1. text-align. Aligned the h1 tag to the center of the page. Experimented with different alignments before settling on center.
 2. color. Changed color of text. Used this. Challenging to make all colors look nice.
 3. margin. Adjusted margin of h2 tag to separate parts of webpage.
 4. border. Added a purple border to the h1 tag.
 5. height/width. Auto resize images for responsive web layouts.
 
-**Extra HTML tags**:  Added extra HTML tags not originally in the index.html file.
+**Extra HTML tags**:  Added extra HTML tags not originally in the index.html file. Challenging to figure out the proper ordering of certain tags. For instance putting <p> inside of <b> as opposed to putting <p> around <b> tags.
 1. a. Added a link at the bottom of the page.
 2. img. Image. Added an image from another site since the server isn't configured to serve image files.
 3. div. Added division containers around image to place it in a container.
