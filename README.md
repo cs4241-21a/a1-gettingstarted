@@ -12,6 +12,7 @@ This project showcases some basic information about me, including my major, clas
     * strong for highlighting most experience in Java
     * span for background color of text to prevent it from extending all the way across the page
     * link for accessing the google font
+    * hr for seperating classes from technologies and methods
 
 
 ## Design Achievements:
