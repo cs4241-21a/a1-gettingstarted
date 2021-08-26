@@ -18,8 +18,8 @@
     --font-size-xl: 1.5rem;
 
     --shadow-intensity: 0.2;
-    --shadow-offset: 20px;
-    --shadow-blur: 40px;
+    --shadow-offset: 4px;
+    --shadow-blur: 16px;
     --box-shadow-down: 0 var(--shadow-offset) var(--shadow-blur) rgb(0, 0, 0, var(--shadow-intensity));
 
     --gap-xs: 4px;
