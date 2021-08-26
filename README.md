@@ -94,7 +94,10 @@ http://a1-charlieroberts.glitch.me
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Replaced the bullet points in li with discs.
+- **Added a simple JavaScript animation**: none yet.
+- **Experimented with HTML tags**: Used table, th, tr, and td to hold the experience section. Added a link to the experience section in the beginning of the page.
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used a generated color palette**: none yet
+- **Used the Roboto Font from Google Fonts**: none yet
