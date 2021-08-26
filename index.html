@@ -9,20 +9,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
   </head>
   <style>
+    :root {
+      --color-wheel-1: #0c6bf6;
+      --color-wheel-2: #0b91d4;
+      --color-wheel-3: #00dceb;
+      --color-wheel-4: #0bd4a9;
+      --color-wheel-5: #0cf682;
+    }
     body {
       font-family: 'Lato', sans-serif;
-      color: #0c1829;
-      background-color: #9ecbf7;
+      color: var(--color-wheel-3);
+      background-color: #000000;
+    }
+
+    h1 {
+      color: var(--color-wheel-5);
+    }
+
+    h2 {
+      color: var(--color-wheel-4);
     }
 
     table, th, td {
-      border: 1px solid black;
+      border: 3px solid var(--color-wheel-2);
+    }
+
+    ul {
+      color: var(--color-wheel-1)
     }
   </style>
   <body>
     <h1>Information about Owen</h1>
     <p>
-      I am a CS major. I do lots of coding, and have some web development experience. I'm hoping webware can help me learn more and get deeper with web development! <br><br>
+      I do lots of coding, and have some web development experience. I'm hoping webware can help me learn more and get deeper with web development! <br><br>
       I also have a website at <a href="https://owenthe.dev">https://owenthe.dev</a>.
     </p>
     <p>
