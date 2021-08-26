@@ -6,22 +6,25 @@ const http = require('http'),
 
 const server = http.createServer( function( request,response ) {
   if (request.url[request.url.length - 1] == '/'){
-    sendFile(response, request.url + 'index.html');
+    request.url += "index.html";
   }
-  else{
-    sendFile(response, request.url);
+  if (request.url[0] == '/'){
+    request.url = request.url.substr(1, request.url.length);
   }
+  findFile(response, request.url);
 })
 
 server.listen( process.env.PORT || port )
 
-const sendFile = function( response, filename ) {
+const findFile = function( response, filename ) {
   fs.readFile( filename, function( err, content ) {
-    if (err) {
-      response.end( '404 Error: File Not Found' );
+    if (err){
+      console.log(filename);
+      console.log(err);
+      response.end('404 Error: File Not Found');
     }
     else{
-      response.end( content, 'utf-8' )
+      response.end(content, 'utf-8');
     }
   })
 }
