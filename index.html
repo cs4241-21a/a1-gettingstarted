@@ -1,28 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/global.css">
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script src="data/roles.js"></script>
+    <script src="data/courses.js"></script>
+    <script src="data/headers.js"></script>
+
+    <script>
+      const renderTemplate = (template, id, data) =>
+              document.getElementById(id).innerHTML = Mustache.render(template, { data: data });
+
+      function onLoad() {
+        fetch('templates/card.mustache').then(response => response.text())
+                .then(template => {
+                  renderTemplate(template, 'roles', roles);
+                  renderTemplate(template, 'courses', courses);
+                });
+
+        fetch('templates/header.mustache').then(response => response.text())
+                .then(template => {
+                  renderTemplate(template, 'roles-header', headers.readme);
+                  renderTemplate(template, 'courses-header', headers.education);
+                });
+      }
+    </script>
+  </head>
+  <body onload="onLoad()">
+    <div class="banner"></div>
+    <div class="page">
+      <div class="page__framework">
+        <h1 class="page__hero">Hello, I'm Nathan</h1>
+
+        <div id="roles-header"></div>
+        <div class="page__cards" id="roles"></div>
+
+        <div id="courses-header"></div>
+        <div class="page__cards" id="courses"></div>
+      </div>
+    </div>
   </body>
 </html>

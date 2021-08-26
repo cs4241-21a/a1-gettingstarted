@@ -1,0 +1,57 @@
+{{#data}}
+    <div class="card">
+        <div class="card__title">{{title}}</div>
+        <div class="card__bottom">
+            <div class="card__subtitle">{{subtitle}}</div>
+            <div class="card__tag">{{tag}}</div>
+        </div>
+    </div>
+
+    <style>
+        .card {
+            max-width: 400px;
+            height: min-content;
+            box-shadow: var(--box-shadow-down);
+            background: var(--background-tertiary);
+            border-radius: var(--border-radius);
+            padding: calc(var(--gap-sm) + var(--gap-xs)) var(--gap-md);
+        }
+
+        .card .card__title {
+            font-size: var(--font-size-lg);
+            font-weight: 500;
+            margin-bottom: var(--gap-xs);
+            line-height: 120%;
+        }
+
+        .card .card__bottom {
+            margin-top: calc(var(--gap-sm) * -1);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+
+        .card .card__bottom .card__subtitle {
+            font-style: italic;
+            color: var(--color-secondary);
+            margin: var(--gap-sm) var(--gap-md) 0 0;
+            line-height: 100%;
+        }
+
+        .card .card__bottom .card__tag {
+            margin-top: var(--gap-sm);
+            height: min-content;
+            margin-left: auto;
+            margin-right: calc(var(--gap-xs) * -1);
+            line-height: 80%;
+            background: var(--accent-primary);
+            border-radius: var(--gap-md);
+            font-size: var(--font-size-sm);
+            padding: var(--gap-xs) var(--gap-sm);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+{{/data}}
