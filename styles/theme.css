@@ -27,6 +27,7 @@
     --gap-md: 16px;
 
     --border-radius: var(--gap-sm);
+    --framework-width: 1000px;
 }
 
 body {
@@ -43,4 +44,14 @@ body, h1, h2, h3, pre {
 
 pre {
     font-family: var(--font-family-secondary);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus {
+    text-decoration: underline;
 }

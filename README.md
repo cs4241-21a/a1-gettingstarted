@@ -14,11 +14,13 @@ This project shows who I am as a student and as a professional. It includes the 
     - I used a lot of styles, so I'm not going to list them all here. If you would like to look, the website's stylings are split up amongst `styles/global.css`, `styles/theme.css`, `templates/card.mustache`, and `templates/header.mustache`.
 - **Animated Cursor Effect**: Added a blinking cursor effect next to *Hello, I'm Nathan*.
     - Using a simple `@keyframes` animation, I toggled the opacity of a white div to give the appearance of a live cursor.
-* **Tag Utilization**: Utilized the  `div`, `pre`, `h1`, and `span` HTML tags.
+* **Tag Utilization**: Utilized the  `div`, `pre`, `h1`, `span`, `a`, and `img` HTML tags.
     - `div` was used to create divisions between structured content.
     - `pre` was used to style text like code.
     - `h1` was used to mark the primary heading *Hello, I'm Nathan*.
     - `span` was used to change the styling of just *Nathan* in the primary heading.
+    - `a` was used to create a hyperlink to my LinkedIn page in the website footer.
+    - `img` was used to add the LinkedIn icon to the associated hyperlink.
 
 ### Design Achievements
 - **Standardized Theming**: Created a standardized theme for CSS styles.
