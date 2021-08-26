@@ -6,7 +6,9 @@ const routes = {
   '/': 'index.html'
 }
 
-http.createServer((req, res) => toRoute(res, routes[req.url] || req.url.slice(1))).listen(process.env.PORT || port)
+http.createServer((req, res) => {
+  toRoute(res, routes[req.url] || req.url.slice(1))
+}).listen(process.env.PORT || port)
 
 function toRoute(res, route) {
   fs.readFile(route, function(err, data) {
