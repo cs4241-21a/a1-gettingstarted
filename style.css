@@ -1,0 +1,44 @@
+li {
+    list-style-type: circle;
+    background-color: #56ED51;
+    border-radius: 3px;
+    margin: 1px;
+}
+
+body {
+    font-family: Helvetica;
+}
+
+h1 {
+    color: #48D470;
+}
+
+h2 {
+    color: #5BEBB1;
+}
+
+table {
+    background-color:#48D4C8;
+}
+
+td {
+    border: 2px solid #57DDFF;
+}
+
+figcaption {
+    color: grey;
+    font-style: italic;
+}
+
+#ImageContainer {
+    height: 10em;
+    position: relative;
+}
+
+#ColorWheelImage {
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    height: 10em;
+    width: 10em;
+}

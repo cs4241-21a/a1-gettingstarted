@@ -3,26 +3,62 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="animate.js"></script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Ryan Stebe</h1>
     <p>
-      [Self introduction]
+      Ryan Stebe is a student in WPI's class of 2022
     </p>
     <p>
-      [Major and other information]
+      Ryan is a CS major with a minor in <abbr title="Interactive Media and Game Design">IMGD</abbr>
     </p>
+    <p>The <a href="#experience">experience</a> section is at the bottom of the page.</p>
     <p>
-      [Other things]
+      Ryan has taken the following computer science courses at WPI:
     </p>
-
+    <ul>
+      <li>CS 1102 - Accelerated Introduction To Program Design</li>
+      <li>CS 2103 - Accelerated Object-Oriented Design Concepts</li>
+      <li>CS 2011 - Introduction To Machine Organization And Assembly Language</li>
+      <li>CS 2303 - Systems Programming Concepts</li>
+      <li>CS 2022 - Discrete Mathematics</li>
+      <li>CS 2223 - Algorithms</li>
+      <li>CS 3013 - Operating Systems</li>
+      <li>CS 3133 - Foundations Of Computer Science</li>
+      <li>CS 3733 - Software Engineering</li>
+      <li>CS 4342 - Machine Learning</li>
+      <li>CS 3043 - Social Implications Of Information Processing</li>
+      <li>CS 3041 - Human-Computer Interaction</li>
+      <li>CS 4341 - Introduction To Artificial Intelligence</li>
+    </ul>
+    <h2>Color Scheme:</h2>
+    <figure>
+      <div id="ImageContainer">
+        <img id="ColorWheelImage" onload="setupAnimation()" src="Images/ColorWheel(Small).png" alt="color wheel with five colors from green to blue selected">
+      </div>
+      <figcaption>The color wheel from color.adobe.com displaying the five colors generated for this page's color scheme.</figcaption>
+    </figure>
     <h2>Experience</h2>
     <p>
+      Domains of experience related to Webware
+    </p>
+    <table>
+      <th>type</th><th>experience</th>
+      <tr><td>HTML</td><td>some</td></tr>
+      <tr><td>CSS</td><td>some</td></tr>
+      <tr><td>Java</td><td>some</td></tr>
+      <tr><td>JavaScript</td><td>some</td></tr>
+      <tr><td>Ruby</td><td>none</td></tr>
+      <tr><td>Python</td><td>some</td></tr>
+      <tr><td>unit testing</td><td>a little</td></tr>
+    </table>
+    <p id="experience">
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li><abbr title="Rivest–Shamir–Adleman">RSA</abbr> security</li>
     </ul>
   </body>
 </html>
