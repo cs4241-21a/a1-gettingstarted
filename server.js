@@ -20,6 +20,7 @@ const server = http.createServer( function( request,response ) {
 server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
+  filename = filename.substring(1)
    fs.readFile( filename, function( err, content ) {
      if(err){
       response.end( '404 Error: File Not Found' )
