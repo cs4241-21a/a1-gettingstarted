@@ -3,7 +3,8 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" ref="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="animate.js"></script>
   </head>
   <body>
     <h1>Information about Ryan Stebe</h1>
@@ -11,7 +12,7 @@
       Ryan Stebe is a student in WPI's class of 2022
     </p>
     <p>
-      Ryan is a CS major with a minor in IMGD
+      Ryan is a CS major with a minor in <abbr title="Interactive Media and Game Design">IMGD</abbr>
     </p>
     <p>The <a href="#experience">experience</a> section is at the bottom of the page.</p>
     <p>
@@ -32,25 +33,32 @@
       <li>CS 3041 - Human-Computer Interaction</li>
       <li>CS 4341 - Introduction To Artificial Intelligence</li>
     </ul>
+    <h2>Color Scheme:</h2>
+    <figure>
+      <div id="ImageContainer">
+        <img id="ColorWheelImage" onload="setupAnimation()" src="Images/Color Wheel (Small).png" alt="color wheel with five colors from green to blue selected">
+      </div>
+      <figcaption>The color wheel from color.adobe.com displaying the five colors generated for this page's color scheme.</figcaption>
+    </figure>
     <h2>Experience</h2>
     <p>
       Domains of experience related to Webware
     </p>
     <table>
       <th>type</th><th>experience</th>
-      <tr>HTML</tr><td>some</td>
-      <tr>CSS</tr><td>some</td>
-      <tr>Java</tr><td>some</td>
-      <tr>JavaScript</tr><td>some</td>
-      <tr>Ruby</tr><td>none</td>
-      <tr>Python</tr><td>some</td>
-      <tr>unit testing</tr><td>a little</td>
+      <tr><td>HTML</td><td>some</td></tr>
+      <tr><td>CSS</td><td>some</td></tr>
+      <tr><td>Java</td><td>some</td></tr>
+      <tr><td>JavaScript</td><td>some</td></tr>
+      <tr><td>Ruby</td><td>none</td></tr>
+      <tr><td>Python</td><td>some</td></tr>
+      <tr><td>unit testing</td><td>a little</td></tr>
     </table>
-    <p>
+    <p id="experience">
       Working experience
     </p>
     <ul>
-      <li>RSA security</li>
+      <li><abbr title="Rivest–Shamir–Adleman">RSA</abbr> security</li>
     </ul>
   </body>
 </html>
