@@ -1,7 +1,15 @@
-p {
-  font-family: 'Kaisei Tokumin', serif;
+body {
+  background-color: #FAAA9B;
 }
 
-body {
-  background-color: blue;
+h1, h2 {
+  color: #EDF50F;	
 }
+
+p, li {
+  color: #A16902;
+  -webkit-text-stroke: 0.5px black;
+  font-family: 'Kaisei Tokumin', serif;
+  margin-left: 20px;
+}
+
