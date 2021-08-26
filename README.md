@@ -1,4 +1,4 @@
-Tim McCarthy: 
+Tim McCarthy: https://a1-temccarthy.glitch.me
 
 This project demonstrates how html, css, and js can all work together to make one whole webpage.
 
@@ -10,7 +10,7 @@ This project demonstrates how html, css, and js can all work together to make on
     * font size
     * background color
 
-* JS animation - button moves down when clicked
+* JS animation - the button moves down when clicked
 
 ### Design Achievements
 * I used a color palatte - see screenshot
