@@ -1,0 +1,33 @@
+{{#data}}
+    <div class="header">
+        <pre class="header__path">{{data.path}}</pre>
+        <div class="header__title">{{data.title}}</div>
+        <div class="header__subtitle">{{{data.subtitle}}}</div>
+    </div>
+
+    <style>
+        .header {
+            margin: 4rem 0 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header .header__path {
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+        }
+
+        .header .header__title {
+            margin-bottom: 0.25rem;
+            font-weight: 500;
+            font-size: var(--font-size-xl);
+        }
+
+        .header .header__subtitle {
+            font-weight: 400;
+            font-size: var(--font-size-md);
+            color: var(--color-secondary);
+            max-width: 600px;
+        }
+    </style>
+{{/data}}

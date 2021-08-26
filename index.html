@@ -1,28 +1,61 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="stylesheet" href="styles/theme.css">
+    <link rel="stylesheet" href="styles/global.css">
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script src="data/roles.js"></script>
+    <script src="data/courses.js"></script>
+    <script src="data/headers.js"></script>
+    <script src="data/skills.js"></script>
+
+    <script>
+      const renderTemplate = (template, id, data) =>
+              document.getElementById(id).innerHTML = Mustache.render(template, { data: data });
+
+      function onLoad() {
+        fetch('templates/card.mustache').then(response => response.text())
+                .then(template => {
+                  renderTemplate(template, 'roles', roles);
+                  renderTemplate(template, 'courses', courses);
+                  renderTemplate(template, 'skills', skills);
+                });
+
+        fetch('templates/header.mustache').then(response => response.text())
+                .then(template => {
+                  renderTemplate(template, 'experience-header', headers.experience);
+                  renderTemplate(template, 'courses-header', headers.education);
+                  renderTemplate(template, 'skills-header', headers.skills);
+                });
+      }
+    </script>
+  </head>
+  <body onload="onLoad()">
+    <div class="banner"></div>
+    <div class="page">
+      <div class="page__framework">
+        <div class="page__hero">
+          <h1 class="hero__text">Hello, I'm <span>Nathan</span></h1>
+          <div class="hero__cursor"></div>
+        </div>
+
+        <div id="experience-header"></div>
+        <div class="page__cards" id="roles"></div>
+
+        <div id="courses-header"></div>
+        <div class="page__cards" id="courses"></div>
+
+        <div id="skills-header"></div>
+        <div class="page__cards" id="skills"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer__framework">
+        <a href="https://linkedin.com/in/thenjk" target="_blank"><img src="assets/linkedin.png">Connect with me on LinkedIn</a>
+      </div>
+    </div>
   </body>
 </html>
