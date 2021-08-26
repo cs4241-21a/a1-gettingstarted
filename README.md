@@ -21,6 +21,6 @@ font-family. Added a custom font and applied it to the body tag. Overall the mos
 5. strong. Made class of 2022 bold.
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Comic Neue from Google Fonts**: I used Comic Neue as the font for the primary text in my site.
 - **Created Color Profile from color.adobe.com**: Created and used a color profile.
 ![color wheel](colors.PNG)
