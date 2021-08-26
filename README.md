@@ -85,3 +85,4 @@ This project shows ...
 - **Used PressStart from Google Fonts**: I used Press Start as the font for the primary copy text in my site.
 
 - **Created Color Palette**: I ensured that this project was color blind safe via Adobe's built in accessibility tools. Screenshot of color palette can be viewable within the git repo of this project, but off-hand the hex values are the following:
+  w
