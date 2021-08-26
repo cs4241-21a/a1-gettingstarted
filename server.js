@@ -1,25 +1,23 @@
-const http = require('http'),
-      fs   = require('fs'),
-      port = 3000
+const http = require('http')
+const fs = require('fs')
+const port = 3000
 
-const server = http.createServer( function( request,response ) {
-  switch( request.url ) {
-    case '/':
-      sendFile( response, 'index.html' )
-      break
-    case '/index.html':
-      sendFile( response, 'index.html' )
-      break
-    default:
-      response.end( '404 Error: File Not Found' )
-  }
-})
+const routes = {
+  '/': 'index.html'
+}
 
-server.listen( process.env.PORT || port )
+http.createServer((req, res) => {
+  toRoute(res, routes[req.url] || req.url.slice(1))
+}).listen( process.env.PORT || port )
 
-const sendFile = function( response, filename ) {
-   fs.readFile( filename, function( err, content ) {
-     file = content
-     response.end( content, 'utf-8' )
-   })
+function toRoute(res, route) {
+  fs.readFile(route, function(err, data) {
+    if (err) {
+      res.writeHead(404);
+      res.end("File not found.");
+    } else {
+      res.writeHead(200);
+      res.end(data);
+    }
+  })
 }
