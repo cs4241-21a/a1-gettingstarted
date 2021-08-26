@@ -10,12 +10,7 @@ http.createServer((req, res) => toRoute(res, routes[req.url] || req.url.slice(1)
 
 function toRoute(res, route) {
   fs.readFile(route, function(err, data) {
-    if (err) {
-      res.writeHead(404);
-      res.end("File not found.");
-    } else {
-      res.writeHead(200);
-      res.end(data);
-    }
+    res.writeHead(err ? 404 : 200);
+    res.end(err ? "File not found." : data);
   })
 }
