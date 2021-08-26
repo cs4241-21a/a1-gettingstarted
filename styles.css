@@ -1,0 +1,48 @@
+html {
+  padding: 0;
+}
+body {
+  background-color: #f4f5a4;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.page {
+  margin: 0;
+  max-width: 600pt;
+  background-color: #e1faf4;
+  padding: 20pt;
+  display: flex;
+  flex-direction: column;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-family: "Impact";
+  text-transform: uppercase;
+  color: white;
+  font-size: 30pt;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+    -2px 0px 0 #000, 2px 2px 5px #000;
+}
+h2 {
+  font-family: "Impact";
+  text-transform: uppercase;
+  color: white;
+  font-size: 24pt;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0px 2px 0 #000, 2px 0px 0 #000, 0px -2px 0 #000,
+    -2px 0px 0 #000, 2px 2px 5px #000;
+}
+p,
+li {
+  font-family: "Comic Sans", "Comic Sans MS", cursive;
+}
+b {
+  font-family: "Papyrus";
+}
