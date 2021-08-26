@@ -13,7 +13,7 @@ font-family. Added a custom font and applied it to the body tag. Overall the mos
 4. border. Added a purple border to the h1 tag.
 5. height/width. Auto resize images for responsive web layouts.
 
-**Extra HTML tags**:  Added extra HTML tags not originally in the index.html file. Challenging to figure out the proper ordering of certain tags. For instance putting <p> inside of <b> as opposed to putting <p> around <b> tags.
+**Extra HTML tags**:  Added extra HTML tags not originally in the index.html file. Challenging to figure out the proper ordering of certain tags. For instance putting p tags inside of bold tags as opposed to putting p tags around bold tags.
 1. a. Added a link at the bottom of the page.
 2. img. Image. Added an image from another site since the server isn't configured to serve image files.
 3. div. Added division containers around image to place it in a container.
