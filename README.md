@@ -1,6 +1,6 @@
 Jack Ayvazian https://a1-jpayvazian.glitch.me
 
-This project showcases some basic information about me, including my major, class year, previous cs courses taken at WPI, and experience in various programming languages and concepts.
+This project showcases some basic information about me, including my major, class year, hobbies, previous cs courses taken at WPI, experience in various programming languages and methods, and work experience.
 
 ## Technical Achievements:
 * Styled page with CSS:
@@ -13,6 +13,7 @@ This project showcases some basic information about me, including my major, clas
     * span for background color of text to prevent it from extending all the way across the page
     * link for accessing the google font
     * hr for seperating classes from technologies and methods
+    * br for line break in the introduction
 
 
 ## Design Achievements:
