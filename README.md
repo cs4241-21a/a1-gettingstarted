@@ -88,13 +88,15 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
+Owen McGinley
 http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Added rules for the body text & background color (using Adobe Color). I also added rules for the table borders.
+- **Used extra HTML tags**: Used the link tag in the experience section, and the table tag for all the CS courses.
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used Adobe Color palette**: Used the color palette to make a blue/black palette that has a good contrast ratio.
+- **Used the Lato Font from Google Fonts**: Used the Lato font from Google Fonts, and added CSS rules to make it work across the page.

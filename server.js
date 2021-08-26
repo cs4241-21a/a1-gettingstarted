@@ -16,6 +16,7 @@ const server = http.createServer( function( request,response ) {
 })
 
 server.listen( process.env.PORT || port )
+console.log("Server is now running on port 3000")
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
