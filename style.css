@@ -1,0 +1,87 @@
+/* 
+ * Color Palette
+ * f4f1de
+ * e07a5f
+ * 3d405b
+ * 81b29a
+ * f2cc8f
+ */
+
+ @import url("https://fonts.google.com/specimen/Montserrat?category=Sans+Serif");
+ @import url("https://fonts.google.com/specimen/Lemon?query=lemon#standard-styles");
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f1de;
+    margin-left: 5vw;
+}
+
+h1 {
+    font-family: "Lemon";
+    color: #81b29a;
+    font-size: 50px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.side {
+    float: left;
+    width: 40vw;
+    height: auto;
+    margin-top: 10vh;
+    margin-left: 1vw;
+}
+
+img {
+    width: 45vw;
+    height: auto;
+    margin-top: 5vh;
+    margin-left: 3vw;
+  }
+
+button {
+    background-color: #81b29a;
+    border: none;
+    /* color: white; */
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: small;
+    font-family: "Monteserrat", sans-serif;
+    /* margin-left: 5px; */
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #558B71;
+}
+
+#experience-button {
+    color: #f4f1de;
+    background-color: #3d405b;
+}
+#experience-button:hover {
+    background-color: #81b29a;
+}
+#projects-button {
+    /* color: #f4f1de; */
+    background-color: #f2cc8f;
+}
+#projects-button:hover {
+    background-color: #81b29a;
+}
+#cats-button {
+    /* color: #f4f1de; */
+    background-color: #e07a5f;
+}
+#cats-button:hover {
+    background-color: #81b29a;
+}
+
+#particle-js {
+    width: 100vw;
+    height: 20vh;
+}

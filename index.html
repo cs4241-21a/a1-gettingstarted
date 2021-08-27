@@ -1,28 +1,33 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>CS4241 A1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lemon">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="side">
+      <h1>Jyalu Wu</h1>
+      <p>
+        Hello! I'm Jyalu (jahh-loo) and I like cats. 
+        I'll be graduating in the Spring of 2022 with a 
+        double major in CS and DS!
+      </p>
+      <button id="experience-button" oncLick="window.location.href = 'pages/experience.html'">Experience</button>
+      <button id="projects-button" class="projects" oncLick="window.location.href = 'pages/projects.html'">Projects</button>
+      <button id="cats-button" class="cats" oncLick="window.location.href = 'pages/cats.html'">Cats</button>
+    </div>
+      
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="side">
+      <img src="https://cdn.pixabay.com/photo/2014/04/13/20/49/cat-323262_960_720.jpg" 
+      alt="Cute tabby cat licking itself">
+    </div>
+
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer data-deferred="1"></script>
+    <script src="app.js"></script>
   </body>
 </html>
