@@ -1,10 +1,13 @@
 Name: Aditya Kumar
+
 WPI email: akumar6@wpi.edu
+
 Github Username: hellofellowkids
 
-Glitch link: (deploy later)
+Glitch link: http://a1-hellofellowkids.glitch.me
 
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
+
 *DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
 
 ## Technical Achievements
