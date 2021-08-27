@@ -15,9 +15,9 @@ This project shows ...
     +1 Changes the cursor to the onClick icon when hovering the image  
 
 2. (5 points) Add a simple JavaScript animation to the page. (DONE)  
-    +5 Click the image at the top to rotate the image
-        -This uses JS to transform the image by transforming it by 90deg each click. An overall value is stored to keep track of the current angle of the image.
-        -Implements the onClick method by accessing the id of the image in the document. 
+    +5 Click the image at the top to rotate the image   
+        -This uses JS to transform the image by transforming it by 90deg each click. An overall value is stored to keep track of the current angle of the image.   
+        -Implements the onClick method by accessing the id of the image in the document.   
 
 3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README. (DONE)   
     +1 Incorporates an Image of me  
@@ -31,12 +31,12 @@ This project shows ...
 - **Used the Oswald Font from Google Fonts**: 
 *Design*
 1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo. (DONE)  
-    +10 Colors are implemented throughout the webpage.   
-        -One color is for the top header #2ca7ad  
-        -One color is used in the text #FC5185  
-        -One color is used in the Education section #BA5FF0  
-        -One color is used as the header color #43F2FA  
-        -One color is used as text color and Footer color #145D75  
+    +10 Colors are implemented throughout the webpage.     
+        -One color is for the top header #2ca7ad    
+        -One color is used in the text #FC5185    
+        -One color is used in the Education section #BA5FF0    
+        -One color is used as the header color #43F2FA    
+        -One color is used as text color and Footer color #145D75   
     [Color Wheel Here](https://i.imgur.com/JKfEQPq.jpg)  
 
     
