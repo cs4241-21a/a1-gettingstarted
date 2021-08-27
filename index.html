@@ -9,38 +9,45 @@
       @font-face {
         font-family: ComicNeue;
         font-weight: normal;
-        src: url("/fonts/Comic_Neue/ComicNeue-Regular.ttf");
+        src: url("https://cdn.glitch.com/d8515bd5-df33-46d0-83d7-f1a564879610%2FComicNeue-Regular.ttf?v=1630075018206");
       }
       @font-face {
         font-family: ComicNeue;
         font-weight: bold;
-        src: url("/fonts/Comic_Neue/ComicNeue-Bold.ttf");
+        src: url("https://cdn.glitch.com/d8515bd5-df33-46d0-83d7-f1a564879610%2FComicNeue-Bold.ttf?v=1630075018416");
       }
       @font-face {
         font-family: ComicNeue;
         font-style: italic;
-        src: url("/fonts/Comic_Neue/ComicNeue-Italic.ttf");
+        src: url("https://cdn.glitch.com/d8515bd5-df33-46d0-83d7-f1a564879610%2FComicNeue-Italic.ttf?v=1630075018237");
       }
       @font-face {
         font-family: ComicNeue;
         font-weight: bold;
         font-style: italic;
-        src: url("/fonts/ComicNeue-BoldItalic.ttf");
+        src: url("https://cdn.glitch.com/d8515bd5-df33-46d0-83d7-f1a564879610%2FComicNeue-BoldItalic.ttf?v=1630075018273");
       }
       @font-face {
         font-family: ComicNeue;
         font-weight: lighter;
-        src: url("/fonts/ComicNeue-Light.ttf");
+        src: url("https://cdn.glitch.com/d8515bd5-df33-46d0-83d7-f1a564879610%2FComicNeue-Light.ttf?v=1630075018255");
       }
       @font-face {
         font-family: ComicNeue;
         font-weight: lighter;
         font-style: italic;
-        src: url("/fonts/ComicNeue-LightItalic.ttf");
+        src: url("https://cdn.glitch.com/d8515bd5-df33-46d0-83d7-f1a564879610%2FComicNeue-LightItalic.ttf?v=1630075018291");
       }
 
+      body {
+        background-color: #fffce6;
+        margin-left: 20px;
+        text-align: center;
+      }
       h1 {
-        font-family: ComicNeue, bold, italic;
+        font-family: ComicNeue;
+        font-weight: bold;
+        font-style: italic;
         font-size: 2.5em;
         color: #a3cdd9;
       }
@@ -49,37 +56,96 @@
         font-size: 2em;
         color: #f2cc39;
       }
+      h3 {
+        font-family: ComicNeue;
+        font-style: italic;
+        font-size: 1.5em;
+      }
       p {
         font-family: ComicNeue;
-        color: black;
-      }
-      ul {
-        font-family: ComicNeue, italic;
-        font-size: 1.5em;
+        font-size: 1.25em;
         color: #506ad4;
       }
-      li {
-        font-family: ComicNeue, lighter;
-        color: #c2b8ad;
+      ul {
+        display: inline-block;
+        text-align: left;
       }
-      body {
-        background-color: #fffce6;
-        margin-left: 20px;
+      li {
+        font-family: ComicNeue;
+        font-weight: lighter;
+        color: #827b74;
+      }
+      #wallybutton {
+        font-family: ComicNeue;
+        font-size: 1.75em;
+      }
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75;
+      }
+      #wallyLink {
+        font-size: 1.5em;
+        color: #506ad4;
       }
     </style>
 
     <script>
+      let visibleFlag = false;
+
       function onClickWally() {
-        document.getElementById("wally").style.display = "block";
+        if (visibleFlag === false) {
+          
+          document.getElementById("wally").style.display = "block";
+          document.getElementById("wallyLink").style.display = "block";
+          document.getElementById("wow").style.display = "block";
+          document.getElementById("wow").style.visibility = "hidden";
+          visibleFlag = true;
+          document.getElementById("wallybutton").innerText = "Wow!";
+        } else {
+          document.getElementById("wow").style.visibility = "visible";
+          document.getElementById("wow").style.opacity = "0.1";
+          fadein(document.getElementById("wow"));
+          setTimeout(function () {
+            fadeout(document.getElementById("wow"));
+          }, 1250);
+        }
+      }
+
+      function fadein(element) {
+        var initial_opacity = 0.1;
+        element.style.display = "block";
+        var timer = setInterval(function () {
+          if (initial_opacity >= 1) {
+            clearInterval(timer);
+          }
+          element.style.opacity = initial_opacity;
+          element.style.filter = "alpha(opacity=" + initial_opacity * 100 + ")";
+          initial_opacity += initial_opacity * 0.1;
+        }, 30);
+      }
+
+      function fadeout(element) {
+        let initial_opacity = 1;
+        let timer = setInterval(function () {
+          if (initial_opacity <= 0.1) {
+            clearInterval(timer);
+            element.style.visibility = "hidden";
+          }
+          element.style.opacity = initial_opacity;
+          element.style.filter = "alpha(opacity=" + initial_opacity * 100 + ")";
+          initial_opacity -= initial_opacity * 0.1;
+        }, 20);
       }
     </script>
   </head>
 
   <body>
-    <h1>Information about Ezra Werlinich</h1>
+    <h1>Ezra Werlinich</h1>
     <p></p>
     <h2>About</h2>
-    <p>Computer Science major, class of 2022</p>
+    <h3>Computer Science major, class of 2022</h3>
     <p>CS classes I've taken</p>
     <ul>
       <li>Computer Architecture</li>
@@ -110,16 +176,27 @@
     </ul>
 
     <br />
-    <br />
+
+    <button id="wallybutton" onclick="onClickWally()">Enjoy ;)</button>
+
     <br />
 
-    <button onclick="onClickWally()">Enjoy ;)</button>
+    <div id="wow" style="display: none">"Wow! ;)"</div>
 
     <img
       id="wally"
-      src="images/wally.gif"
+      src="https://cdn.glitch.com/d8515bd5-df33-46d0-83d7-f1a564879610%2Fwally.gif?v=1629998796294"
       alt="You should be seeing wally"
+      class="center"
       style="display: none"
     />
+    <a
+      id="wallyLink"
+      style="display: none"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://en.wikipedia.org/wiki/Eddy_Wally"
+      >Who is this?</a
+    >
   </body>
 </html>
