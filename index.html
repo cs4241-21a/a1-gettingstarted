@@ -3,9 +3,95 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      ul {
+        list-style: none;
+      }
+      li::before {
+        content: "\2023";
+        color: #2665AE;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        transform: scale(1.2);
+      }
+
+      @keyframes blink { 
+        50% { border-color: #FFF; } 
+      }
+
+      .we-text > .wrap { 
+        border-right: 0.08em solid #030303;
+        animation-name: blink;
+        animation-duration: 0.5s;
+        animation-timing-function: step-end;
+        animation-iteration-count: infinite; 
+      }
+
+    </style>
+    <script>
+      let WEtext = function(elem, toRotate, period) {
+        this.toRotate = toRotate;
+        this.elem = elem;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.text = '';
+        this.tick();
+        this.isDeleting = false;
+      };
+
+      WEtext.prototype.tick = function() {
+        let i = this.loopNum % this.toRotate.length;
+        let fullText = this.toRotate[i];
+
+        if (this.isDeleting) {
+          this.text = fullText.substring(0, this.text.length - 1);
+        } else {
+          this.text = fullText.substring(0, this.text.length + 1);
+        }
+        if (fullText === "Bill") {
+          this.elem.innerHTML = '<span class="wrap" style="color: #2665AE">' + this.text + '</span>';
+        } else {
+          this.elem.innerHTML = '<span class="wrap" style="color: #000">' + this.text + '</span>';
+        }
+
+        let that = this;
+        let delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+        if (!this.isDeleting && this.text === fullText) {
+          delta = this.period;
+          this.isDeleting = true;
+        } else if (this.isDeleting && this.text === '') {
+          this.isDeleting = false;
+          this.loopNum++;
+          delta = 500;
+        }
+
+        setTimeout(function() {
+          that.tick();
+        }, delta);
+      };
+
+      window.onload = function() {
+        let elems = document.getElementsByClassName('we-text');
+        for (let i = 0; i < elems.length; i++) {
+          let toRotate = elems[i].getAttribute('data-rotate');
+          let period = elems[i].getAttribute('data-period');
+          if (toRotate) {
+            new WEtext(elems[i], JSON.parse(toRotate), period);
+          }
+        }
+      }
+    </script>
   </head>
   <body>
-    <h1>Information about Bill Pham</h1>
+    <h1>Information about  
+      <span 
+        class="we-text"
+        data-period="2000"
+        data-rotate='["Hoang", "Bill"]'
+      ></span> Pham.</h1>
     <p>
       My name is Hoang, but english-speaking people call me Bill. My parents are from Vietnam <span></span>, but I was born and raised in Russia <span></span>. 
     </p>
@@ -20,7 +106,7 @@
     <p>
       Curriculum experience
     </p>
-    <ul>
+    <ul class="curr">
       <li>Object-Oriented Design Concepts (Java)</li>
       <li>Algorithms (Java)</li>
       <li>Intro to Machine Organization and Assembly Language (Assembly / C++)</li>
@@ -33,14 +119,14 @@
     <p>
       Working experience
     </p>
-    <ul>
+    <ul class="work">
       <li>CommCreative</li>
       <li>WPI</li>
     </ul>
     <p>
       Language experience
     </p>
-    <ul>
+    <ul class="lang">
       <li>HTML: a lot</li>
       <li>CSS: a lot</li>
       <li>Java: a lot</li>
