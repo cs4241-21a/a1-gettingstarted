@@ -26,7 +26,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 - strong
 
 
-## Desgin Achievemnets
+## Desgin Achievements
 1. **Create a color palette using color.adobe.com.**: Selected and used a color palette from the website. 
 ![color scheme](color-scheme.png)
 2. **Use a font from Goolge Fonts in your website**: Used the "Devonshire" Google Font for "h1" element.
