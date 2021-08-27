@@ -20,3 +20,6 @@ This project shows the basic of use HTML, CSS, and JS to create a website.
 ### Design Achievements
 - **Used the Comic Neue from Google Fonts**: I used Comic Neue as the font for the primary copy text in my site. I also added multiple variants, such as bold, italic, light, etc. for optimal customization
 - **Used a color palette from Adobe Color**: Created a color palette that is color-blind accessible for use in my site, and displayed all of the colors throughout the site. I included an image of the color wheel in the images folder for reference
+
+### Custom Achievements
+- **Created script for activating image, text, and anchor**: All three are set to display="none" and given IDs in the html at first load. When the button is clicked, it finds them and sets their display to block to make them appear, but turns the div "wow" invisible. It also changes the button's text to say from "Enjoy ;)" to "Wow!". When the button is clicked again, it makes the div fade in and then fade out with custom scripts in the JS in the header.
