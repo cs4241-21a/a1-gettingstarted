@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <script src="script.js" defer></script>
     
 
   </head>
@@ -14,9 +16,10 @@
 
     
     <p class = "large center textColor">
-      <img src="https://i.imgur.com/3WDJUEv.jpg" alt="Image Failed to Load" id="icon">
+      <img src="https://i.imgur.com/CFJR2QV.jpg" alt="Image Failed to Load" id="icon">
       <br>
       CLICK MY FACE TO ROTATE ME!!!
+      <br>
       <br>
       Hey! 
       <br>  
@@ -43,7 +46,7 @@
         <br>
         
       </p>
-
+      <HR>
       <h2>Education</h2>
       <p class = "medium textColor2">
       
@@ -149,7 +152,7 @@
       <br>
       </p>
     
-
+      <HR>
     <h2>Experience</h2>
     
     <ul class="textColor3">
@@ -235,16 +238,7 @@
     </footer>
   
 
-    <script>
-      let angle = 0;
-      icon.onclick = function() {
-        angle += 90;
-        if (angle === 360) 
-          angle = 0;
-      
-        document.getElementById("icon").style.transform = `rotate(${angle}deg)`;
-      }
-    </script>
+    
 
   
   </body>
