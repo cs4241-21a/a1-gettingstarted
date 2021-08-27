@@ -1,17 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
-*DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great! 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
-you'll need skills with these tools throughout the rest of the course.
-
-Assignment details
 ---
 
 This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are two ways to do this:
@@ -48,12 +38,6 @@ This assignment requires that your website is both contained in a GitHub reposit
 9. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
 9. Create and submit a Pull Request to the original repo.
 
-## Option 2 - Fork repo and import to Glitch, edit on Glitch, and then export back to GitHub
-Most of these steps are the same as option 1, except that you being by creating a new project Glitch using this repo as a staring point (just choose New Project > Import from GitHub for this and then paste in the link to your repo). At the end, you can export your Glitch project to GitHub by [following these instructions](https://www.youtube.com/watch?time_continue=77&v=aWJFbtrgW4E&feature=emb_logo). *Note that the location of the projecct export feature in Glitch has moved from what they show in this video.* It's now located in Tools > Import and Export (tools is located in the bottom left of the Glitch editor).
-
-## Option 3 - Clone to computer, edit locally, push to GitHub, upload to Glitch
-This is the same as option 1, except that for step 6 (Deploy to Glitch) you simply upload each file to your Glitch repository (using New File > Upload a File).
-
 Naming and URL Scheme
 ---
 
@@ -65,36 +49,32 @@ By default Glitch often assigns your application a random name. To change it, cl
 The name scheme should be `a1-yourGitHubUsername`.
 The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
 
-Achievements
----
-Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
 
-*Technical*
-1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
 
-*Design*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9936730811904746&context=L&vid=01WPI_INST:Default&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,Jon%20Duckett&offset=0) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Charlie Roberts
+Jyalu Wu
 http://a1-charlieroberts.glitch.me
 
-This project shows ...
 
-## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+Achievements
+---
+### Technical Achievements
+- **Created buttons and other pages**: Added 3 other pages (experience, projects, and cats) in addition to the main landing page
+- **Put two divs side by side**: Put two divs (text and image) side by side on the landing page
+- **Added a CSS stylesheet**: Used a CSS file to change the fonts,  margins/padding in all pages, and colors (background, font, buttons)
+- **Numerous HTML tags**: Image, link, button, list item, headers
+- **JS animation**: Some particle animations on the landing page
 
-### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+#### Design Achievements
+- **Used the Lemon and Montserrat fonts from Google Fonts**: I imported these fonts and used them on the site
+- **Nice color palette**: Picked a color palette from coolors.co
+![Color Palette](Palette.png)
+- **Cat image**: Added a cute cat pic!
+- **Minimalistic layout**: Used a simple + minimalistic layout that is (hopefully) pleasing to the eye
+- **Particles**: Nice particles on the landing page, same color palette
+- **Custom favicon**: Custom favicon with my initials on it
+
+
+Resources
+===
+- [Particles.js library](https://github.com/VincentGarreau/particles.js/)
+- [Particles.js tutorial](https://redstapler.co/particles-js-tutorial/)

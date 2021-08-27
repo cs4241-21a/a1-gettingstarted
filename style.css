@@ -1,4 +1,5 @@
 /* 
+ * Color Palette
  * f4f1de
  * e07a5f
  * 3d405b
@@ -12,6 +13,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #f4f1de;
+    margin-left: 5vw;
 }
 
 h1 {
@@ -24,19 +26,19 @@ h2 {
     margin-top: 30px;
 }
 
-div {
+.side {
     float: left;
     width: 40vw;
     height: auto;
     margin-top: 10vh;
-    margin-left: 5vw;
+    margin-left: 1vw;
 }
 
 img {
     width: 45vw;
     height: auto;
-    margin-top: 15vh;
-    margin-left: 5vw;
+    margin-top: 5vh;
+    margin-left: 3vw;
   }
 
 button {
@@ -77,4 +79,9 @@ button:hover {
 }
 #cats-button:hover {
     background-color: #81b29a;
+}
+
+#particle-js {
+    width: 100vw;
+    height: 20vh;
 }
