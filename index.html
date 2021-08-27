@@ -1,28 +1,128 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <style>
+      .parallax {
+        /* The image used */
+        background-image: url("https://cdn.glitch.com/6f53309a-1012-485c-9a2f-a84c0624f854%2F7681630c-1815-45f8-be8a-5a7918896378.wp6899583-dark-mountain-wallpapers.jpg?v=1629986556835");
+
+        /* Set a specific height */
+        min-height: 100vh;
+        
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      * {
+        text-align: center;
+        font-family: "Share Tech Mono", monospace;
+        color: yellow;
+      }
+      body {
+        background-color: black;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      p {
+        font-size: 18px;
+      }
+    </style>
+    <script type="text/javascript">
+      var opacity = 0;
+      var intervalID = 0;
+      window.onload = fadeIn;
+
+      function fadeIn() {
+          setInterval(show, 100);
+      }
+
+      function show() {
+          var body = document.getElementById("body");
+        <!-- Get Current Opacity of the Body Tag -->
+          opacity = Number(window.getComputedStyle(body)
+                           .getPropertyValue("opacity"));
+          if (opacity < 1) {
+              opacity = opacity + 0.1;
+              body.style.opacity = opacity
+          } else {
+              clearInterval(intervalID);
+          }
+      }
+    </script>
+   
+  <div class="parallax">
+     <h1>Ashwin Pai '22</h1>
     <p>
-      [Self introduction]
+      Hi everyone, my name is Ash and I am rising senior majoring in CS. <br />I am
+      excited to be back on campus for my final year and looking forward to see
+      both old and new faces!
+      <br /> <br />
+      Scroll below for more information
+    </p>
+  </div>
+  <body id="body" style="opacity: 0;">
+    <h1>
+      About Me
+    </h1>
+    <p>
+      Major: Computer Science <br />
+      Minor: Biology
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      Outside of school I enjoy playing hanging out with friends and
+      participating in outdoor activities such as playing spikeball out on the
+      quad.
     </p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h3>
+      Professional Work Experience
+    </h3>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      Pegasystems - Software Engineering Intern<br />
+      Tracelink - Software Engineering Intern<br />
+    </ul>
+
+    <h3>
+      WPI Course Experience
+    </h3>
+    <ul>
+      OO Design<br />
+      Algorithims<br />
+      Discrete Math<br />
+      DB Systems<br />
+      System Programming<br />
+      Foundations of Computer Science<br />
+      Machine Org and Assembly<br />
+      Operating Systems<br />
+      Biovizualization<br />
+      Software Security Engineering<br />
+      Human Computer Interaction<br />
+    </ul>
+
+    <h3>
+      Webware Technologies
+    </h3>
+    <ul>
+      HTML - alot<br />
+      CSS - alot<br />
+      Java - alot<br />
+      JavaScript - some<br />
+      Ruby - none<br />
+      Python - alot<br />
+      Unit Testing - alot<br />
     </ul>
   </body>
 </html>
