@@ -1,0 +1,35 @@
+body {
+  background-color: #3C6873;
+  background: linear-gradient(#3C6873, #33414a);
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1, h2 {
+  color: #1FFFAE;
+}
+
+h3, h4 {
+  color: #05C1ED;
+}
+
+a {
+  color: #1FFFAE;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p, ul {
+  color: #f5f5f5;
+}
+
+table { 
+color: #f5f5f5;
+}
+
+.head1 {
+  background-color: #DE5752
+}
+
+.head2 {
+  background-color: #8F0639
+}
