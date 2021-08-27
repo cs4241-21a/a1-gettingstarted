@@ -28,7 +28,7 @@ This project shows ...
     +1 Uses HR to create horizontal lines in the page  
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: 
+- **Used the Oswald Font from Google Fonts**: 
 *Design*
 1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo. (DONE)  
     +10 Colors are implemented throughout the webpage.   
