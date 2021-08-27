@@ -1,0 +1,49 @@
+* {
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: #97BFB5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #387363;
+    font-weight: 1000;
+}
+
+table, th, td {
+    border: 1px solid #387363;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+th {
+    color: #386973;
+    background-color: #00F5B2;
+}
+
+td {
+    color: #5B736C;
+    background-color: #BFF2E5;
+}
+
+hr {
+    width: 25em;
+    border-top: 1px solid #386973;
+    border-bottom: none;
+}
+
+.center-container {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.center-item {
+    margin-left: auto;
+    margin-right: auto;
+}
