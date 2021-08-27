@@ -1,28 +1,129 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Devonshire" rel="stylesheet">
+
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <script>
+      let id = null;
+      let position = 0;
+      let direction = 0;
+
+      function doAnimate() {
+          console.log("animate() is running ");
+          const elem = document.getElementById("animation");
+          clearInterval(id);
+          id = setInterval(frame, 10);
+          function frame() {
+            if (position == 700 && direction == 0) {
+              // clearInterval(id);
+              direction = 1;
+            } else if (position == 0 && direction == 1) {
+              // clearInterval(id);
+              direction = 0;
+            } else if (direction == 1) {
+              position = position - 1;
+              elem.innerHTML = "Slide to the Left"
+              elem.style.marginLeft = position + 'px';
+            } else {
+              position++;
+              elem.style.marginLeft = position + 'px';
+              elem.innerHTML = "Slide to the Right"
+            }
+          }
+        }
+    </script>
+
+    <style>
+    body {
+      background-color: #00B88D;
+    }
+
+    h1 {
+        background-color: #006950;
+        color: #47EDC6;
+        font-family: 'Devonshire', cursive;
+        width: 400px;
+        margin: auto;
+        text-align: center;
+        border: 10px;
+        border-radius: 500px;
+        border-color: white;
+        border-style: double;
+
+    }
+
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #1F6957;
+        color: #00E8B2;
+        width: fit-content;
+        padding: 10px;
+        border-style: dashed;
+        border-color: black;
+    }
+
+      p {
+          width: 1000px;
+      }
+
+      div {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: xx-large;
+          width: 300px;
+          color: #47EDC6;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Aditya Kumar</h1>
+    <h2><b>About Me</b></h2>
+    <table>
+      <tr>
+        <td>
+          <img width="200" height="200" float="left" src="https://media-exp1.licdn.com/dms/image/C5103AQG4H5whQtbQ8w/profile-displayphoto-shrink_800_800/0/1579096663920?e=1635379200&amp;v=beta&amp;t=ufht4bJXKyISZrSrMBBj6WuWyFag_F4yTK4Ek4tXxeE">
+        </td>
+        <td>
+          <p>
+          Hi, my name is Aditya Kumar. <br/> <br/> 
+          I am WPI student in the <i>Class of 2022</i> that commutes to campus each weekday.
+          I am pretty excited about wrapping up my undergraduate studies and plan to enter the work force after graduation. </br> </br>
+
+          If you want a more details about my professional experience and skills, check out my <a href="https://www.linkedin.com/in/aditya-kumar-308462190/" target="_blank">Linkdeln</a>
+        </p>
+      </td>
+      </tr>
+    </table>
     <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      <strong>Majors:</strong> Computer Science & Electrical Computer Engineering </br>
+      <strong>Year of Graduation:</strong> 2022
     </p>
 
-    <h2>Experience</h2>
+    <div id="animation" position="relative" margin="auto" onclick="javascript:doAnimate()">
+    -- Click Me -- 
+    </div>
+
+    <h2>Previous CS Courses</h2>
     <p>
-      Working experience
+      <ul>
+        <li>Operating Systems</li>
+        <li>Software Engineering</li>
+        <li>Moible & Ubiquitious Computing</li>
+        <li>Database Systems I</li>
+        <li>Database Systems II</li>
+        <li>Algorithms</li>
+        <li>Discrete Mathetmatics</li>
+        <li>Foundations of Computer Science</li>
+        <li>Intro to Crytography & Communication Security</li>
+        <li>Intro to Machine Org & Assmebly</li>
+        <li>Intro to Program Design</li>
+        <li>Object-Oreiented Design Concepts</li>
+        <li>Systems Programming Concepts</li>
+      </ul>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
   </body>
 </html>
