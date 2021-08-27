@@ -21,6 +21,9 @@ server.listen( process.env.PORT || port )
 
 const sendFile = function( response, filename ) {
   filename = filename.substring(1)
+  if(filename === ""){
+    filename= "index.html"
+  }
    fs.readFile( filename, function( err, content ) {
      if(err){
       response.end( '404 Error: File Not Found' )
