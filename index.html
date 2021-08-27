@@ -1,28 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&family=Montserrat&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --pink-color: #FF6EB3;
+        --purple-color: #A945EB;
+        --dark-blue-color: #2E71FF;
+        --blue-color: #36BDEB;
+        --light-blue-color: #D6F3FC;
+      }
+
+      body {
+        background-color: white;
+        margin: 0 0 50px 0;
+        font-family: "Arimo", sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        color: var(--dark-blue-color);
+        font-family: "Rampart One", cursive;
+      }
+
+      h2 {
+        text-align: center;
+        color: var(--purple-color);
+        font-family: "Montserrat", sans-serif;
+      }
+
+      h3 {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      p {
+        width: 60%;
+        display: inline-block;
+      }
+
+      img {
+        width: 200px;
+      }
+
+      hr {
+        margin-top: 0;
+        color: var(--dark-blue-color);
+      }
+
+      .main {
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        background-color: var(--light-blue-color);
+      }
+      
+      .section {
+        margin: auto;
+        text-align: center;
+      }
+    
+      .cs-heading-box {
+        height: 260px;
+        width: 250px;
+        display: inline-block;
+        background-color: var(--blue-color);
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        vertical-align: bottom;
+      }
+
+      .cs-description-box {
+        height: 260px;
+        width: 400px;
+        display: inline-block;
+        text-align: left;
+        background-color: var(--pink-color);
+        color: white;
+      }
+      
+      .tech-heading-box {
+        height: 250px;
+        width: 200px;
+        display: inline-block;
+        background-color: var(--pink-color);
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        vertical-align: bottom;
+      }
+
+      .tech-description-box {
+        height: 250px;
+        width: 200px;
+        display: inline-block;
+        background-color: var(--blue-color);
+        color: white;
+        vertical-align: bottom;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="main">
+      <img
+        src="https://cdn.glitch.com/7d3faea7-777e-4386-a78f-fec520b060cd%2Fshannen.png?v=16300242"
+        alt="shannen-img"
+      />
+      <h1>Shannen Lin</h1>
+      <p>
+        I am a junior(class of 2023) at <a href="https://www.wpi.edu/">Worcester Polytechnic Institute</a> double
+        majoring in computer science and psychology. I am involved in the
+        <a href="https://acm.wpi.edu/">Association for Computing Machinery club</a> and the <a href="http://web.cs.wpi.edu/~wics/">Women in Computer
+        Science club</a>.
+      </p>
+    </div>
+
+    <hr />
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="section">
+      <div class="cs-heading-box box">
+        <h3>
+          Computer Science Courses
+        </h3>
+      </div><!--
+  --><div class="cs-description-box">
+                <ul>
+          <li>CS1101 - Introduction to Program Design</li>
+          <li>CS2102 - Object Oriented Design Concepts</li>
+          <li>CS2022 - Discrete Mathematics</li>
+          <li>CS2303 - Systems Programming Concepts</li>
+          <li>CS2223 - Algorithms</li>
+          <li>
+            CS2011 - Introduction to Machine Organization and Assembly Language
+          </li>
+          <li>CS3043 - Social Implications of Information Processing</li>
+          <li>CS3133 - Foundations of Computer Science</li>
+          <li>CS3013 - Operating Systems</li>
+          <li>CS3733 - Software Engineering</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="section">
+      <div class="tech-heading-box">
+        <h3>
+          Technologies/ Methods
+        </h3>
+      </div><!--
+  --><div class="tech-description-box">
+        <table cellspacing="10">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Some</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Some</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td>A Lot</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Ruby</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>None</td>
+            </tr>
+            <tr>
+              <td>Unit Testing</td>
+              <td>Some</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </body>
 </html>
