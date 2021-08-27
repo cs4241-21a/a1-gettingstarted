@@ -16,22 +16,65 @@ body {
 
 h1 {
     font-family: "Lemon";
+    color: #81b29a;
+    font-size: 50px;
 }
 
+h2 {
+    margin-top: 30px;
+}
+
+div {
+    float: left;
+    width: 40vw;
+    height: auto;
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+img {
+    width: 45vw;
+    height: auto;
+    margin-top: 15vh;
+    margin-left: 5vw;
+  }
+
 button {
-    /* background-color: #4CAF50; */
+    background-color: #81b29a;
     border: none;
     /* color: white; */
-    padding: 15px 32px;
+    padding: 15px 20px;
     text-align: center;
     display: inline-block;
     font-size: small;
     font-family: "Monteserrat", sans-serif;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     margin-right: 5px;
+    margin-top: 10px;
 }
 
-.experience-button {
+button:hover {
+    background-color: #558B71;
+}
+
+#experience-button {
     color: #f4f1de;
     background-color: #3d405b;
+}
+#experience-button:hover {
+    background-color: #81b29a;
+}
+#projects-button {
+    /* color: #f4f1de; */
+    background-color: #f2cc8f;
+}
+#projects-button:hover {
+    background-color: #81b29a;
+}
+#cats-button {
+    /* color: #f4f1de; */
+    background-color: #e07a5f;
+}
+#cats-button:hover {
+    background-color: #81b29a;
 }
