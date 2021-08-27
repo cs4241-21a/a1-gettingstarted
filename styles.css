@@ -1,13 +1,27 @@
-h1 { font-size: 40px;}
-h2 { font-size: 30px;}
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Shadows+Into+Light&display=swap');
+body{
+  background-image: url('Bold_and_Brash.png');
+}
+
+h1 { 
+  font-size: 40px;
+  font-family: "Bungee Shade", sans-serif;
+  color: #0000CD;
+}
+h2 {
+  font-size: 30px;
+  font-family: "Shadows Into Light", sans-serif;
+}
 
 p{
 font-weight: bold;
+font-size:large;
 color: maroon;
 margin: 10px;
 }
 
 li{
+  font-weight: bold;
   color: purple;
   margin: 7px;
 }
