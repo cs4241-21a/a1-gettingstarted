@@ -11,13 +11,13 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 *DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
 
 ## Technical Achievements
-1. **Style your page using CSS**: In "styles.css" , added various attributes to style in elements. This includes:
+1. **Style your page using CSS**: In <style> tags in index.html , added various attributes to style in elements. This includes:
 - text-align
 - border
 - margin
 - width
 - padding
-2. **Add a simple JavaScript animation to the page.** Simple animation launched when clicking "Click Me" on page. Hope you can enjoy!
+2. **Add a simple JavaScript animation to the page.** Simple animation launched when clicking "Click Me" on page. JS code for it is found in <scipt> tags in index.html , hope you can enjoy!
 3. **Experiment with other HTML tags** Added various tags including:
 - div
 - img

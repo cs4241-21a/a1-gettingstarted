@@ -5,11 +5,79 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Devonshire" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css">
-    <script type='text/javascript' src="animation.js"></script>
-
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <script>
+      let id = null;
+      let position = 0;
+      let direction = 0;
+
+      function doAnimate() {
+          console.log("animate() is running ");
+          const elem = document.getElementById("animation");
+          clearInterval(id);
+          id = setInterval(frame, 10);
+          function frame() {
+            if (position == 700 && direction == 0) {
+              // clearInterval(id);
+              direction = 1;
+            } else if (position == 0 && direction == 1) {
+              // clearInterval(id);
+              direction = 0;
+            } else if (direction == 1) {
+              position = position - 1;
+              elem.innerHTML = "Slide to the Left"
+              elem.style.marginLeft = position + 'px';
+            } else {
+              position++;
+              elem.style.marginLeft = position + 'px';
+              elem.innerHTML = "Slide to the Right"
+            }
+          }
+        }
+    </script>
+
+    <style>
+    body {
+      background-color: #00B88D;
+    }
+
+    h1 {
+        background-color: #006950;
+        color: #47EDC6;
+        font-family: 'Devonshire', cursive;
+        width: 400px;
+        margin: auto;
+        text-align: center;
+        border: 10px;
+        border-radius: 500px;
+        border-color: white;
+        border-style: double;
+
+    }
+
+    h2 {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #1F6957;
+        color: #00E8B2;
+        width: fit-content;
+        padding: 10px;
+        border-style: dashed;
+        border-color: black;
+    }
+
+      p {
+          width: 1000px;
+      }
+
+      div {
+          font-family: 'Times New Roman', Times, serif;
+          font-size: xx-large;
+          width: 300px;
+          color: #47EDC6;
+      }
+    </style>
   </head>
   <body>
     <h1>Information about Aditya Kumar</h1>
