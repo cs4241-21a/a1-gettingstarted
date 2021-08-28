@@ -1,28 +1,214 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    
+    <title>CS4241 Assignment 1</title>
+
+    <style>
+      h1{
+        background-color: #AC2B37; /* Official WPI color to match logo */
+        color: white;
+        text-align: center;
+      }
+
+      h2{
+        background-color: #AC2B37;
+        color: white;
+        text-align: center;
+      }
+ 
+      #thankyou{
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        font-weight: bold;
+      }
+
+      #coursework{
+        font-weight: bold;
+      }
+
+      table{
+        border-collapse: collapse;
+        border: 1px solid black;
+        width: 40%;
+        text-align: center;
+      }
+      
+      th{
+        border: 1px solid black;
+        background-color: #A9B0B7; /* Official WPI color to match logo */
+      }
+      
+      td {
+        border: 1px solid black;
+      }
+
+      img{
+        width: 30%;
+        height: 30%;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      #container {
+        margin-top: 20px;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: #A9B0B7;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+      
+      #animated {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background: #AC2B37;
+      }
+
+      body{
+        margin: 35px;
+      }
+    </style>
+    
+    <script>
+      const elem = document.getElementById("animated");
+        let xpos = 0;
+        let xdir = 1;
+        let ypos = 0;
+        let ydir = 0;
+
+      function animation() {
+        const elem = document.getElementById("animated");
+        let xpos = 0;
+        let xdir = 1;
+        let ypos = 0;
+        let ydir = 0;
+        let interval = null;
+ 
+        clearInterval(interval);
+        interval = setInterval(frame, 5);
+      
+
+      function frame() {
+        xpos = xpos + xdir;
+          
+        ypos = ypos+ ydir;
+        elem.style.left = xpos + "px";
+        elem.style.top = ypos + "px";
+        
+        if ((xpos == 350)&&(ypos == 0) ){
+            xdir = 0;
+            ydir = 1;
+            elem.style.background = black;
+          }
+          else if ((xpos == 350)&&(ypos == 350) ){
+            xdir = -1;
+            ydir = 0;
+          }
+          else if ((xpos == 0)&&(ypos == 350) ){
+            xdir = 0;
+            ydir = -1;
+          }
+          else if ((xpos == 0)&&(ypos == 0) ){
+            xdir = 1;
+            ydir = 0;
+          }
+
+        }
+      }
+    </script>
+
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body onload="animation()">
+    
+    <h1>Information about Jared Poulos</h1>
     <p>
-      [Self introduction]
+      My name is Jared Poulos, and I am a member of the WPI class of 2022.
+    </p>
+    
+    <p>
+      I am a major in Computer Science with no minors.
     </p>
     <p>
-      [Major and other information]
+      
     </p>
-    <p>
-      [Other things]
+    <h2>Experience</h2>
+
+    <p id="coursework">
+      Computer Science Coursework
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS1101</li>
+      <li>CS2102</li>
+      <li>CS2303</li>
+      <li>CS3516</li>
+      <li>CS2011</li>
+      <li>CS2223</li>
+      <li>CS3013</li>
+      <li>CS3133</li>
+      <li>CS4341</li>
+      <li>CS3733</li>
+      <li>CS3431</li>
+      <li>CS3043</li>
+      <li>CS4342</li>
     </ul>
+
+    <table>
+      <tr>
+        <th>Technology</th>
+        <th>Experience</th>
+      </tr>
+
+      <tr>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>A Lot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>A Lot</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>Some (JUnit)</td>
+      </tr>
+      
+    </table>
+
+    <div id="container" >
+      <div id="animated"></div>
+      </div>
+      
+
+    <img src="WPI_Logo.png">
+    <p id="thankyou">
+      Thank you for visiting my website!
+    </p>
   </body>
 </html>
