@@ -10,12 +10,15 @@ This project creates a website that shows a basic introduction to a student with
 
 - **Experiment with other HTML tags**:
 	- Used `<h1>`, `<h2>` and `<h3>` to better format the webpage
+	- Used `<img>` to embed a high-resolution logo in the webpage
 	- Used `<select>`, `<label>` and `<option>` for *Selectable List of Classes Taken*
 	- Used `<script>` to add embedded JS for *Selectable List of Classes Taken*
 	- Used `<table>` and `<tr>`, `<th>`, `<td>` for *Table of Technology Experience*
 	- Used `<a>` to add links of previous employers for *List of Working Experience*
 - **Style Page With External CSS**: Used color variables for palette colors, used `padding`, `align`, `color`, `font`
   and `font-size`, `border` and `border-radius`, `padding`, `text-align` and `background-color`. CSS file is external.
+- **Clicker Game** (a simple JavaScript animation): When the user clicks the G3P logo, the logo randomly jumps to
+  another position and the user has to click again, made with embedded JS ![](G3P-3D-REN-Filled-Fixed-Transparent.png)
 
 ### Design Achievements
 
