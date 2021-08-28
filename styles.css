@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Shadows+Into+Light&display=swap');
-body{
-  background-image: url('Bold_and_Brash.png');
-}
+
 
 h1 { 
   font-size: 40px;
@@ -11,6 +9,8 @@ h1 {
 h2 {
   font-size: 30px;
   font-family: "Shadows Into Light", sans-serif;
+  color:brown;
+  margin: 5px;
 }
 
 p{
