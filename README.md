@@ -88,13 +88,15 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Jared Poulos
+http://a1-jaredpoulos.glitch.me
 
-This project shows ...
+This project demonstrates my ability to create a simple html webpage with css and javascript elements. The site itself is also a brief introduction containing my name, class year, major, prior cosrework, and level of experience with certain technologies. It also shows some technical and design achievements listed below.
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Added rules for the p, li, and a selectors
+- **Added a simple JavaScript animation**: Added a red square which moves along the sides of a larger grey square. I achieved this by using JavaScript to change the css of the inner square. 
+- **Experiment with other HTML Tags**: Added rules for the p, li, and a selectors...
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Dancing Script Font from Google Fonts**: I used Dancing Script as the font for the 'Thank you' message at the bottom of the page. 
