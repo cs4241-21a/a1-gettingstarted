@@ -7,15 +7,15 @@ This project shows a basic page introducing myself. It contains an image of myse
 ## Technical Achievements
 - **Styled page with CSS**: 
     1. Added rule to add margins to bottom of body tag
-        margin: 0 0 50px 0;
+       * margin: 0 0 50px 0;
     2. Added rule to change font color of h1 tag
-        color: var(--dark-blue-color);
+       * color: var(--dark-blue-color);
     3. Added rule to center align text of h2 tag
-        text-align: center;
+       * text-align: center;
     4. Added rule to set width of p tag
-        width: 60%;
+       * width: 60%;
     5. Added rule to change font of h3 tag
-        font-family: "Montserrat", sans-serif;
+       * font-family: "Montserrat", sans-serif;
 
 - **Use other HTML tags**: 
     1. hr - added horizontal line
