@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 Jared Poulos
-http://a1-jaredpoulos.glitch.me
+https://a1-jpoulos000.glitch.me
 
 This project demonstrates my ability to create a simple html webpage with css and javascript elements. The site itself is also a brief introduction containing my name, class year, major, prior cosrework, and level of experience with certain technologies. It also shows some technical and design achievements listed below.
 
