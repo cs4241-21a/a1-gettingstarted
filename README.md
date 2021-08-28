@@ -1,9 +1,8 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
+Shannen Lin http://a1-sklin330.glitch.me
 
-*DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
-
-This project shows ...
+This project shows a basic page introducing myself. It contains an image of myself, a paragraph describing myself, a list of CS classes I have taken, and my experience with some technologies and methods.
 
 ## Technical Achievements
 - **Styled page with CSS**: 
@@ -19,6 +18,7 @@ This project shows ...
     3. a - added links going to WPI website, ACM website, and WiCS website
     4. ul, li - added a bulleted list of my CS classes
     5. table - added a table which lists the technologies in the first column and my experience level in the second column
+    6. br - added break between my cs class and technologies section
 
 - **Used classes for CSS styling**: 
     * main, section, etc.
@@ -33,3 +33,7 @@ This project shows ...
     3. Used the light blue color as background of the top half of the page
     4. Used the dark blue color as the font color of the h1 tag
     5. Used the purple color as the font color of the h2 tag
+
+- **Created adjacent boxes**: 
+    * I used <div> to create different sections for my contents which I added colors to make different colored rectanges
+    * I then set the display to inline-block so that they would appear right next to each other
