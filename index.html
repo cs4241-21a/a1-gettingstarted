@@ -3,26 +3,96 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat">
+
+    <style>
+      body {
+        background-color: #FFFFFC;
+        font-family: 'Montserrat', serif;
+      }
+      h1 {
+        color: #4EB4C2;
+      }
+    </style> 
+
+  <script src="https://js.cx/libs/animate.js"></script>
+  <link rel="stylesheet" href="style.css">
+
   </head>
+
   <body>
-    <h1>Information about [Your name here]</h1>
+    <div id="field">
+      <img src="https://js.cx/clipart/ball.svg" width="40" height="40" id="ball">
+    </div>
+
+    <h1>Information about Renee Sawka</h1>
     <p>
-      [Self introduction]
+      Hi! I'm Renee, a junior here at WPI. I'm on the women's Divison III Volleyball team and in my spare time I like to bake, read, and watch sports.
     </p>
     <p>
-      [Major and other information]
+      Computer Science Major with a Minor in Financial Technology (December '22) 
     </p>
     <p>
-      [Other things]
+      Previous WPI CS Courses
+    <ul>
+      <li>Accelerated Introduction to Program Design</li>
+      <li>Object-Oriented Design Concepts</li>
+      <li>Systems Programming Concepts</li>
+      <li>Discrete Mathematics</li>
+      <li>Algorithms</li>
+      <li>Introduction to Machine Organization & Assembly Language</li>
+      <li>Computer Networks</li>
+      <li>Foundations of Computer Science</li>
+      <li>Software Engineering</li>
+      <li>Operating Systems</li>
+      <li>Database Systems I</li>
+      <li>Database Systems II</li>
+      <li>Social Implications of Information Processing</li>
+      <li>Machine Learning</li>
+    </ul>
     </p>
 
     <h2>Experience</h2>
     <p>
+      Technologies and Methods 
+      <ul>
+        <li>HTML: none</li>
+        <li>CSS: none</li>
+        <li>Java: a lot</li>
+        <li>JavaScript: none</li>
+        <li>Ruby: none</li>
+        <li>Python: some</li>
+        <li>Unit Testing: a lot</li>
+      </ul>
+    </p>
+    <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>MITRE Embedded Security Intern 2021</li>
     </ul>
+
+    <script>
+      ball.onclick = function() {
+        let start = Date.now();
+  
+        let timer = setInterval(function() {
+          let timePassed = Date.now() - start;
+  
+          ball.style.left = timePassed / 5 + 'px';
+  
+          if (timePassed > 2000) clearInterval(timer);
+  
+        }, 20);
+      }
+    </script>
+  
+  
+  
+
+
+
+
   </body>
 </html>

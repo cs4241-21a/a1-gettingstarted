@@ -97,4 +97,6 @@ This project shows ...
 - **Styled page with CSS**: Added rules for the p, li, and a selectors...
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Created a color palette using the Adobe color wheel**: I created a color palette and used all the colors in my webpage (see SawkaColorPalette.png).
+
+- **Used the Montserrat from Google Fonts**: I used Montserrat as the font for the primary copy text in my site.
