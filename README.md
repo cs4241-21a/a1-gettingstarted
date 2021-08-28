@@ -2,6 +2,10 @@
 
 _DUE: Monday, August 30th by 11:59 AM (before the start of class!)_
 
+Hoang Phan Pham http://a1-gtwfam.glitch.me
+
+This project shows some basic information about myself as well as some the experience I have with HTML, CSS, and JS.
+
 Achivements:
 
 ## Technical
