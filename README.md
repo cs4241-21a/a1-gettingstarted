@@ -26,4 +26,7 @@ added to the body element.
     - #FF0B0A
     - #17FFDC
 
+![image](https://user-images.githubusercontent.com/32044950/131230093-1b3ecdc6-f68e-4a33-b350-9ccf34059b2b.png)
+
+
 - **Used the Press Start 2P Font from Google Fonts**: I used Press Start 2P as the font for all text on my site.
