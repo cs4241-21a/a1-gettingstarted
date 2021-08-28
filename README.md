@@ -3,7 +3,7 @@ Sample Readme (delete the above when you're ready to submit, and modify the text
 ---
 
 Timothy Goon
-TODO: add url from glitch
+Glitch URL: https://a1-t-goon.glitch.me
 
 This project shows all required parts of the first assignment along with all of the achievements completed. My name a short intro and my class at WPI are shown at the top. Next, is a list of the CS classes I've taken or am taking at WPI. After that is the 'Experience' section with a list of CS related jobs I've had and then a table with my proficiency with various web development skills. The page is styled with css and has a simple animation made using JS.
 
