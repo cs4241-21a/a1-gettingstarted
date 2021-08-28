@@ -1,0 +1,48 @@
+
+/*
+    Colors:
+    Dark blue: #537CAD
+    Light Blue: #ADD2FF
+    Blue: #92C0FA
+    Dark Brown: #AD8742
+    Light Brown: #FAD591
+*/
+
+body {
+    background: #537CAD;
+    transition: background 2s;
+}
+
+.course-table,
+.language-table {
+    border-collapse: separate;
+    border-radius: 13px;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    text-align: center;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0,0,0, 0.15);
+}
+
+.course-table thead tr,
+.language-table thead tr {
+    background-color: #537CAD;
+    color: #FAD591;
+}
+
+.course-table th,
+.course-table td,
+.language-table th,
+.language-table td {
+    padding: 12px 15px;
+}
+
+.course-table tbody tr,
+.language-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+body p {
+    color: "red"; 
+}
