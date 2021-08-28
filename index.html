@@ -1,139 +1,227 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-    <style>
-      ul {
-        list-style: none;
+
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-size: 16pt;
+      background-color: #d4d3e3;
+    }
+
+    .text-orange {
+      color: #FE9169;
+    }
+
+    .text-red {
+      color: #E02955;
+    }
+
+    .text-green {
+      color: #159b80;
+    }
+
+    h1,
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li::before {
+      content: "\2023";
+      color: #2665AE;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      transform: scale(1.2);
+    }
+
+    .curr>li::before {
+      color: #FE9169;
+    }
+
+    .work>li::before {
+      color: #E02955;
+    }
+
+    .lang>li::before {
+      color: #159b80;
+    }
+
+    @keyframes blink {
+      50% {
+        border-color: #d4d3e3;
       }
-      li::before {
-        content: "\2023";
-        color: #2665AE;
-        display: inline-block;
-        width: 1em;
-        margin-left: -1em;
-        transform: scale(1.2);
+    }
+
+    .we-text>.wrap {
+      border-right: 0.08em solid #030303;
+      animation-name: blink;
+      animation-duration: 0.5s;
+      animation-timing-function: step-end;
+      animation-iteration-count: infinite;
+    }
+
+    .container {
+      margin-left: 7%;
+      margin-right: 7%;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .half {
+      width: 45%;
+    }
+
+    .half-left {
+      margin-right: 5%;
+    }
+
+    .profile.half-right {
+      display: grid;
+      align-items: center;
+    }
+
+    .profile-pic {
+      border-radius: 50%;
+      margin-left: 5%;
+    }
+
+    .half>p {
+      line-height: 30px;
+    }
+  </style>
+  <script>
+    let WEtext = function (elem, toRotate, period) {
+      this.toRotate = toRotate;
+      this.elem = elem;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.text = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    WEtext.prototype.tick = function () {
+      let i = this.loopNum % this.toRotate.length;
+      let fullText = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.text = fullText.substring(0, this.text.length - 1);
+      } else {
+        this.text = fullText.substring(0, this.text.length + 1);
+      }
+      if (fullText === "Bill") {
+        this.elem.innerHTML = '<span class="wrap" style="color: #2665AE">' + this.text + '</span>';
+      } else {
+        this.elem.innerHTML = '<span class="wrap" style="color: #159b80">' + this.text + '</span>';
       }
 
-      @keyframes blink { 
-        50% { border-color: #FFF; } 
-      }
+      let that = this;
+      let delta = 300 - Math.random() * 100;
 
-      .we-text > .wrap { 
-        border-right: 0.08em solid #030303;
-        animation-name: blink;
-        animation-duration: 0.5s;
-        animation-timing-function: step-end;
-        animation-iteration-count: infinite; 
-      }
-
-    </style>
-    <script>
-      let WEtext = function(elem, toRotate, period) {
-        this.toRotate = toRotate;
-        this.elem = elem;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.text = '';
-        this.tick();
+      if (this.isDeleting) { delta /= 2; }
+      if (!this.isDeleting && this.text === fullText) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.text === '') {
         this.isDeleting = false;
-      };
+        this.loopNum++;
+        delta = 500;
+      }
 
-      WEtext.prototype.tick = function() {
-        let i = this.loopNum % this.toRotate.length;
-        let fullText = this.toRotate[i];
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
 
-        if (this.isDeleting) {
-          this.text = fullText.substring(0, this.text.length - 1);
-        } else {
-          this.text = fullText.substring(0, this.text.length + 1);
-        }
-        if (fullText === "Bill") {
-          this.elem.innerHTML = '<span class="wrap" style="color: #2665AE">' + this.text + '</span>';
-        } else {
-          this.elem.innerHTML = '<span class="wrap" style="color: #000">' + this.text + '</span>';
-        }
-
-        let that = this;
-        let delta = 300 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-        if (!this.isDeleting && this.text === fullText) {
-          delta = this.period;
-          this.isDeleting = true;
-        } else if (this.isDeleting && this.text === '') {
-          this.isDeleting = false;
-          this.loopNum++;
-          delta = 500;
-        }
-
-        setTimeout(function() {
-          that.tick();
-        }, delta);
-      };
-
-      window.onload = function() {
-        let elems = document.getElementsByClassName('we-text');
-        for (let i = 0; i < elems.length; i++) {
-          let toRotate = elems[i].getAttribute('data-rotate');
-          let period = elems[i].getAttribute('data-period');
-          if (toRotate) {
-            new WEtext(elems[i], JSON.parse(toRotate), period);
-          }
+    window.onload = function () {
+      let elems = document.getElementsByClassName('we-text');
+      for (let i = 0; i < elems.length; i++) {
+        let toRotate = elems[i].getAttribute('data-rotate');
+        let period = elems[i].getAttribute('data-period');
+        if (toRotate) {
+          new WEtext(elems[i], JSON.parse(toRotate), period);
         }
       }
-    </script>
-  </head>
-  <body>
-    <h1>Information about  
-      <span 
-        class="we-text"
-        data-period="2000"
-        data-rotate='["Hoang", "Bill"]'
-      ></span> Pham.</h1>
-    <p>
-      My name is Hoang, but english-speaking people call me Bill. My parents are from Vietnam <span></span>, but I was born and raised in Russia <span></span>. 
-    </p>
-    <p>
-      I am class of 2022 at WPI trying to double major in Computer Science Major and Data Science. [Major and other information]
-    </p>
-    <p>
-      I am a passionate Dota 2 player and is a part of WPI E-sports team. Right now we are looking for possible subs in our current roster.[Other things]
-    </p>
+    }
+  </script>
+</head>
 
+<body>
+  <div class="container">
+    <h1>Information about
+      <span class="we-text" data-period="2000" data-rotate='["Hoang", "Bill"]'></span> Pham:
+    </h1>
+    <div class="row">
+      <div class="half half-left">
+        <p>
+          My name is Hoang, but english-speaking people call me Bill. My parents are from Vietnam <img
+            src="images/vietnam.png" width="30px" height="30px">, but I was born and raised in Russia <img
+            src="images/russia.png" width="30px" height="30px">.
+        </p>
+        <p>
+          I am class of 2022 at WPI <img src="images/WPI_logo.png" width="30px" height="30px"> double-majoring in
+          Computer
+          Science Major and Data Science. [Major and other information]
+        </p>
+        <p>
+          I am a passionate Dota 2 player and is a part of WPI E-sports team <img src="images/wpiEsports.png"
+            width="30px" height="30px"> Right now we are looking for possible subs in our current roster.[Other things]
+        </p>
+      </div>
+      <div class="half half-right profile">
+        <img class="profile-pic" src="images/Profile.JPG">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
     <h2>Experience</h2>
-    <p>
-      Curriculum experience
-    </p>
-    <ul class="curr">
-      <li>Object-Oriented Design Concepts (Java)</li>
-      <li>Algorithms (Java)</li>
-      <li>Intro to Machine Organization and Assembly Language (Assembly / C++)</li>
-      <li>Computer Graphics (HTML, JavaScript) </li>
-      <li>Software Engineering (Java, SQL, HTML, JavaScript)</li>
-      <li>Operating Systems (C)</li>
-      <li>Database Systems (SQL)</li>
-      <li>Distributed Systems (C, Go)</li>
-    </ul>
-    <p>
-      Working experience
-    </p>
-    <ul class="work">
-      <li>CommCreative</li>
-      <li>WPI</li>
-    </ul>
-    <p>
-      Language experience
-    </p>
-    <ul class="lang">
-      <li>HTML: a lot</li>
-      <li>CSS: a lot</li>
-      <li>Java: a lot</li>
-      <li>JavaScript: a lot</li>
-      <li>Ruby: none</li>
-      <li>Python: some</li>
-      <li>unit testing: some</li>
-    </ul>
-  </body>
+    <div class="row">
+      <div class="half half-left">
+        <h3 class="text-orange">Curriculum experience:</h3>
+        <ul class="curr">
+          <li>Object-Oriented Design Concepts (Java)</li>
+          <li>Algorithms (Java)</li>
+          <li>Intro to Machine Organization and Assembly Language (Assembly / C++)</li>
+          <li>Computer Graphics (HTML, JavaScript) </li>
+          <li>Software Engineering (Java, SQL, HTML, JavaScript)</li>
+          <li>Operating Systems (C)</li>
+          <li>Database Systems (SQL)</li>
+          <li>Distributed Systems (C, Go)</li>
+        </ul>
+      </div>
+      <div class="half half-right">
+        <h3 class="text-red">Working experience:</h3>
+        <ul class="work">
+          <li>CommCreative</li>
+          <li>WPI</li>
+        </ul>
+        <h3 class="text-green">Language experience:</h3>
+        <ul class="lang">
+          <li>HTML: a lot</li>
+          <li>CSS: a lot</li>
+          <li>Java: a lot</li>
+          <li>JavaScript: a lot</li>
+          <li>Ruby: none</li>
+          <li>Python: some</li>
+          <li>unit testing: some</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
