@@ -11,9 +11,49 @@
 <p>Major: Interactive Media & Game Development, Computer Science</p>
 <p>Class of 2023</p>
 <p>Currently learning remotely and has 12 hours of time difference</p>
-</p>
-<p>
-	Previous CS classes: 1101, 2102, 2303, 2022, 2011, 2223, 3431, 3733, 4731
+
+<h2>Previous CS classes:</h2>
+<label for="years">Choose a year:</label>
+<select name="years" id="years" onchange="changeInfo()">
+	<option value="Freshman">Freshman</option>
+	<option value="Sophomore">Sophomore</option>
+	<option value="Junior">Junior</option>
+	<option value="Senior">Senior</option>
+</select>
+
+<p id="info" onload="changeInfo()">
+	<script>
+		function changeInfo() {
+			let info = document.getElementById('info')
+			switch (document.getElementById('years').value) {
+				case 'Freshman':
+					info.innerHTML =
+						'<ul><li>CS 1101 Introduction to Program Design</li>' +
+						'<li>CS 2102 Object-Oriented Design Concepts</li>' +
+						'<li>CS 2303 Systems Programming Concepts</li>' +
+						'<li>CS 2022 Discrete Mathematics</li></ul>'
+					break
+				case 'Sophomore':
+					info.innerHTML =
+						'<ul>' +
+						'<li>CS 2223 Algorithms</li>' +
+						'<li>CS 2011 Introduction to Machine Organization and Assembly Language</li>' +
+						'<li>CS 3431 Database Systems I</li>' +
+						'<li>CS 3733 Software Engineering</li>' +
+						'<li>CS 4731 Computer Graphics</li></ul>'
+					break
+				case 'Junior':
+					info.innerHTML =
+						'<ul><li>CS 4241 Webware: Computational Technology for Network Information Systems</li></ul>'
+					break
+				case 'Senior':
+					info.innerHTML = '<ul><li>none</li></ul>'
+					break
+			}
+		}
+
+		changeInfo()
+	</script>
 </p>
 
 <h2>Experience:</h2>
