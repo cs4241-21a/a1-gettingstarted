@@ -1,0 +1,78 @@
+:root {
+    --background-color:#1B2A49;
+    --main-dark:#465881;
+    --main-color:#00909E;
+    --main-light:#C9D1D3;
+    --complementary-light:#9E6D00;
+    --complementary-dark:#523800;
+}
+
+body{
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: center;
+    background-color: var(--background-color);
+    font-family: "Audiowide", sans-serif;
+}
+
+h1 {
+    color: var(--main-color);
+    font-size: 200%;
+    border: 2px solid var(--main-dark);
+    background: var(--main-dark);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+h2 {
+    color: var(--main-color);
+}
+
+h3 {
+    color: var(--main-light);
+}
+
+p {
+    color: var(--main-light);
+    font-size: 120%;
+}
+
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--main-light);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    color: var(--main-color);
+}
+
+td {
+    color: var(--main-light);
+}
+
+th, td {
+    background-color: var(--main-dark);
+}
+
+label {
+    color: var(--main-light);
+}
+
+select {
+    color: var(--background-color);
+    font-family: "Audiowide", sans-serif;
+}
+
+ul {
+    color: var(--main-light);
+    border: 2px solid var(--main-dark);
+    border-radius: 10px;
+    background: var(--main-dark);
+}
+
+a {
+    color: var(--main-color);
+}
