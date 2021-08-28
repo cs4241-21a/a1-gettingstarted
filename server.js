@@ -15,11 +15,10 @@ const server = http.createServer( function( request,response ) {
   }
 })
 
-server.listen( process.env.PORT || port )
+server.listen( port )
 
 const sendFile = function( response, filename ) {
    fs.readFile( filename, function( err, content ) {
-     file = content
-     response.end( content, 'utf-8' )
+    response.end( content, 'utf-8' )
    })
 }
