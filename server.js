@@ -4,16 +4,6 @@ const http = require('http'),
 
 const server = http.createServer( function( request,response ) {
   sendFile( response, request.url)
-  // switch( request.url ) {
-  //   case '/':
-  //     sendFile( response, 'index.html' )
-  //     break
-  //   case '/index.html':
-  //     sendFile( response, 'index.html' )
-  //     break
-  //   default:
-  //     response.end( '404 Error: File Not Found' )
-  // }
 })
 
 server.listen( process.env.PORT || port )

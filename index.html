@@ -1,19 +1,36 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about Evan</h1>
-    <p>
-      My name is Evan Llewellyn, and I'm in the Class of 2022.
-    </p>
-    <p>
-      I'm majoring in Computer Science and minoring in Data Science.
-    </p>
-    <p>
-      Previous courses I've taken:
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <style>
+    body {
+      font-family: 'Roboto', Arial;
+      font-size: 1em;
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+    }
+    li {
+      margin-top: 0.2em;
+      list-style-type: none;
+      margin-right: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Information about Evan</h1>
+  <p>
+    My name is Evan Llewellyn, and I'm in the Class of 2022.
+  </p>
+  <p>
+    I'm majoring in Computer Science and minoring in Data Science.
+  </p>
+  <h2>Courses</h2>
+  <details open="true">
+    <summary>Preivous courses I've taken:</summary>
     <ul>
       <li>Database Systems I</li>
       <li>Database Systems II</li>
@@ -22,12 +39,12 @@
       <li>Foundations of Computer Science</li>
       <li>Operating Systems</li>
     </ul>
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+  </details>
+  <h2>Experience</h2>
+  <details open="true">
+    <summary>
+      Working experience:
+    </summary>
     <ul>
       <li>HTML - Some</li>
       <li>CSS - Some</li>
@@ -37,5 +54,6 @@
       <li>Python - Some</li>
       <li>Unit Testing - A lot</li>
     </ul>
-  </body>
+  </details>
+</body>
 </html>
