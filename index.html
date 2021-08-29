@@ -1,46 +1,103 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/428381972545404928/881663935521095730/strawberry.gif" type="image/x-icon">
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      body {
+        background-color: #380233;
+        color: #16F0DA;
+        font-family: 'Fredoka One', cursive;
+      }
+      h1 {color: #F02EDE}
+      h2 {color: #F0CE46}
+      ul {
+        list-style: none; /* Remove default bullets */
+      }
+      ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #19AC9D; /* Change the color */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
+      .zoom {
+        transition: transform .2s; /* Animation */
+      }
+
+      .zoom:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      #myFace {
+        height: 300px;
+        float: right;
+        top: 0;
+      }
+      #animButton {
+        float: right;
+        font-family: 'Fredoka One', cursive;
+        border: none;
+        color: #19AC9D;
+        background-color: #16F0DA;
+      }
+    </style>
+    <script>
+      let timer;
+      let turn = 0;
+      function turnOn() {
+        timer = setInterval(spin, 30);
+      }
+
+      function spin() {
+        let x = document.getElementById("myFace");
+        turn += 5;
+        x.style.transform = "rotate("+ turn +"deg)"
+      }
+    </script>
   </head>
   <body>
-    <h1>Information about Kiara Munz</h1>
+    <button id="animButton" type="button" onclick="turnOn()">Make Me Spin!</button>
+    <h1>Webware With Kiara Munz!</h1>
+    <img id="myFace" class="zoom" src="https://cdn.discordapp.com/attachments/428381972545404928/881643078878920704/thumbnail_IMG_2495.jpg" alt="me in some cool clothes :)"/>
     <p>
       Hi! My name is Kiara Munz and I am a computer science major, minoring in imgd, and hoping to graduate in 2023! I have been a moderately avid coder since freshman year of high school, so I have encountered a wide variety of code related things in my travels :) Outside of the coding world, I like neon colors, craft projects, and video games!
     </p>
-
     <!-- TODO: Achievments -->
     <!-- TODO: Update README -->
     <!-- TODO: Test in Glitch -->
-    <h2>Experience</h2>
-    <p>
+    <h1>Experience</h1>
+    <h2>
       Working experience
-    </p>
+    </h2>
     <ul>
       <li>Senscio Systems - Intern - Summer 2018 - Did some basic web application work, but mostly helped with inventory grunt work</li>
       <li>Tyndall Design - Summer 2019 & 2020 - Junior Engineer - Worked mostly on a Excel to Database converter. Created a web app for it and had extensive database design studies </li>
       <li>Hubspot - Intern - Summer 2021 - Work extensively with Kafka workers, TQ2 queues, java backend object design, and more for the Sandboxes team at Hubspot</li>
     </ul>
-    <p>
+    <h2>
       Language experience
-    </p>
+    </h2>
     <table>
     <tbody>
       <tr>
         <td>HTML</td>
         <td>Low</td>
-        <td>Took a class sophmore year in high school, didnt love it, I rely on W3Schools templates now.</td>
+        <td>Took a class sophomore year in high school, didnt love it, I rely on W3Schools templates now.</td>
       </tr>
       <tr>
         <td>CSS</td>
         <td>Low</td>
-        <td>Took a class sophmore year in high school, I am definitely better at css than html!</td>
+        <td>Took a class sophomore year in high school, I am definitely better at css than html!</td>
       </tr>
       <tr>
         <td>Java</td>
         <td>High</td>
-        <td>Currently my prefered language due to high experience. Been coding in it since high school robotics.</td>
+        <td>Currently my preferred language due to high experience. Been coding in it since high school robotics.</td>
       </tr>
       <tr>
         <td>JavaScript</td>
@@ -58,7 +115,7 @@
         <td>Took a pretty extensive class freshman year high school. Mostly turtle stuff, but I have a goodhandle on the language.</td>
       </tr>
       <tr>
-        <td>unit testing</td>
+        <td>Unit Testing</td>
         <td>High</td>
         <td>Many WPI classes and my most recent internship heavily relied on unit testing.</td>
       </tr>
