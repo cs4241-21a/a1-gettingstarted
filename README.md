@@ -1,5 +1,5 @@
 Andrew Whitney
-http://a1-charlieroberts.glitch.me CHANGE THIS
+http://a1-andrewwhitney.glitch.me
 
 This project is a webpage that shows information about myself that would be relevant to this class.
 It includes information such as my year, major, previous WPI CS classes, and knowledge of web technologies.
