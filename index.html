@@ -1,28 +1,148 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        text-align: center;
+        background-color: #ede7dd;
+        color: #4f7294;
+      }
+      h1 {
+        font-size: 40px;
+        text-align: center;
+        background-color: #c1d5d6;
+        color: #4f7294;
+      }
+      h2 {
+        font-size: 30px;
+        text-align: center;
+        color: #8a1939;
+      }
+      p.quote {
+        font-size: 30px;
+        font-family: "Dancing Script", cursive;
+        color: #4fb6f0;
+        text-align: center;
+      }
+      .vacation-picture-format {
+        display: none;
+        width: 400px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .linkedin-format {
+        display: block;
+        width: 250px;
+        height: 250px;
+        margin-bottom: 25px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      ul {
+        margin: auto;
+        text-align: left;
+        list-style-position: inside;
+      }
+      div {
+        margin: auto;
+        text-align: center;
+        width: max-content;
+      }
+    </style>
+
+    <script>
+      function displayImage() {
+        document.getElementById("vacation-picture").style.display = "block";
+      }
+    </script>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
+    <h1>Information about Stefano Jordhani</h1>
+    <h2>About Me</h2>
+    <img
+      src="https://media-exp1.licdn.com/dms/image/C4E03AQEIk6W5errzmA/profile-displayphoto-shrink_800_800/0/1582071475250?e=1635379200&v=beta&t=ifVU6l7LhmUkKiISqg5GWmp-alPjMmAXuS0m5ElLBUg"
+      alt="LinkedIn Picture"
+      class="linkedin-format"
+    />
+    <a href="https://github.com/sjordhani22" target="_blank"
+      >Click here to visit my GitHub</a
+    >
+    <br />
+    <a href="https://www.linkedin.com/in/sjordhani/" target="_blank"
+      >Click here to visit my LinkedIn</a
+    >
+    <h3>
+      I am currently a senior (class of 2022) at Worcester Polytechnic Institute
+      majoring in Computer Science.
+    </h3>
+    <h3>When I am not programming, I like to:</h3>
+    <div>
+      <ul>
+        <li>Spend time with family/outdoors</li>
+        <li>Watch/play soccer and other sports</li>
+        <li>Listen to music</li>
+        <li>Play video games</li>
+        <li>Watching TV shows</li>
+        <li>Travel</li>
+      </ul>
+    </div>
+    <button onclick="displayImage()" style="margin-top: 10px">
+      Click here to see a picture from my last trip!
+    </button>
+    <img
+      id="vacation-picture"
+      src="https://i.ibb.co/ZWz9bBF/IMG-6563.jpg"
+      alt="Picture from vacation"
+      class="vacation-picture-format"
+    />
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <h3>Previous Computer Science Courses Taken at WPI</h3>
+    <div>
+      <ul>
+        <li>CS 1101 - Intro To Program Design</li>
+        <li>CS 3013 - Operating Systems</li>
+        <li>CS 3133 - Foundations Of Computer Science</li>
+        <li>CS 3733 - Software Engineering</li>
+        <li>CS 2011 - Machine Org & Assembly</li>
+        <li>CS 2022 - Discrete Mathematics</li>
+        <li>CS 2102 - O-O Design Concepts</li>
+        <li>CS 2223 - Algorithms</li>
+        <li>CS 2303 - Systems Programming Concepts</li>
+        <li>CS 3043 - Social Implications of Info Processing</li>
+        <li>CS 4233 - Object-Oriented Analysis & Design</li>
+        <li>CS 4341 - Intro to Artificial Intelligence</li>
+        <li>CS 4445 - Data Mining</li>
+        <li>CS 4518 - Mobile & Ubiquitous Computing</li>
+      </ul>
+    </div>
+    <h3>Experience With Some Technologies</h3>
+    <div>
+      <ul>
+        <li>HTML: some</li>
+        <li>CSS: none</li>
+        <li>Java: a lot</li>
+        <li>JavaScript: some</li>
+        <li>Ruby: none</li>
+        <li>Python: some</li>
+        <li>Unit Testing: a lot</li>
+      </ul>
+    </div>
+    <h3>Working Experience</h3>
+    <div>
+      <ul>
+        <li>Software Engineering Internship at HCL Technologies</li>
+      </ul>
+    </div>
+    <p class="quote">"Impossible is just an opinion" -Paulo Coelho</p>
   </body>
 </html>
