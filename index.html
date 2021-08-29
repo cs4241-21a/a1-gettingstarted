@@ -3,26 +3,107 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+      p {
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        color: #A87E00;
+      }
+      body {
+        background-color: #EEDDA6;
+      }
+      h1 {
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        color: #2A6625;
+      }
+      h2 {
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        color: #0087E0;
+      }
+      ul {
+        text-align: center;
+        color: #51CCAE;
+      }
+      li {
+        display: block;
+        font-family: 'Quicksand', sans-serif;
+      }
+      #darkMode {
+        height: 2em;
+        width: 10em;
+        border: none;
+      }
+      #darkMode:hover {
+        background-color: lightgray;
+      }
+    </style>
+    <script>
+      let dark = false;
+      function changeTheme() {
+        if (dark) {
+           lightMode()
+        }
+        else {
+          darkMode()
+        }
+        dark = !dark
+      }
+      
+      function lightMode() {
+        document.getElementById("body").style.backgroundColor = "#EEDDA6"
+        document.getElementById("p1").style.color = "#A87E00"
+        document.getElementById("p2").style.color = "#A87E00"
+        document.getElementById("p3").style.color = "#A87E00"
+        document.getElementById("p4").style.color = "#A87E00"
+        document.getElementById("h1").style.color = "#2A6625"
+        document.getElementById("h2").style.color = "#0087E0"
+        document.getElementById("ul").style.color = "#51CCAE"
+        document.getElementById("darkMode").innerHTML = "DARK MODE"
+      }
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
+      function darkMode() {
+        document.getElementById("body").style.backgroundColor = "black"
+        document.getElementById("p1").style.color = "white"
+        document.getElementById("p2").style.color = "white"
+        document.getElementById("p3").style.color = "white"
+        document.getElementById("p4").style.color = "white"
+        document.getElementById("h1").style.color = "lightgreen"
+        document.getElementById("h2").style.color = "#00CEE0"
+        document.getElementById("ul").style.color = "#95EBD6"
+        document.getElementById("darkMode").innerHTML = "LIGHT MODE"
+      }
+      
+    </script>
+  </head>
+  <body id="body">
+    <button id="darkMode" onclick="changeTheme()">DARK MODE</button>
+    <h1 id="h1">Information about Loren DiLoreto</h1>
+    <p id="p1">
+      Class of 2023
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+    <p id="p2">
+      Computer Science major
+    </p>
+    <p id="p3">
+      Previous courses: Intro to Program Design, Intro to Object Oriented Design, Systems Programming Concepts, Machine Org, Discrete Math, Algorithms, OS, Soft Eng
+    </p>
+    <h2 id="h2">Experience</h2>
+    <p id="p4">
+      Technical Experience
+    </p>
+    <ul id="ul">
+      <li>HTML - some</li>
+      <li>CSS - some</li>
+      <li>Java - a lot</li>
+      <li>JavaScript - some</li>
+      <li>Ruby - none</li>
+      <li>Python - some</li>
+      <li>unit testing - some</li>
     </ul>
   </body>
 </html>
