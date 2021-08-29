@@ -39,7 +39,7 @@ This project shows a web page I created to give a little information about me an
 - **Created a Color Palette using Adobe**: 
     - My favorite colors are green and purple so I wanted to design a color palette that mainly has those colors. I designed the following color wheel:
 
-    ![Color Palette](https://cdn.glitch.com/9c2f420d-101b-4535-afef-0199a4380e29%2Fpalette.JPG?v=1630268934921)
+    ![Color Palette](https://cdn.glitch.com/8f9216a5-8139-4dad-830d-97d730ef744d%2Fpalette.JPG?v=1630270286343)
 
 - **Used Google Fonts**
     - For my name, I used the Google Font entitled "Bitter"
