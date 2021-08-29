@@ -8,7 +8,8 @@ In this project I created a simple website that can act like a "portfolio" to sh
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1/h2, table/th/td/tr, header, link, and button selectors.
-- **Using other HTML tags**: Other than the tags in the started code, I used the table/th/td/tr, header, button, ul/li, and link tags  
+- **Using other HTML tags**: Other than the tags in the started code, I used the table/th/td/tr, header, button, ul/li, and link tags
+- **Modified server code**: Modified server code to support an external CSS file 
 
 ### Design Achievements
 - **Used a Adobe Color Palette**: I used the Blue Sky Moisty 2 color pallete from color.adobe.com. ![colorPalette](colPal.jpeg)
