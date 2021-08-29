@@ -3,14 +3,6 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 *DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great! 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
-you'll need skills with these tools throughout the rest of the course.
-
 Assignment details
 ---
 
@@ -54,16 +46,6 @@ Most of these steps are the same as option 1, except that you being by creating 
 ## Option 3 - Clone to computer, edit locally, push to GitHub, upload to Glitch
 This is the same as option 1, except that for step 6 (Deploy to Glitch) you simply upload each file to your Glitch repository (using New File > Upload a File).
 
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
 
 Achievements
 ---
