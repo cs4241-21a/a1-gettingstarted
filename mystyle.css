@@ -1,0 +1,85 @@
+/* Color Theme Swatches in Hex */
+:root{
+    --colPal-1: #192E45;
+    --colPal-2: #5C9CDB;
+    --colPal-3: #5CA2DB;
+    --colPal-4: #72B4F2;
+    --colPal-5: #6BBFFF;
+}
+
+body {
+    background-color: var(--colPal-2);
+    font-family: 'Lora', serif;
+}
+
+h1, h2 {
+    text-align: center;
+    color: white;
+    background-color: var(--colPal-1);
+    border: 3px solid black;
+    /*    
+    background-image: url("assets/picOfMe.jpeg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+     */
+
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    flex-grow: 1;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: var(--colPal-4);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px  #999;
+}
+
+button:hover {
+    background-color: var(--colPal-3);
+}
+
+button:active {
+    background-color: var(--colPal-1);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+th {
+    text-align: center;
+}
+
+table {
+    background-color: var(--colPal-5);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+a {
+    color: var(--colPal-1)
+}
+
+a:hover {
+    color: var(--colPal-5)
+}
