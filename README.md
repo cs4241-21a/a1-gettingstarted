@@ -3,7 +3,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 Maddison Caten
 [glitch link]
 
-This project shows ...
+This project shows a web page I created to give a little information about me and classes I've taken at WPI so far. I also list some experience that I have with various technologies. 
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, and a selectors...
