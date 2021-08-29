@@ -1,6 +1,6 @@
 function startGame() {
     console.log("started the animation")
-    document.getElementById('startGame').style.visibility = "hidden"
+    document.getElementById('startGame').innerText = "Rerun"
     drops = ''
     for(let i = 0; i < 10; i++) {
         // create a raindrop randomly in the width
