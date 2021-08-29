@@ -3,6 +3,8 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 Steven Tran http://a1-stevenptran.glitch.me
 
+https://github.com/stevenptran/a1-gettingstarted/tree/glitch
+
 This project shows a sample website created by Steven Tran of his skills, classes taken at WPI, and class year.
 
 ## Technical Achievements
