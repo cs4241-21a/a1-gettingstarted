@@ -1,4 +1,4 @@
-This project shows ...
+This project is a webpage that shows information about Loren DiLoreto. It features a simple Node.js server, CSS styles and a Javascript animation.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, body, h1, h2, ul and li selectors.
