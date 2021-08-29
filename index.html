@@ -3,26 +3,130 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Webware first Assignment">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Yonghua Wang">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap');
+
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      body{
+        background-color: #fa6461;
+        font-family: 'Kaisei HarunoUmi', serif;
+      }
+      img{
+        opacity: 0;
+        width: 400px;
+      }
+      div{
+        margin: auto;
+        max-width: 500px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div style="background-color: #fabd61;">
+      <h1><b>Wang, Yonghua</b> </h1>
+      <p>
+        Class of 2022.
+      </p>
+      <p>
+        Major in computer science
+      </p>
+      <p>
+        <a href="mailto:ywang33@wpi.edu" title="contact Yonghua">ywang33@wpi.edu</a>
+      </p>
+      <h3>
+        Click on the img below to see the gompei
+      </h3>
+      <button id="btn" title= "click to show the gompei">
+        <img id="gompei"  src="gompei.jpg" alt="engineer gompei">
+      </button>
+      <script>
+          let img = document.querySelector('#btn').addEventListener('click',()=>{
+            let compei=document.querySelector('#gompei');
+            setInterval(() => {
+              compei.style.opacity+=1;
+            }, 500);
+            // for (let index = 0; index <= 1; index+=0.2) {
+            //   compei.style.opacity=index;              
+            // }
+            
+          });   
+      </script>
+    </div>
+    <br/>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div style="background-color: #de9657;">
+      <h2>Experience</h2>
+
+      <p>
+        Working experience
+      </p>
+      <ul>
+        <li>WPI</li>
+        <li>Tencent</li>
+      </ul>
+    </div>
+    
+    <div style="background-color: #f5976c;">
+      <p>
+        CS Classes taken in WPI
+      </p>
+      <ul>
+        <li>Machine learning</li>
+        <li>Database system</li>
+        <li>Software engineering</li>
+        <li>Computer network</li>
+        <li>Operating system</li>
+        <li>...</li>
+      </ul>
+    </div>
+ 
+    <div style="background-color: #de6d57;">
+      <p>
+        Experience with following technologies and methods
+      </p>
+      <table id="skillProf">
+        <tr>
+          <th>technologies and methods</th>
+          <th>degree of proficiency</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>some</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>some</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>a lot</td>
+        </tr>
+        <tr>
+          <td>Java Script</td>
+          <td>some</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>some</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>none</td>
+        </tr>
+        <tr>
+          <td>unit testing</td>
+          <td>some</td>
+        </tr>
+      </table>
+    </div>
+    
   </body>
 </html>
