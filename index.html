@@ -3,26 +3,113 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asset&family=Bangers&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Morgan</h1>
     <p>
-      [Self introduction]
+      Howdy, pardner. The name's Morgan. WPI Class of 2022, at your service.
     </p>
     <p>
-      [Major and other information]
+      I'm a CS major by day, and a Math minor, also by day. Don't ask what I am by night.
     </p>
     <p>
-      [Other things]
+      My PRONOUNS are THEY/THEM 
     </p>
+    <img src="https://i.redd.it/90syz5ulh7i71.jpg" alt="Tony Hawk's pro nouns">
 
     <h2>Experience</h2>
+    <p>
+      Computer Science Courses:
+    </p>
+    <ul>
+      <li>1101: Intro to Program Design</li>
+      <li>2102: Object Oriented Design Concepts</li>
+      <li>2303: Systems Programming Concepts</li>
+      <li>3043: Social Implications of Information Processing</li>
+      <li>2022: Discrete Mathematics</li>
+      <li>2011: Intro to Machine Organization and Assembly</li>
+      <li>2223: Algorithms</li>
+      <li>3013: Operating Systems</li>
+      <li>3133: Foundations of Computer Science</li>
+      <li>3733: Software Engineering</li>
+      <li>4032: Numerical Methods for Linear and Nonlinear Systems</li>
+      <li>4342: Machine Learning</li>
+    </ul>
     <p>
       Working experience
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Library Circulation Assistant (2018-present)</li>
+      <li>Computer Science Departmant Student Assistant (2019-present)</li>
+      <li>Research Lab Assistant - ASSISTments (2020-present)</li>
     </ul>
+    <p>
+      Technology Stack Experience:
+    </p>
+    <ul>
+      <li>HTML: exstensive</li>
+      <li>CSS: moderate</li>
+      <li>Java: exstensive</li>
+      <li>JavaScript: exstensive</li>
+      <li>Ruby: none</li>
+      <li>Python: moderate</li>
+      <li>Unit Testing: moderate</li>
+    </ul>
+
+    <button id='gumby-btn' class='btn-off'>WARNING: do not press</button>
+    <div id='gumby-root' style="visibility: hidden">
+      <p id='gumby-text'>YOU'VE BEEN GUMBIED!!!</p>
+      <img src='https://upload.wikimedia.org/wikipedia/en/7/7c/Gumby_sm.png' alt='GUMBY GOT YOU, OH GOD'>
+    </div>
+
   </body>
+  <script>
+    document.getElementById('gumby-btn').addEventListener('click',function() {
+      if(document.getElementById('gumby-root').style.visibility === 'hidden') {
+        document.getElementById('gumby-btn').classList.add('btn-on');
+        document.getElementById('gumby-btn').classList.remove('btn-off');
+        document.getElementById('gumby-root').style.visibility = 'visible';
+      } else {
+        document.getElementById('gumby-btn').classList.add('btn-off');
+        document.getElementById('gumby-btn').classList.remove('btn-on');
+        document.getElementById('gumby-root').style.visibility = 'hidden';
+      }
+    });
+  </script>
+  <style>
+    #gumby-text {
+      font-family: 'ZCOOL KuaiLe', cursive!important;
+    }
+    p {
+      font-family: 'Asset', cursive;
+    }
+    li {
+      font-family: 'Bangers', cursive;
+    }
+    li,p {
+      color: #44E041;
+    }
+    h1, h2 {
+      color: #24BA22;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    body {
+      background-color: #990F54;
+    }
+    .btn-off {
+      background-color: #E04195
+    }
+    .btn-on {
+      background-color: #66FF63;
+    }
+    button {
+      color: #136312;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      border-radius: 2rem;
+      padding: 1rem;
+    }
+  </style>
 </html>
