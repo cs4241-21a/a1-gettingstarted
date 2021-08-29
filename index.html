@@ -1,28 +1,184 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <meta charset="utf-8" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Lato&display=swap");
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+      body {
+        padding: 20px;
+        background-color: #efeeee;
+      }
+
+      h1 {
+        border-right: solid 3px rgba(65, 90, 78, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: "Bitter", serif;
+        font-size: 42px;
+        color: #415a4e;
+      }
+
+      /* Animation */
+      h1 {
+        animation: animated-text 3s steps(29, end) 1s 1 normal both,
+          animated-cursor 600ms steps(29, end);
+      }
+
+      /* text animation */
+
+      @keyframes animated-text {
+        from {
+          width: 0;
+        }
+        to {
+          width: 320px;
+        }
+      }
+
+      /* cursor animations */
+
+      @keyframes animated-cursor {
+        from {
+          border-right-color: #759c8a;
+        }
+        to {
+          border-right-color: transparent;
+        }
+      }
+
+      p {
+        font-family: "Lato", sans-serif;
+        color: black;
+        font-size: 14px;
+      }
+
+      hr.rounded {
+        border-top: 4px solid #5f555a;
+        border-radius: 5px;
+      }
+
+      h2 {
+        font-family: "Lato", sans-serif;
+        color: #5f555a;
+      }
+
+      .bgcont {
+        background-color: #dfd8d2;
+        border-radius: 10px;
+        padding-top: -2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+      }
+
+      .pad {
+        padding-top: -2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 5px;
+      }
+
+      .cellContainer {
+        width: 50%;
+        float: left;
+      }
+
+      li {
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+      }
+
+      #content {
+        position: relative;
+    }
+    #content img {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    </style>
+  </head>
+  <script language = JavaScript type = "text/javascript">
+    var currentImgNumber = 1;
+    var numberOfImages = 2;
+    function window_onload()
+    {
+      setTimeout("switchImage()", 3000);
+    }
+  
+    function switchImage()
+    {
+      currentImgNumber++;
+      document.imgAdvert.src = 'AdvertImage' + currentImgNumber + '.jpg';
+      if (currentImgNumber < numberOfImages)
+      {
+        setTimeout("switchImage()", 3000); 
+      }
+    }
+    
+  </script>
+
+  <body>
+    <div>
+      <h1>Maddison Caten</h1>
+      <div class="content">
+        <img src = "AdvertImage1.jpg" name = "imgAdvert" class="ribbon"></img>
+      </div>
+    </div>
+    <hr class="rounded" />
+    <div class="bgcont">
+      <h2>About Me</h2>
+      <p>
+        Hello! I'm a student at Worcester Polytechnic Institute (WPI). I love
+        collecting and taking care of my houseplants and crocheting! I also
+        like playing board games and doing puzzles. Let me know if you have any
+        recomendations!
+      </p>
+      <p>
+        I'm a computer science and data science double major. I'm planning to
+        graduate in May 2022!
+      </p>
+    </div>
+
+    <div style="width:100%; height: 200px;">
+      <div class="cellContainer">
+        <div style="margin-right: 10px; margin-top: 20px; background-color: #dfd8d2; border-radius: 10px;" class="pad">
+          <h2>Relevant Coursework</h2>
+          <p>The following computer science courses I have completed thus far at WPI:</p>
+          <ul>
+            <li>CS 1101: Introduction to Program Design</li>
+            <li>CS 2102: Object Oriented Design Concepts</li>
+            <li>CS 2303: Systems Programming Concepts</li>
+            <li>CS 2011: Introduction to Machine Organization and Assembly Language</li>
+            <li>CS 2022: Discrete Mathematics</li>
+            <li>CS 2223: Algorithms</li>
+            <li>CS 3013: Operating Systems</li>
+            <li>CS 3043: Social Implications of Information Processing</li>
+            <li>CS 3133: Foundations of Computer Science</li>
+            <li>CS 3431: Database Systems I</li>
+            <li>CS 3733: Software Engineering</li>
+            <li>CS 4341: Introduction to Artificial Intelligence</li>
+            <li>CS 4342: Machine Learning</li>
+          </ul>
+        </div>
+      </div>
+      <div class="cellContainer">
+        <div style="margin-left: 10px; margin-top: 20px; background-color: #dfd8d2; border-radius: 10px;"class="pad">
+          <h2>Experience</h2>
+          <ul>
+            <li>A lot of experience with HTML</li>
+            <li>Some experience with CSS</li>
+            <li>A lot of experience with Java programming</li>
+            <li>Some experience with Javascript programming</li>
+            <li>Some experience with Ruby programming</li>
+            <li>A lot of experience with Python programming</li>
+            <li>A lot of experience with unit testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
