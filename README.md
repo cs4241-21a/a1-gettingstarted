@@ -1,4 +1,4 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
+Evan Llewellyn http://a1-emllewellyn.glitch.me
 
 This project shows I'm able to create a simple informative website with simple styling as well. Below are the achievements that detail what style changes I made.
 
