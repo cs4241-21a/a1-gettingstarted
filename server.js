@@ -7,6 +7,9 @@ const server = http.createServer( function( request,response ) {
     case '/':
       sendFile( response, 'index.html' )
       break
+    case '/gompei.jpg':
+      sendFile( response, 'gompei.jpg' )
+      break
     case '/index.html':
       sendFile( response, 'index.html' )
       break
