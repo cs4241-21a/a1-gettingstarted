@@ -23,5 +23,5 @@ In this project I created a personal presentation webpage using HTML, CSS, and J
     - I used the `style`, `link`, and `script` tags to introduce CSS styling, Google Fonts, and a JS animation.
     - I used a `<div>` tag to split the page into sections
 ### Design Achievements
-- **Used the Noto Sans JP Font from Google Fonts**: I used Noto Sans JP as the font for the website. Specifically, I set the `<p>, <h1>, <h2>, <a>, <tr>, <li>` tags to use this font.
+- **Used the Noto Sans JP Font from Google Fonts**: I used Noto Sans JP as the font for the website. Specifically, I set the `<body>` tag to use this font, which modifies the default font for all tags.
 - **Used color.adobe.com to create a color palette**: I created a color palette to change the colors of the links when their status is link, visited, hover, and active. I also used a color for the LinkedIn link button.
