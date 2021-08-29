@@ -1,7 +1,8 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 Maddison Caten
-[glitch link]
+
+https://a1-mcaten.glitch.me/
 
 This project shows a web page I created to give a little information about me and classes I've taken at WPI so far. I also list some experience that I have with various technologies. 
 
