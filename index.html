@@ -2,27 +2,231 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="shortcut icon" type="image/ico" href="https://cdn.glitch.com/09f34000-7d1e-4fbd-824f-ccbed4061435%2Fa1Asset%2011favicon2.ico?v=1630071281021"/>
     <meta charset="utf-8">
+    <style>
+      
+      @import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        
+        * {
+          box-sizing: border-box;
+        }
+
+        /* Create two equal columns that floats next to each other */
+        .column {
+          width: 20%;
+          float: left;
+          padding: 10px;
+
+          /*background-color: #F280BF;*/
+        }
+      
+      .column.green {
+        /*border-radius: 15px;*/
+        background-color: #c1d832;
+        color: #faf6db;
+        padding: 40px;
+      }
+       
+      
+      .column.blue {
+        /*border-radius: 15px;*/
+        background-color: #3ba9d2;
+        color: #faf6db;
+        padding: 40px;
+      }
+      
+      .column:hover {
+        background-color: #c4b0d5;
+      }
+      
+      
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+        
+      }
+      
+      .row {
+        
+        text-align: center;
+        align: auto;
+      }
+      
+      .row1 {
+        align: auto;
+        background-color: #fac4c5;
+        color: #101436;
+        width: 100%;
+        padding: 30px;
+        
+      }
+      
+      .row3 {
+        align: auto;
+        background-color: #fac4c5;
+        color: #101436;
+        width: 100%;
+        padding: 30px;
+        
+      }
+
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 50px;
+        padding: 10px;
+        
+        /*font-family: 'Kaisei Tokumin', serif;*/
+        /*font-family: 'PT Serif', serif;*/
+      }
+      
+      .header.image {
+        width: 850px;
+        height: 420px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        margin-top: -50px;
+        background: url('https://cdn.glitch.com/09f34000-7d1e-4fbd-824f-ccbed4061435%2Fheaderlogo.png?v=1630018208814');
+        background-size: cover;
+      }
+      
+      
+      
+      h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        /*font-family: 'PT Serif', serif;*/
+      }
+      
+      p {
+        font-family: 'Montserrat', sans-serif;
+      } 
+      
+      li {
+        font-family: 'Montserrat', sans-serif;
+        text-align: left;
+      } 
+      
+      body {
+        background-color: #FAF6DB;
+        color: #00000;
+      }
+      
+      ul {
+        list-style-image: url(https://cdn.glitch.com/09f34000-7d1e-4fbd-824f-ccbed4061435%2Fa1Asset%2014bullet.png?v=1630185402445);
+        text-align: center;
+        list-style-position: inside;
+        display: table;
+        margin: 0 auto;
+        font-size: 25px;
+        
+      }
+      
+      p {
+        font-size: 25px;
+        text-align: center;
+      }
+      
+      
+      
+      
+</style>
+    
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <div class="header image"> </div>
+    
+    <div class="row1">
+    <h2>
+      Hi everyone!
+    </h2>
     <p>
-      [Self introduction]
+      My name is Paloma and I am a CS/IMGD double major (class of 2022).
     </p>
     <p>
-      [Major and other information]
+      Here are the CS classes I have taken at WPI so far:
     </p>
+    </div>
+    
+    <!--first grid row-->
+    
+    <div class="row">
+      
+      <div class="column green">
+        <h2>CS1101</h2>   
+      </div>
+      
+      <div class="column blue">
+        <h2>CS2101</h2>
+      </div>
+      
+      <div class="column green">
+        <h2>CS2011</h2>
+      </div>
+      
+      <div class="column blue">
+        <h2>CS2303</h2>
+      </div>
+      
+      <div class="column green">
+        <h2>CS2022</h2>
+      </div>
+      
+    </div>
+    
+    <!--second grid row-->
+    
+    <div class="row">
+      
+      <div class="column blue">
+        <h2>CS2223</h2>
+      </div>
+      
+      <div class="column green">
+        <h2>CS3013</h2>
+      </div>
+      
+      <div class="column blue">
+        <h2>CS3041</h2>
+      </div>
+      
+      <div class="column green">
+        <h2>CS3043</h2>
+      </div>
+      
+      <div class="column blue">
+        <h2>CS4731</h2>
+      </div>
+      
+    </div>
+    
+    <div class="row3">
     <p>
-      [Other things]
+      Here is my experience with webware related skills:
     </p>
+            <ul>
+              <li>HTML: some</li>
+              <li>CSS: some</li>
+              <li>Java: some</li>
+              <li>JavaScript: some</li>
+              <li>Ruby: none</li>
+              <li>Python: some</li>
+              <li>Unit testing: some</li>
+            </ul>
+    </div>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    
   </body>
 </html>
