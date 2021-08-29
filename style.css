@@ -1,0 +1,32 @@
+body {
+    background-color: #4F44C7;
+    color: #D1706E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    border-style: solid;
+    border-color: #9C12B8;
+    border-width: 4px;
+    background-color: #4B91B8;
+    display: inline;
+}
+
+a:hover {
+    background-color:#1AD68D;
+    opacity: .5;
+}
+
+ul {
+    border: solid;
+    border-width: 4px;
+    display: table;
+    list-style-type: none;
+    padding:0;
+}
+
+li {
+    border-bottom:solid;
+    border-left:solid;
+    border-width: 1px;
+}
