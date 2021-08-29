@@ -2,9 +2,9 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 David Mahany
-http://a1-charlieroberts.glitch.me
+https://a1-pieking1215.glitch.me
 
-This project shows ...
+This project contains a page with some basic information about myself. This includes my majors, class year, previous cs classes, and experience with some technologies related to this class. 
 
 ## Technical Achievements
 - **Styled page with CSS** 
