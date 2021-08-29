@@ -90,51 +90,58 @@
         font-size: 14px;
       }
 
-      #content {
+      .content {
         position: relative;
-    }
-    #content img {
+      }
+      .content img {
         position: absolute;
-        top: 0px;
+        top: -120px;
         right: 0px;
-    }
-
+        width: 10%;
+        height: auto;
+      }
     </style>
   </head>
-  <script language = JavaScript type = "text/javascript">
-    var currentImgNumber = 1;
+  <script language="JavaScript" type="text/javascript">
+    var currentImgNumber = 0;
     var numberOfImages = 2;
-    function window_onload()
-    {
+    const ig = ["https://images.squarespace-cdn.com/content/v1/5ba16b43af2096229b2409d4/1597539921982-T8RUEWU06SJKJ7VK7Z1K/GOMPEI-10.png", "https://images.squarespace-cdn.com/content/v1/5ba16b43af2096229b2409d4/1597539916944-P9TU48GAJJXRE7Q90II3/GOMPEI-04.png"];
+    function window_onload() {
       setTimeout("switchImage()", 3000);
     }
-  
-    function switchImage()
-    {
-      currentImgNumber++;
-      document.imgAdvert.src = 'AdvertImage' + currentImgNumber + '.jpg';
-      if (currentImgNumber < numberOfImages)
-      {
-        setTimeout("switchImage()", 3000); 
+
+    function switchImage() {
+
+      if(currentImgNumber == 2) {
+        currentImgNumber = 0;
       }
+      
+
+      document.imgAdvert.src = ig[currentImgNumber];
+
+      if (currentImgNumber < numberOfImages) {
+        setTimeout("switchImage()", 5000);
+      }
+
+      currentImgNumber++;
     }
-    
   </script>
 
-  <body>
+  <body onload="window_onload()">
     <div>
       <h1>Maddison Caten</h1>
       <div class="content">
-        <img src = "AdvertImage1.jpg" name = "imgAdvert" class="ribbon"></img>
-      </div>
+        <img
+        src="https://images.squarespace-cdn.com/content/v1/5ba16b43af2096229b2409d4/1597539921982-T8RUEWU06SJKJ7VK7Z1K/GOMPEI-10.png"
+      name="imgAdvert"/></div>
     </div>
     <hr class="rounded" />
     <div class="bgcont">
       <h2>About Me</h2>
       <p>
         Hello! I'm a student at Worcester Polytechnic Institute (WPI). I love
-        collecting and taking care of my houseplants and crocheting! I also
-        like playing board games and doing puzzles. Let me know if you have any
+        collecting and taking care of my houseplants and crocheting! I also like
+        playing board games and doing puzzles. Let me know if you have any
         recomendations!
       </p>
       <p>
@@ -143,16 +150,30 @@
       </p>
     </div>
 
-    <div style="width:100%; height: 200px;">
+    <div style="width: 100%; height: 200px">
       <div class="cellContainer">
-        <div style="margin-right: 10px; margin-top: 20px; background-color: #dfd8d2; border-radius: 10px;" class="pad">
+        <div
+          style="
+            margin-right: 10px;
+            margin-top: 20px;
+            background-color: #dfd8d2;
+            border-radius: 10px;
+          "
+          class="pad"
+        >
           <h2>Relevant Coursework</h2>
-          <p>The following computer science courses I have completed thus far at WPI:</p>
+          <p>
+            The following computer science courses I have completed thus far at
+            WPI:
+          </p>
           <ul>
             <li>CS 1101: Introduction to Program Design</li>
             <li>CS 2102: Object Oriented Design Concepts</li>
             <li>CS 2303: Systems Programming Concepts</li>
-            <li>CS 2011: Introduction to Machine Organization and Assembly Language</li>
+            <li>
+              CS 2011: Introduction to Machine Organization and Assembly
+              Language
+            </li>
             <li>CS 2022: Discrete Mathematics</li>
             <li>CS 2223: Algorithms</li>
             <li>CS 3013: Operating Systems</li>
@@ -166,7 +187,15 @@
         </div>
       </div>
       <div class="cellContainer">
-        <div style="margin-left: 10px; margin-top: 20px; background-color: #dfd8d2; border-radius: 10px;"class="pad">
+        <div
+          style="
+            margin-left: 10px;
+            margin-top: 20px;
+            background-color: #dfd8d2;
+            border-radius: 10px;
+          "
+          class="pad"
+        >
           <h2>Experience</h2>
           <ul>
             <li>A lot of experience with HTML</li>
@@ -180,5 +209,12 @@
         </div>
       </div>
     </div>
+
+    <div style="text-align: center;" class="pad">
+      <ul style = "text-align: center">
+        <li style = "display: inline; list-style-type: none"><a href = "https://www.linkedin.com/in/maddisoncaten/" style = "text-decoration: none">LinkedIn</a> &brvbar 
+        <li style = "display: inline; list-style-type: none"><a href = "https://github.com/mcaten" style = "text-decoration: none">Github</a> 
+      </ul>
+      </div>
   </body>
 </html>
