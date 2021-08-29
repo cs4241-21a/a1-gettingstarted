@@ -14,3 +14,4 @@ This project shows a basic html site with some information about myself as well 
 - **Added a custom header image**: I designed and added my own logo/header image to the site
 - **Added a custom bullet point symbol**: Designed and added my own symbol for bulleted lists
 - **Created a row and column layout**: Used the div class tags to create a row, column and grid layout for the site
+- **Created a color palette**: Made a color palette with color.adobe.com
