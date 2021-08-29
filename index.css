@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font: bold;
+    color:#103369;
+    font-size: 200%;
+}
+
+h2{
+    font: bold;
+    color: #103369;
+    font-size: 150%;
+}
+
+p1{
+    color:#2372E8;
+}
+
+p2{
+    color: #23406B;
+}
+
+p3{
+    color: #1C5AB8;
+}
+
+p4{
+    color: #6A9EEC;
+}
