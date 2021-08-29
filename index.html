@@ -1,28 +1,168 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #pain {
+        color: black;
+      }
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        color: black;
+      }
+
+      body {
+        font-family: "Bubblegum Sans", sans-serif;
+        font-size: 20px;
+        background-color: #C9B651;
+        color: #0AD60B;
+      }
+      p {
+        background-color: #EB6A6A;
+        color: #F7A10C;
+      }
+      li {
+        font-size: 18px;
+        color: #0033EB;
+      }
+      h2 {
+        font-size: 25px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Jason Odell</h1>
     <p>
-      [Self introduction]
+      My name is Jason Odell, I am a part of the class of 2023
     </p>
     <p>
-      [Major and other information]
+      I am a computer science major and I'm planning on minoring in Data
+      Science.
     </p>
     <p>
-      [Other things]
+      I am the competitive manager for the League of Legends team at WPI as well
+      as the events coordinator for
+      <a href="https://wpiesports.github.io/">WPI esports</a>
     </p>
 
-    <h2>Experience</h2>
+    <h2>Experience:</h2>
     <p>
-      Working experience
+      Experience with CS:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML: Very little, took a class on it in middle school</li>
+      <li>CSS: Very little, took a class on it in middle school</li>
+      <li>
+        Java: A lot of experience, taken several classes and used for personal
+        projects
+      </li>
+      <li>
+        Javascript: Some, wrote a very basic discord bot in JS and did another
+        unfinished personal project
+      </li>
+      <li>
+        Ruby: very little, wrote a discord bot in Ruby at a hackathon, no real
+        Ruby experience
+      </li>
+      <li>
+        Python: Very little, learned some basic Python in DS1010 and have used
+        it at a summer camp
+      </li>
+      <li>unit testing: Some, primarily from previous CS courses.</li>
     </ul>
+    <p>
+      Working experience:
+    </p>
+    <ul>
+      <li>Home Depot</li>
+    </ul>
+    <p>
+      CS Classes taken at WPI:
+    </p>
+    <ul>
+      <li>CS2103: ACCELERATED OBJECT-ORIENTED DESIGN CONCEPTS (B19)</li>
+      <li>CS2303: SYSTEMS PROGRAMMING CONCEPTS (C20)</li>
+      <li>
+        CS2011: INTRODUCTION TO MACHINE ORGANIZATION AND ASSEMBLY LANGUAGE (D20)
+      </li>
+      <li>CS3013: Operating Systems (A20)</li>
+      <li>CS2223: Algorithms (B20)</li>
+    </ul>
+    <p>
+      Other Coding experience:
+    </p>
+    <ul>
+      <li>
+        Lead Programmer for the Hillsdale High School Robotics Team (2018-2019)
+      </li>
+      <li>
+        Programmer & Team member for The Hillsdale High School Robotics Team
+        (2016-2019)
+      </li>
+      <li>Participation in Hackathons: SM Hacks 2018, Los Altos Hacks 3 & 4</li>
+    </ul>
+    <img
+      src="https://i.kym-cdn.com/entries/icons/original/000/018/929/graphic_design_is_my_passion.png"
+      alt="Graphic_Design"
+    />
+    <h3>
+      Contacts
+    </h3>
+    <table>
+      <tr>
+        <th>Discord</th>
+        <th>uginghostdragon#6818</th>
+      </tr>
+      <tr>
+        <th>Email</th>
+        <th>jdodell@wpi.edu</th>
+      </tr>
+      <tr>
+        <th>github</th>
+        <th><a href="https://github.com/jasonodell2001">jasonodell2001</a></th>
+      </tr>
+    </table>
+
+    <p id="pain">
+      Forgive me...
+    </p>
+    <button id="sad" onclick="changeColor()">
+      Forgive me for what I have done
+    </button>
+    <script>
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      async function changeColor() {
+        var elem = document.getElementById("pain");
+        var elem2 = document.getElementById("sad");
+        elem.style.color = "green";
+        elem2.style.color = "blue";
+        let x = 0;
+        let y = 0;
+        for (let i = 0; i < 10; i++) {
+          y = Math.random() * 500;
+          x = Math.random() * 500;
+          elem.style.width = x + "px";
+          elem.style.height = y + "px";
+          elem.style.height = x + "px";
+          elem2.style.width = y + "px";
+          await sleep(500);
+        }
+      }
+    </script>
   </body>
 </html>
