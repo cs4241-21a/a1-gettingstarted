@@ -1,28 +1,195 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/b3e5280887.js" crossorigin="anonymous"></script> -->
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+
+    <style>
+        body {
+            width: 80%;
+            margin: auto;
+            font-family: 'Ubuntu', sans-serif;
+            background-color: #E6D5A3;
+        }
+        
+        .introduction {
+            text-align: center;
+            width: 100%;
+            margin-top: 6rem;
+            color: #7C8C99;
+            margin-bottom: 6rem;
+        }
+        
+        .introduction h1 {
+            font-size: 6rem;
+            margin: auto;
+        }
+        
+        .introduciton p {
+            font-size: 4rem;
+            margin: auto;
+            /* text-align: center; */
+        }
+        
+        .information {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: stretch;
+            align-content: stretch;
+            flex-wrap: wrap;
+        }
+        
+        .information div {
+            background-color: #7AB4E6;
+            color: #00000000;
+            flex: 1 1 0px;
+            margin: 1rem;
+            padding: 1rem;
+        }
+        
+        .information div h2 {
+            text-align: center;
+        }
+        
+        table {
+            width: 100%;
+        }
+        
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="introduction">
+        <h1>Information about Alex Kinley</h1>
+        <p>
+            Hello! I am Alex Kinley, a Computer Science major and part of the WPI class of 2022.
+        </p>
+    </div>
+    <div class="information">
+
+        <div class="courses">
+            <h2>
+                WPI CS Courses
+            </h2>
+            <ul>
+                <li>Racket</li>
+                <li>Object Oriented Programming Concepts</li>
+                <li>System Programming</li>
+                <li>Networks</li>
+                <li>Assembly/Machine Organization</li>
+                <li>Graphics</li>
+                <li>Operating Systems</li>
+            </ul>
+        </div>
+
+        <div class="tech-experience">
+            <h2>Technology Experience</h2>
+            <table>
+                <tr>
+                    <th>Technology</th>
+                    <th>Experience</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td class="star-rating">5</td>
+                    <td>React as well as plain html</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td class="star-rating">4</td>
+                    <td>Mainly sass</td>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td class="star-rating">5</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td class="star-rating">4</td>
+                    <td>Mostly with typescript</td>
+                </tr>
+                <tr>
+                    <td>Ruby</td>
+                    <td class="star-rating">0</td>
+                    <td>Have not touched ruby</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td class="star-rating">4</td>
+                    <td>For general scripting, and with FastAPI</td>
+                </tr>
+                <tr>
+                    <td>Unit Testing</td>
+                    <td class="star-rating">4</td>
+                    <td>Mainly Jest for JS and JUnit for Java</td>
+                </tr>
+            </table>
+        </div>
+        <div class="other-stuff">
+            <h2>Other stuff about me</h2>
+
+            <ul>
+                <li>This past summer I interned at <a href="https://www.metrika.co/">metrika</a> doing frontend development in React and backend development in python</li>
+                <li>A website I'm building for my IQP: <a href="https://awkinley.github.io/IQP-Project-Website/">link</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    function turn_ratings_into_stars() {
+        const ratings = document.getElementsByClassName("star-rating");
+        for (const rating of ratings) {
+            const ranking = rating.innerText;
+            const numStars = parseInt(ranking);
+            if (numStars != NaN) {
+                rating.innerText = "";
+                const numEmptyStars = 5 - numStars;
+                for (let i = 0; i < 5; i++) {
+                    if (i < numStars) {
+                        rating.innerText += '\u2605';
+                    } else {
+                        rating.innerText += '\u2606';
+                    }
+                }
+            }
+        }
+    }
+
+    function fade_in_info_boxes() {
+        const infoDiv = document.getElementsByClassName("information")[0];
+        for (const child of infoDiv.children) {
+            child.style.color = '#00000000';
+            let intervalId = setInterval(() => {
+                const alpha = child.style.color.split(',').slice(-1);
+                const newAlpha = parseFloat(alpha) + 0.01;
+                const newColor = `rgba(0, 0, 0, ${newAlpha})`;
+                child.style.color = newColor;
+                if (newAlpha >= 1.0) {
+                    clearInterval(intervalId);
+                }
+
+            }, 10);
+        }
+
+    }
+    window.onload = () => {
+        turn_ratings_into_stars();
+        fade_in_info_boxes();
+
+    }
+</script>
+
 </html>
