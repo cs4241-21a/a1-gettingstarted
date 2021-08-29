@@ -38,9 +38,11 @@ This project shows a web page I created to give a little information about me an
 - **Created a Color Palette using Adobe**: 
     - My favorite colors are green and purple so I wanted to design a color palette that mainly has those colors. I designed the following color wheel:
 
-    ![Color Palette](palette.jpg)
+    ![Color Palette](https://cdn.glitch.com/9c2f420d-101b-4535-afef-0199a4380e29%2Fpalette.JPG?v=1630268934921)
 
 - **Used Google Fonts**
     - For my name, I used the Google Font entitled "Bitter"
 
     - For the rest of the page, I used the Google Font entitled "Lato"
+
+- For the typewriting effect, I based it off the following link: https://www.codesdope.com/blog/article/creating-typewriter-text-animation-using-css/ 
