@@ -14,6 +14,9 @@ This project contains a page with some basic information about myself. This incl
 - **Added a JavaScript animation**
   - Used JavaScript (in [index.js](index.js)) to fade in elements one by one on page load.
 
+- **Added routes for index.css and index.js in server.js**
+  - I added routes for the index.css and index.js files in the server in order for them to load correctly.
+
 - **Used extra HTML tags**
   - I utilized the table, tr, and td tags to organize the "technologies" panel. This also made it easier to align everything neatly.
 
