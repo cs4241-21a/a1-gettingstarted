@@ -18,8 +18,8 @@ This project shows ...
     +5 Click the image at the top to rotate the image   
         -This uses JS to transform the image by transforming it by 90deg each click. An overall value is stored to keep track of the current angle of the image.   
         -Implements the onClick method by accessing the id of the image in the document.   
-    +0 User can also zoom in on the table showing all the courses I have taken
-        -Uses the hover feature along with transform scale
+    +0 User can also zoom in on the table showing all the courses I have taken    
+        -Uses the hover feature along with transform scale    
 
 3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README. (DONE)   
     +1 Incorporates an Image of me  
