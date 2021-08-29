@@ -17,5 +17,5 @@ This project shows my personal information.
 ### Design Achievements
 - I used Roboto as the font for the primary text in my site.
 - I use 5 color from color.adobe.com. The screenshot is in the repo, they are #F5B058, #D4381E, #EB2DE4, #471ED4, #2397F7
- ![Image text](/Screenshot 2021-08-29 131637.png)
+ ![Image text](Screenshot 2021-08-29 131637.png)
 - I add a gray background to make website more readable and eye-friendly.
