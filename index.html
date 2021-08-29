@@ -3,6 +3,8 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+
+    <script src="client.js"></script>
   </head>
   <body>
     <h1>Information about Eli Benevedes</h1>
@@ -45,5 +47,21 @@
       <li>Python: A lot</li>
       <li>Unit Testing: Some</li>
     </ul>
+
+    <h2>Message Board</h2>
+    <p>Add a message</p>
+
+    <input id="name" type="text" placeholder="Name" />
+    <input id="msg"  type="text" placeholder="Message" />
+
+    <input id="submit" type="button" value="Send message" onclick="postMessage();" />
+
+    <table id="message_table" >
+      <tr>
+        <th>Name</th>
+        <th>Message</th>
+        <th>Date</th>
+      </tr>
+    </table>
   </body>
 </html>
