@@ -1,0 +1,72 @@
+h1 {
+    font-style: italic;
+    font-family: "Sofia", sans-serif;
+    color: #2ca7ad;
+    text-align: center;
+  }
+
+  h2 {
+    font-family: "Sofia", sans-serif;
+    color: #43F2FA;
+  }
+
+  #icon {
+    position: relative;
+    cursor: pointer;
+  }
+
+
+.large{
+  font-size: 150%;
+}
+
+.medium{
+  font-size: 125%;
+}
+
+.center{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+img {
+  vertical-align: middle;
+}
+
+ td {
+  text-align: center;
+  border-collapse: collapse;
+  border:1px solid #2ca7ad;
+}
+
+.textColor{
+  color: #FC5185; 
+}
+
+.textColor2 {
+  color: #BA5FF0;
+}
+
+.textColor3 {
+  color: #145D75;
+}
+
+#footer {
+  font-size: 125%;
+  color: #145D75;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
