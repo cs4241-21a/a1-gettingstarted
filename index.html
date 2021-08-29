@@ -4,25 +4,301 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Pacifico">
+  <style>
+
+    .coolBackground {
+      background-image: url("https://cdn.glitch.com/1845c976-6fed-4e4d-a968-5dd4c58088b6%2F0bb6dqsiab451.gif?v=1630101608786");
+      
+      min-height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-left: -65px;
+      margin-right: -65px;
+      margin-top: -100px;
+    
+    }
+    
+    button {
+      background-color: #F25252;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 2px;
+      height: 25px;
+      width: 75px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    
+    button:hover{
+    background-color: white;
+      color: black;
+    }
+    
+    a:link {
+  color: #F25252;
+}
+
+
+a:visited {
+  color: #F25252;
+}
+    
+    h1 {
+        font-family: 'Pacifico', serif;
+        font-size: 48px;
+        color: white;
+      margin-left: 60px;
+      }
+    p {font-size: 120%}
+    body{background-color: #1D0C59;
+      color: #FFFFFF;
+      padding: 60px;
+      align: center;
+           }
+    p.smallcaps { font-variant: small-caps; }
+    p.important { border-style: solid; border-width: 5px; border-color: #F25CCA; }
+    table.center { display: block; margin: auto; }
+
+    
+    
+  #container {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  background: #EF4BF2;
+}
+  #animate {
+  width: 80px;
+  height: 40px;
+  position: absolute;
+}
+    
+    table, th, td {
+      border: 2px solid #EF4BF2;
+    }
+    
+  </style>
+  
+  <script>
+    
+ function sound(src) {
+  this.sound = document.createElement("audio");
+  this.sound.src = src;
+  this.sound.setAttribute("preload", "auto");
+  this.sound.setAttribute("controls", "none");
+  this.sound.style.display = "none";
+  this.play = function(){
+    this.sound.play();
+  }
+  this.stop = function(){
+    this.sound.pause();
+  }
+}
+    
+
+  let muted = true;  
+  let mySound = null;
+
+function mute(){
+  if (!muted){
+    muted = true;
+    mySound = null;
+    document.getElementById("muteButton").innerHTML = 'Unmute';
+  } else {
+    muted = false;
+    mySound = new sound("https://cdn.glitch.com/1845c976-6fed-4e4d-a968-5dd4c58088b6%2Fboing.mp3?v=1630081063375");
+  document.getElementById("muteButton").innerHTML = 'Mute';
+  }
+}
+
+    
+
+ window.onload = function myMove() {
+  let id = null;
+  let down = true;
+  let right = true;
+   let maxDown = 360;
+   let maxRight = 620;
+  const elem = document.getElementById("animate");
+  let xpos = 0;
+  let ypos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 10);
+  function frame() {
+    if (down && right) {
+      if (ypos === maxDown){
+        down = false;
+       mySound.play();
+      } else if (xpos === maxRight) {
+        right = false;
+        mySound.play();
+      } else {
+        xpos++;
+        ypos++;
+        elem.style.top = ypos + 'px';
+        elem.style.left = xpos + 'px';  }
+    } else if (!down && right ){
+      if (ypos === 0){
+        down = true;
+        mySound.play();
+      } else if(xpos === maxRight){
+        right = false;
+        mySound.play();
+      } else {
+        ypos--;
+        xpos++;
+        elem.style.top = ypos + 'px';
+        elem.style.left = xpos + 'px';
+      }
+    } else if (down && !right){
+      if (ypos === maxDown){
+        down = false;
+        mySound.play();
+      } else if (xpos === 0){
+        right = true;
+        mySound.play();
+      } else {
+        ypos++;
+        xpos--;
+        elem.style.top = ypos + 'px';
+        elem.style.left = xpos + 'px';
+      }
+    } else if (!down && !right){
+        if (ypos === 0){
+        down = true;
+        mySound.play();
+      } else if (xpos === 0){
+        right = true;
+        mySound.play();
+      } else {
+        ypos--;
+        xpos--;
+        elem.style.top = ypos + 'px';
+        elem.style.left = xpos + 'px';
+      }
+    }
+
+  }
+}
+    
+  
+  </script>
+  
+ <div class="coolBackground" id = "top">
+   <h1>Aidan Pecorale '22</h1>
+  </div> 
+
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+    
+    <p class='smallcaps' align='center'>
+      Hi, my name is Aidan Pecorale and I am in the Class of 2022.
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+    <p class="important" align='center'>
+      <b>Majors:</b>
+      Bioinformatics & Computational Biology (BCB) and Computer Science (CS)
+    </ul>
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+
+    <h2 algin='center'>Computer Science Classes Taken</h2>
+      <img src="https://cdn.glitch.com/1845c976-6fed-4e4d-a968-5dd4c58088b6%2FWPI_logo.png?v=1630094312063" alt="WPI Seal" width="200"
+height="200" align="right" />
+
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS 1101 - Introduction To Program Design </li>
+      <li>CS 2022 - Discrete Mathematics </li>
+      <li>CS 2102 - Object-Oriented Design Concepts </li>
+      <li>CS 2223 - Algorithms </li>
+      <li>CS 3043 - Social Implications Of Information Processing </li>
+      <li>CS 3133 - Foundations Of Computer Science </li>
+      <li>CS 3431 - Database Systems I </li>
+      <li>CS 3733 - Software Engineering </li>
+      <li>CS 4432 - Database Systems II </li>
+      <li>CS 4515 - Computer Architecture </li>
+      <li>CS 4803 - Biological And Biomedical Database Mining </li>
     </ul>
+<hr style='border: 2px solid #F25CCA'/>
+
+  <table align='center'>
+   <tr class="hover">
+    <th style="width:100px"> </th>
+    <th scope='col' style="width:75px">A Lot</th>
+    <th scope='col' style="width:75px">Some</th>
+    <th scope='col' style="width:75px">None</th>
+    </tr>
+    <tr>
+      <td align='center'>HTML</td>
+      <td></td>
+      <td align='center'>&#10003;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td align='center'>CSS</td>
+      <td></td>
+      <td></td>
+      <td align='center'>&#10003;</td>
+    </tr>
+    <tr>
+      <td align='center'>Java</td>
+      <td align='center'>&#10003;</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td align='center'>JavaScript</td>
+      <td></td>
+      <td></td>
+      <td align='center'>&#10003;</td>
+    </tr>
+    <tr>
+      <td align='center'>Ruby</td>
+      <td></td>
+      <td></td>
+      <td align='center'>&#10003;</td>
+    </tr>
+    <tr>
+      <td align='center'>Python</td>
+      <td></td>
+      <td align='center'>&#10003;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td align='center'>Unit Testing</td>
+      <td></td>
+      <td align='center'>&#10003;</td>
+      <td></td>
+    </tr>
+  </table>
+
+<hr style='border: 2px solid #F25CCA' />
+
+<div align='center'>
+  <h2>
+    Please enjoy my animation :)
+  </h2>
+  <div id ="container" style="position: relative">
+    <img src="https://cdn.glitch.com/1845c976-6fed-4e4d-a968-5dd4c58088b6%2Fdvdblack.png?v=1630262246591" id ="animate" style="position: absolute"></img>
+  </div>
+  <button id='muteButton' onclick='mute()'>
+    Unmute
+  </button>
+</div>
+
+<hr style='border: 2px solid #F25CCA'/>
+
+<div align='center'>
+  <h2>
+    Color Palatte:
+  </h2>
+  <img src="https://cdn.glitch.com/1845c976-6fed-4e4d-a968-5dd4c58088b6%2Fa1colors.PNG?v=1630261901117" title='Color Palatte' height='200px '></img>
+</div>
+
+
+ <p align='center'><a href="#top" color="#F25252">Top of page</a></p>
+  
   </body>
 </html>
