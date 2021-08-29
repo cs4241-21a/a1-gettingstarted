@@ -88,10 +88,10 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Eli Benevedes
+http://a1-elibenevedes.glitch.me
 
-This project shows ...
+This project is a simple portfolio. It lists my interests and work experience.
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the p, li, and a selectors...
