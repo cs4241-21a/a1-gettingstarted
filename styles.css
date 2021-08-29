@@ -1,0 +1,40 @@
+*{
+    background-color: #F0C2C9;
+}
+
+h1, h2 {
+    font-family: "Roboto Slab";
+}
+
+#purple {
+    background-color: #92A2F0;
+}
+
+#yellow { 
+    background-color: #F0D992;
+}
+
+#green {
+    background-color: #9EF0AE;
+}
+
+li, p {
+    font-family: Nunito;
+    font-weight: 14px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #EEE;
+    cursor: pointer;
+}
