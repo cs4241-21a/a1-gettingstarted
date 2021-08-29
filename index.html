@@ -2,38 +2,91 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
     <meta charset="utf-8">
+
   </head>
   <body>
-    <h1>Information about Ido Katz</h1>
-    <p>
-      Ido Katz
-    </p>
-    <p>
-      Computer Science '22
-    </p>
-    <p>
-      Soft Eng, Algo, Machine Learning, Data Vis ISP, Database 1, HCI, OS, and more
-    </p>
 
-    <h2>Experience</h2>
-    <ul>
-      <li>HTML - A lot</li>
-      <li>CSS - A lot</li>
-      <li>Java - A lot</li>
-      <li>JavaScript - Some</li>
-      <li>Ruby - Little/none</li>
-      <li>Python - Some</li>
-      <li>unit testing - Some</li>
-    </ul>
-    </p>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>Optum - Software Engineer</li>
-      <li>WPI - Web Developer</li>
-      <li>KTByte - CS Instructor</li>
-    </ul>
+    <div class="header">
+      <h1>Information about Ido Katz</h1>
+    </div>
+    <div class="content">
+      <p>
+        Ido Katz
+      </p>
+      <p>
+        Computer Science '22
+      </p>
+      <p>
+        Soft Eng, Algo, Machine Learning, Data Vis ISP, Database 1, HCI, OS, and more
+      </p>
+
+      <h2>Experience</h2>
+      <button onclick="myMove()">Animate Picture</button>
+      <table>
+        <tr>
+          <td>HTML</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>Css</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>Little/None</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>unit testing</td>
+          <td>Some</td>
+        </tr>
+      </table>
+      <p>
+        Working experience
+      </p>
+      <ul>
+        <li>Optum - Software Engineer</li>
+        <li>WPI - Web Developer</li>
+        <li>KTByte - CS Instructor</li>
+      </ul>
+    </div>
+      <div id="surprise">
+        <img src="smiley.jpg">
+      </div>
+
+    <div class="footer">
+      <p>Thanks for visiting!</p>
+    </div>
+
+    <script>
+      function myMove() {
+        let id = null;
+        const elem = document.getElementById("surprise");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 350) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elem.style.left = pos + 'px';
+          }
+        }
+      }
+    </script>
   </body>
 </html>
