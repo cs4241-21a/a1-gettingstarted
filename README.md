@@ -91,7 +91,7 @@ Sample Readme (delete the above when you're ready to submit, and modify the text
 Renee Sawka
 http://a1-rcsawka.glitch.me
 
-This project shows ...
+This project shows that I am able to utilize web technologies like HTML, CSS, and JS in order to take an existing template and modify the website to include personal information - as well as show how I explored and used different concepts and features these technologies offer (detailed below).
 
 ## Technical Achievements
 - **Styled page with CSS**: For the body selector, added style rules for font and color. For the h1, h2 selectors, added style rules for color and text alignment. For the li selector, added style rules for color and font-weight. For the a selector, added style rules for color and font style.
