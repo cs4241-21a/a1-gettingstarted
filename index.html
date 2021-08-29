@@ -1,28 +1,141 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allison">
+
+  <style>
+    body {
+      color: #FC8E62;
+      background-color: #F7FFFC;
+    }
+
+    label {
+      font-family: 'Allison', serif;
+      font-size: 40px;
+    }
+
+    .some {
+      color: #C25CD1;
+    }
+
+    .alot {
+      color: #384CD2;
+      font-weight: bold;
+    }
+
+    .none {
+      color: #FE3A5E;
+    }
+
+    #animcont {
+      width: 10px;
+      height: 10px;
+      position: relative;
+
+    }
+
+    #anim {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Information about Duncan Soiffer</h1>
+  <p>
+    Hello! This is the page of Duncan Soiffer, a class of 2024 WPI student.
+  </p>
+  <p>
+    Officially, my major is Undecided, but in reality I am majoring in Computer Science and Math.
+  </p>
+
+  <p><button onclick="move()">Send the box on an adventure</button></p>
+  <div id="animcont">
+    <div id="anim">am box</div>
+  </div>
+  <script>
+    function move() {
+      let posx = 0;
+      let posy = 0;
+      let xadd = 0;
+      let yadd = 0;
+      let id = null;
+      let lost = false;
+      let timer = 0;
+      const elem = document.getElementById("anim");
+      elem.textContent = "am box";
+      clearInterval(id);
+      id = setInterval(frame, 5);
+      function frame() {
+        if (posx === 400) {
+          lost = true
+          elem.textContent = "am LOST";
+        }
+        timer++
+        if (timer > 60) {
+          xadd = Math.floor(Math.random() * 3) - 1;
+          yadd = Math.floor(Math.random() * 3) - 1;
+          timer = 0;
+        }
+        if (lost) {
+          posx += xadd;
+          posy += yadd;
+        } else {
+          posx++;
+          posy++;
+        }
+        elem.style.top = posy + "px";
+        elem.style.left = posx + "px";
+      }
+    }
+
+  </script>
+
+  <p><a href=https://www.destroyallsoftware.com/talks/wat>Here's</a> a link to a short, amusing 4 minute talk on weird
+    things JS does.</p>
+
+  <h2>Experience</h2>
+  <p>
+    Language (and unit testing) experience
+  </p>
+  <ul>
+    <li>HTML: <span class="some">some</span></li>
+    <li>CSS: <span class="some">some</span></li>
+    <li>Java: <span class="alot">a lot</span></li>
+    <li>Javascript: <span class="some">some</span></li>
+    <li>Ruby: <span class="none">none</span></li>
+    <li>Python: <span class="alot">a lot</span></li>
+    <li>Unit testing: <span class="some">some</span> <span class="none">(but not really)</span></li>
+
+  </ul>
+  <p>
+    Class experience
+  </p>
+  <ul>
+    <li>CS 2022: Discrete Math (which is CS apparently?)</li>
+    <li>CS 2223: Algorithms</li>
+    <li>CS 2011: Intro- Machine Org & Assembly</li>
+    <li>CS 4120: Analysis of Algorithms</li>
+  </ul>
+
+  <h3>
+    Post-Reading Questionnaire
+  </h3>
+  <p>After reading this website, please take the following questionnaire:</p>
+  <p>Duncan is (check all that apply):</p>
+  <input type="checkbox" id="q1" name="q1" value="q1">
+  <label for="q1"> cool</label><br>
+  <input type="checkbox" id="q2" name="q2" value="q2">
+  <label for="q2"> hip</label><br>
+  <input type="checkbox" id="q3" name="q3" value="q3">
+  <label for="q3"> with it</label><br>
+
+</body>
+
 </html>
