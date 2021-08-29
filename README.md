@@ -18,5 +18,5 @@ Added a button tag to enable the animation of my image.
 Added a link tag to add a strawberry favicon icon.
 
 ### Design Achievements
-- **Used the Fredoka One Font from Google Fonts**: I used Fredoka One as the font for the =text in my site.
+- **Used the Fredoka One Font from Google Fonts**: I used Fredoka One as the font for the text in my site.
 - **Create Color Palette on Adobe.com**: I used a complementary based color palette. I checked thru the accessibility tools to ensure the colors are contrasted enough with the background and color blind safe!
