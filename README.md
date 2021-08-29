@@ -12,13 +12,16 @@ In this project I created a personal presentation webpage using HTML, CSS, and J
     - Modified the LinkedIn link to always show with color `#78CCFF`
     - Modified the `font-family` to use a Google Fonts font
     - Modofied the `<a>` color for all states to use a color palette from color.adobe.com
+    - Modified the color for the `<i>` tag to be similar to WPI's red color to highlight some words.
+    - Modified the `margin-bottom` for the `<div>` tag to space out the sections of the page.
 - **Simple JavaScript animation**:
     - I created a simple animation of 3 dots changing repeatedly from "." to ".." and "..." sequentially. It then returns to ".". The animation uses a `setInterval` to run a function every second. The function takes the `<h1>` title "Information about Federico Galbiati" and appends the dots at the end. I used the `substring` method to check how many dots there are at any given time in the title, and `".".repeat(x + 1)` to generate the sequence of dots to append.
 - **Extra tags**:
     - I used the `<table>` tag twice. The first table displays the courses that I have taken. I created 2 columns: one with the course ID and the second with the title. The second table displays my previous working experience with a column for dates and one for titles.
     - I used the `<a href="">` tag five times to add links to my LinkedIn, and to the course descriptions (on the WPI website) for the classes that I have taken.
+    - I created a demo newsletter subscribe form. The form used the `<form>` tag. Inside, it uses a `<label>`, an `<input>`, and a `<button>` for the input email field, the label for the field, and the button to subscribe.
     - I used the `style`, `link`, and `script` tags to introduce CSS styling, Google Fonts, and a JS animation.
-
+    - I used a `<div>` tag to split the page into sections
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Noto Sans JP as the font for the website. Specifically, I set the `<p>, <h1>, <h2>, <a>, <tr>, <li>` tags to use this font.
+- **Used the Noto Sans JP Font from Google Fonts**: I used Noto Sans JP as the font for the website. Specifically, I set the `<p>, <h1>, <h2>, <a>, <tr>, <li>` tags to use this font.
 - **Used color.adobe.com to create a color palette**: I created a color palette to change the colors of the links when their status is link, visited, hover, and active. I also used a color for the LinkedIn link button.
