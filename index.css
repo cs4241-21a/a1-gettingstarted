@@ -11,18 +11,18 @@ body {
 }
 
 h1, h2 {
-  color: #EDF50F;	
+  color: #BAFA2D;	
 }
 
 p, li {
-  color: #A16902;
+  color: #FA3614;
   -webkit-text-stroke: 0.5px black;
   font-family: 'Kaisei Tokumin', serif;
   margin-left: 20px;
 }
 
 button {
-  background-color: #A16902;
+  background-color: #FA3614;
   color: #FAAA9B;
   border: 0;
   display: block;
@@ -36,7 +36,7 @@ button {
 }
 
 #animation {
-  background-color: aquamarine;
+  background-color: #2D73FA;
   height: 100%;
 }
 
