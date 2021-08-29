@@ -6,4 +6,6 @@ icon.onclick = function() {
     angle = 0;
   
     document.getElementById("icon").style.transform = `rotate(${angle}deg)`;
+   
 }
+

@@ -1,4 +1,4 @@
-hh1 {
+h1 {
     font-style: italic;
     font-family: "Sofia", sans-serif;
     color: #2ca7ad;
@@ -14,6 +14,7 @@ hh1 {
     position: relative;
     cursor: pointer;
   }
+
 
 .large{
   font-size: 150%;
@@ -39,7 +40,7 @@ img {
  td {
   text-align: center;
   border-collapse: collapse;
-  border:1px solid #145D75;
+  border:1px solid #2ca7ad;
 }
 
 .textColor{
@@ -58,6 +59,11 @@ img {
   font-size: 125%;
   color: #145D75;
 }
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
 
 
 
