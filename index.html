@@ -3,26 +3,118 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link href = "styles/myStyle.css" type = "text/css" rel = "stylesheet" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Ivan Martinovic</h1>
     <p>
-      [Self introduction]
+      Hello, my name is <b>Ivan</b>. I come from <b>Bosnia and Herzegovina</b> and I am currently a <b>junior</b> at <i>WPI</i>.
     </p>
     <p>
-      [Major and other information]
+      I am a <b>CS</b> major, class of <b>2023</b>.
     </p>
-    <p>
-      [Other things]
-    </p>
+    <div class = "container">
+      <div class = "animation">
+        
+      </div>
+    </div>
+    <div>
+      <p>
+        CS courses I have taken so far are:
+        <img src = "images/computers-1227142.jpg" alt = "" title = "actual image of me doing CS 4241" class = "align-right medium">  
+        <ul>
+          <li>CS 1101 - Intro to program design</li>
+          <li>CS 2011 - Intro to machine organization and assembly language</li>
+          <li>CS 2022 - Discrete mathematics</li>
+          <li>CS 2102 - Object-oriented design concepts</li>
+          <li>CS 2223 - Algorithms</li>
+          <li>CS 2303 - Systems programming concepts</li>
+          <li>CS 3013 - Operating Systems</li>
+          <li>CS 3043 - Social implications of information processing</li>
+          <li>CS 3431 - Database Systems</li>
+          <li>CS 3516 - Computer Networks</li>
+          <li>CS 3733 - Software Engineering</li>
+          <li>CS 4513 - Distributed Computer Systems</li>
+        </ul>
+      </p>
+    <div>
 
-    <h2>Experience</h2>
+    <h2>Experience </h2>
     <p>
-      Working experience
+      
+      <table>
+        <thead>
+          <tr>
+            <th scope = "col"> Skill</th>
+            <th scope= "col" > Level </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>very little</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>a lot</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>very little</td>
+          </tr>
+          <tr>
+            <td>Ruby</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>unit testing</td>
+            <td>some</td>
+          </tr>
+        </tbody>
+      </table>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div>
+      <h2>Other information</h2>
+      <button class = "animation" onClick = myAnimation()>Start animation</button>
+      <div id = "container">
+        <div id = "animation"></div>
+      </div>
+    </div>
+    <script>
+      function myAnimation() {
+        let id = null;
+        const elem = document.getElementById("animation");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 90) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px'; 
+          }
+        }
+      } 
+    </script>
+
+    <p>
+      <ul>
+        <li>GitHub: <a href="https://github.com/imartinovic-dzaja">imartinovic-dzaja</a></li>
+        <li>Email: <a href="mailto: imartinovic@wpi.edu"> imartinovic@wpi.edu</a></li>
+      </ul>
+    </p>
+    <p>
+      <a href = "link.html"> Take me somewhere on this website</a>
+    </p>
   </body>
 </html>
