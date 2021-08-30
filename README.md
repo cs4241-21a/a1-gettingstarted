@@ -1,6 +1,3 @@
-
----
-
 Benjamin Peters
 http://a1-ben-peters.glitch.me/
 
