@@ -1,28 +1,214 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-image: radial-gradient(#F52300, #63E2E6);
+      }
+      h1 {
+        font-family: "Azeret Mono", monospace;
+        background-color: grad1;
+        color: #FFEB73;
+      }
+
+      h2 {
+        font-family: "Azeret Mono", monospace;
+        color: #0BF52F;
+      }
+
+      p {
+        font-family: "Azeret Mono", monospace;
+        color: #FFEB73;
+        font-size: 20px;
+      }
+
+      li {
+        font-family: "Azeret Mono", monospace;
+        color: #FFEB73;
+      }
+
+      ul {
+        font-family: "Azeret Mono", monospace;
+        color: #FFEB73;
+        text-align: left;
+      }
+
+      .headshot-placement {
+        margin-left: 25px;
+        margin-right: auto;
+        float: left;
+      }
+
+      .linkedin-placement {
+        margin-bottom: 25px;
+        margin-left: 25px;
+        margin-right: auto;
+        float: left;
+        display: block;
+      }
+
+      .github-placement {
+        margin-bottom: 25px;
+        margin-left: 15px;
+        margin-right: auto;
+        float: left;
+        display: block;
+      }
+
+      .email-placement {
+        margin-bottom: 25px;
+        margin-left: 20px;
+        margin-right: auto;
+        float: left;
+        display: block;
+      }
+
+      .flag-popup {
+        display: none;
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+      }
+    </style>
+
+    <script>
+      function displayImageAndColor() {
+        document.getElementById("Flag_of_Brazil").style.display = "block";
+        Array.from(document.querySelectorAll("button")).map(function(button) {
+          button.style.backgroundColor = "#FF9137";
+        });
+      }
+    </script>
   </head>
+
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>
+      Information about Bryan Lima
+      <img
+        src="https://cdn.glitch.com/83f30027-0e76-4498-a2b3-28931e52e187%2FBryan%20Lima%20Headshot.jpg?v=1630276671079"
+        alt="Headshot"
+        class="headshot-placement"
+      />
+    </h1>
     <p>
-      [Self introduction]
+      Hello, my name is Bryan Lima and I am a Senior (Class of 2022) at
+      Worcester Polytechnic Institute (WPI) pursuing a Bachelor of Science in
+      Computer Science with a minor in Interactive Media & Game Development.
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <button onclick="displayImageAndColor()" style="margin-top: 10px">
+      What Nationality am I?
+    </button>
+
+    <img
+      id="Flag_of_Brazil"
+      src="https://cdn.glitch.com/83f30027-0e76-4498-a2b3-28931e52e187%2FFlag_of_Brazil.gif?v=1630279861123"
+      alt="Brazilian Flag"
+      class="flag-popup"
+    />
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <a href="https://www.linkedin.com/in/bryanlima73/" target="_blank">
+      <img
+        src="https://cdn.glitch.com/83f30027-0e76-4498-a2b3-28931e52e187%2Ficonmonstr-linkedin-3-64.png?v=1630279140743"
+        alt="LinkedIn"
+        class="linkedin-placement"
+      />
+    </a>
+    <a href="https://github.com/bplima" target="_blank">
+      <img
+        src="https://cdn.glitch.com/83f30027-0e76-4498-a2b3-28931e52e187%2Ficonmonstr-github-3-64.png?v=1630279513415"
+        alt="GitHub"
+        class="github-placement"
+      />
+    </a>
+    <a href="mailto:bplima@wpi.edu">
+      <img
+        src="https://cdn.glitch.com/83f30027-0e76-4498-a2b3-28931e52e187%2Ficonmonstr-email-1-64.png?v=1630279775454"
+        alt="Email"
+        class="email-placement"
+      />
+    </a>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <hr />
+    <br />
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h2>
+      Cirriculum Experience
+    </h2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS 1000: AP Computer Science</li>
+      <li>CS 1102: Accelerated Introduction to Program Design</li>
+      <li>CS 2103: Accelerated Object-Oriented Design Concepts</li>
+      <li>CS 2303: Systems Programming Concepts</li>
+      <li>
+        CS 2011: Introduction to Machine Organization and Assembly Language
+      </li>
+      <li>CS 3733: Software Engineering</li>
+      <li>CS 3013: Operating Systems</li>
+      <li>CS 2223: Algorithms</li>
+      <li>CS 3516: Computer Networks</li>
+      <li>CS 3043: Social Implications of Information Processing</li>
+      <li>CS 3133: Foundations of Computer Science</li>
+    </ul>
+    <ul>
+      Currently Taking:
+      <li>
+        CS 4241: Webware: Computational Technology for Network Information
+        Systems
+      </li>
+      <li>CS 4518: Mobile & Ubiquitous Computing</li>
+    </ul>
+    <h2>
+      Experience with the Following Technologies and Methods
+    </h2>
+    <ul>
+      <li>HTML: Some</li>
+      <li>CSS: Some</li>
+      <li>Java: A Lot</li>
+      <li>JavaScript: Some</li>
+      <li>Ruby: None</li>
+      <li>Python: None</li>
+      <li>Unit Testing: Some</li>
+    </ul>
+    <h2>
+      Working Experience
+    </h2>
+    <ul>
+      <li>Amazon Propel Program, Amazon, June 2021 - August 2021</li>
+      <li>Technology Internship Program, Travelers, June 2020 - August 2020</li>
+      <li>
+        Instructor/Tech Coordinator, iD Tech Camps, May 2019 - August 2019
+      </li>
     </ul>
   </body>
 </html>
