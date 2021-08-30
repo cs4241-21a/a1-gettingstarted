@@ -8,7 +8,6 @@
 
         function remove_previous_courses(){
           let modal = document.getElementById("myModal");
-
           modal.style.display = "none";
         }
 
@@ -138,10 +137,6 @@
       .inner_circle {
         height: 150px;  /* needs to be the same height as the circle's height (.dot height) */
         width: 150px;   /* needs to be the same width as the circle's width (.dot width) */
-        /* display: flex; */
-        padding-top: 7px;
-        justify-content: center;
-        align-items: center;
       }
 
       /* The Modal (background) */
@@ -149,28 +144,28 @@
         display: none; /* Hidden by default */
         width: 100%;
         height: 100%;
-
         margin-top: -570px;
+        margin-left: 25%; 
         z-index: 1;
         position: relative;
-        
-        align-content: center;
       }
 
       /* Modal Content */
       .modal-content {
         background-color: rgba(95, 168, 211, 1);
         border: 1px solid rgba(202, 233, 255, 1);
-        width: 600px;
-        height: 600px;
+        width: 700px;
+        height: 660px;
         border-radius: 50%;
+        padding-top: 40px;
         font-family: Vast Shadow;
-        padding-inline-start: 50px;
-        padding-inline-end: 50px;
       }
 
       .modal-content ul{
         margin-top: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
+        line-width: relative;
       }
 
       a {
@@ -182,8 +177,18 @@
       a:hover,
       a:active {
         color:rgba(202, 233, 255, 1);
-      }  /* Mouse over link & Selected link   *
+      }  /* Mouse over link & Selected link   */
+      
 
+      table {
+        width:100%; 
+        margin-top: 100px; 
+        width: auto; 
+        height: auto; 
+        margin-left: auto; 
+        margin-right: auto;
+      }
+      
  
 
     </style>
@@ -194,7 +199,6 @@
   </head>
   <body style="background-color:rgba(98, 182, 203, 1);">
     
-
     
     <div class="center-screen">
       <div class="circular--landscape">
@@ -248,6 +252,7 @@
           <li>CS3516: Computer Networks</li>
           <li>CS3733: Software Engineering</li>
         </ul>
+    
       </div>
 
     </div>
@@ -262,7 +267,7 @@
       <div class="modal-content">
 
         <h2 style="text-align: center;">Experience</h2>
-        <table style="width:100%; margin-top: 50px;">
+        <table>
           <tr>
             <th>HTML</th>
             <td>Some</td>
