@@ -1,28 +1,216 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
+    <title>a1-ElaineChenWPI</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color:#F5F5F5;
+        text-align: center;
+      }
+      h1 {
+        font-family: 'PT Serif', serif;
+        color: #817F82;
+      }
+      h2 {
+        font-family: 'PT Serif', serif;
+        color: #0D1321;    
+      }
+      p {
+        font-family: 'PT Serif', serif;
+        color: #0D1321;
+      }
+      q {
+        font-family: 'PT Serif', serif;
+        font-size: larger;
+        color: #0D1321;
+      }
+      table {
+        font-family: 'PT Serif', serif;
+        color: #0D1321;
+        border: 10px solid #542344;
+      }
+      ul {
+        list-style-type: square;
+        background: #AE8CA3;
+        padding: 35px;
+      }
+      img {
+        border: 30px solid #AE8CA3;
+        border-radius: 50%;
+        background: #817F82;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1 id="type"></h1>
+    <!--Added an id for h1 to call it in my JS function-->
+    <img src="/Users/elainechen/Webware/a1-gettingstarted/ElaineChen PFP.jpeg" alt="Photo of Elaine Chen" width="200" height="200">
+    <!--Added a photo of myself-->
     <p>
-      [Self introduction]
+      Hello! I'm <a href="https://www.linkedin.com/in/elainechen-">Elaine</a>, and I am currently a senior at WPI. 
+    </p>
+    <!--Added a link to my LinkedIn Profile-->
+
+    <q>New Yorker, Dog Lover, Avid Reader, and Skilled Netflix Binger. Also a Lefty.</q>
+    <!--Added a quote to describe a few personal traits about myself-->
+
+    <p>
+      I am currenly double majoring in Computer Science and Professional Writing.
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      These are the computer science courses I have taken so far at WPI. 
     </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <table style="width:100%">
+      <tbody>
+       <tr>
+         <td>Course Number</td>
+         <td>Course Name</td>
+         <td>Term Taken</td>
+        </tr>
+      <tr>
+        <td>CS 1101</td>
+        <td>INTRODUCTION TO PROGRAM DESIGN</td>
+        <td>A18</td>
+        </tr>
+      <tr>
+      <td>CS 2102</td>
+      <td>OBJECT-ORIENTED DESIGN CONCEPTS</td>
+      <td>B18</td>
+        </tr>
+      <tr>
+        <td>CS 2022</td>
+        <td>DISCRETE MATHEMATICS</td>
+        <td>C19</td>
+        </tr>
+      <tr>
+        <td>CS 2223</td>
+        <td>ALGORITHMS</td>
+      <td>D19</td>
+        </tr>
+      <tr>
+        <td>CS 2303</td>
+        <td>SYSTEMS PROGRAMMING CONCEPTS</td>
+        <td>A19</td>
+        </tr>
+      <tr>
+        <td>CS 2011</td>
+        <td>INTRODUCTION TO MACHINE ORGANIZATION AND ASSEMBLY LANGUAGE</td>
+        <td>B19</td>
+        </tr>
+      <tr>
+        <td>CS 3133</td>
+        <td>FOUNDATIONS OF COMPUTER SCIENCE</td>
+        <td>A20</td>
+        </tr>
+      <tr>
+        <td>CS 3043</td>
+        <td>SOCIAL IMPLICATIONS OF INFORMATION PROCESSING</td>
+        <td>A20</td>
+        </tr>
+      <tr>
+        <td>CS 3733</td>
+        <td>SOFTWARE ENGINEERING</td>
+        <td>D21</td>
+        </tr>
+      <tr>
+        <td>CS 3041</td>
+        <td>HUMAN-COMPUTER INTERACTION</td>
+        <td>D21</td>
+        </tr>
+      <tr>
+        <td>CS 3013</td>
+        <td>OPERATING SYSTEMS</td>
+        <td>A21</td>
+        </tr>
+      <tr>
+        <td>CS 4241</td>
+        <td> WEBWARE: COMPUTATIONAL TECHNOLOGY FOR NETWORK INFORMATION SYSTEMS  </td>
+        <td>A21</td>
+        </tr>
+      <tr>
+        <td>CS 4518</td>
+        <td>MOBILE & UBIQUITOUS COMPUTING</td>
+        <td>A21</td>
+        </tr>
+    </tbody>
+
+
+    </table>
+    <!--Added a table for all my computer science classes-->
+
+    <h2>Technical Experience</h2>
+    <table style="width:100%">
+      <tbody>
+        <tr>
+          <td>Technologies/Method</td>
+          <td>Experience Level</td>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>A Lot</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Some</td>
+        </tr>
+        <tr>
+          <td>Unit Testing</td>
+          <td>A Lot</td>
+        </tr>
+
+      </tbody>
+
+
+    </table>
+    <!--Added a table for all my technical experience levels-->
+    <!--Used a different heading to introduce all my technical experience levels-->
+
+    <h2>Work Experience</h2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Technical Product Manager: Groupon - Summer 2021</li>
+      <li>Peer Learning Advisor: WPI GPS Climate Change Oct 2020 - Present</li>
+      <li>Research Assistant: WPI Sept 2020 - Present</li>
+      <li>Website Contributor: WPI Sept 2020 - Present</li>
+      <li>iD Tech Instructor: iD Tech Summer Camps - Summer 2019</li>
     </ul>
+    <!--Added an unordered list for all my work experiences-->
+    <!--Used a different heading to introduce all my work experience-->
+
+  <script>    
+    var tracker = 0;
+    isBackspacing = false;
+    var heading = "Meet Elaine Chen.";
+    function write() {
+      if (tracker < heading.length) {
+        document.getElementById("type").innerHTML += heading.charAt(tracker);
+        tracker++;
+        setTimeout(write, 90);
+      }
+    }
+    write();
+  </script>
+
   </body>
 </html>
