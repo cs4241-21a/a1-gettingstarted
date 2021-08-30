@@ -1,0 +1,19 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+    margin: 50px;
+    background-color: white;
+    background-image: linear-gradient(#FFE591, white);
+    background-repeat: no-repeat;
+}
+h1{
+    color:#B38C0C
+}
+h2{
+    color:#7084FF
+}
+h3{
+    color:#8A9AFF
+}
+ul{
+    color:#2034B3
+}
