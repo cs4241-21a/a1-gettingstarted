@@ -1,12 +1,10 @@
 /* Downloads Staatliches (https://fonts.google.com/specimen/Staatliches?sort=popularity) */
-@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
 body {
-    background: linear-gradient(45deg, white 40%, #80ACBD 100%);
-
-    margin: 5em 2em 5em 2em;
-
-    /*
+  background: linear-gradient(45deg, white 40%, var(--gradient-color) 100%);
+  margin: 5rem 2rem 5rem 2rem;
+  /*
     Colors from Wheel:
     ##4C6670 - Dark blue/gray
     #5CC8F2 - Robin egg blue
@@ -14,83 +12,81 @@ body {
     #2B5C70 - Deep turquoise
     #80ACBD - Light gray
     */
-    --h1h2-color: #2B5C70;
-    --h2-border-color: #80ACBD;
-    --h3-color: var(--h2-border-color);
-    --aLot-color: #5CC8F2;
-    --table-color: var(--h1h2-color);
+  --gradient-color: #80acbd;
+  --h1h2-color: #2b5c70;
+  --h2-border-color: #80acbd;
+  --h3-color: #5cc8f2;
+  --aLot-color: #5cc8f2;
+  --table-color: #2b5c70;
 }
 
-h1, h2, h3 {
-    font-family: 'Staatliches', cursive;
-    text-align: center;
+h1,
+h2,
+h3,
+div.img-group {
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+td.aLot {
+  font-family: "Staatliches", cursive;
+}
+
+h1,
+h2 {
+  color: var(--h1h2-color);
 }
 
 h1 {
-    font-size: 300%;
-    color: var(--h1h2-color);
-    border: 0.2em solid var(--h1h2-color);
+  font-size: 300%;
+  border: 0.2rem solid var(--h1h2-color);
 }
 
 h2 {
-    font-size: 250%;
-    color: var(--h1h2-color);;
-    border-bottom: 0.2em solid var(--h2-border-color);
+  font-size: 250%;
+  border-bottom: 0.2rem solid var(--h2-border-color);
 }
 
 h3 {
-    font-size: 175%;
-    color: var(--h3-color);
-    text-decoration-line: underline;
+  font-size: 175%;
+  color: var(--h3-color);
+  text-decoration-line: underline;
+  margin-bottom: unset;
 }
 
-p, li, th, td {
-    color: var(--h1h2-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+p,
+li,
+table {
+  color: var(--h1h2-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-p {
-    text-align: center;
-}
-
-.img-group {
-    text-align: center;
-}
-
-a {
-    padding: 2rem;
-    text-decoration: none;
-}
-
+p,
 ul {
-    margin-left: auto;
-    margin-right: auto;
-    width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40rem;
+}
+
+p.center {
+  text-align: center;
+}
+
+div.img-group a {
+  padding: 2rem;
+  text-decoration: none;
 }
 
 table {
-    margin-left: auto;
-    margin-right: auto;
-    width: 8em;
-    border: 0.2rem solid var(--table-color);
+  margin-left: auto;
+  margin-right: auto;
+  width: 8rem;
+  border: 0.2rem solid var(--table-color);
 }
 
-/* Styling for the technologies I am familiar with "none" */
-li.none::after {
-    content: " - none";
-    font-variant: small-caps;
-    font-style: italic;
-}
-
-/* Styling for the technologies I am familiar with "some" */
-li.some::after {
-    content: " - some";
-    font-weight: bold;
-}
-
-/* Styling for the technologies I am familiar with "a lot" */
-li.aLot::after {
-    content: " - A LOT";
-    color: var(--aLot-color);
-    font-family: 'Staatliches', cursive;
+td.aLot {
+  color: var(--aLot-color);
+  font-size: 120%;
 }
