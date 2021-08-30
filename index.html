@@ -42,7 +42,7 @@
       th {
         background-color: var(--purple-dark);
         color: var(--purple-light);
-        width: 100px;
+        width: 150px;
         line-height: 3.5ex;
       }
       td {
@@ -65,9 +65,20 @@
         display: inline-block;
         padding-left: 150px;
       }
+      #animation-container {
+        position: relative;
+        height: 30px;
+      }
+      #animation {
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        background-color: var(--yellow-dark);
+        position: absolute;
+      }
     </style>
   </head>
-  <body>
+  <body onload='move()'>
     <script src="https://www.wpromotions.eu/confetti.min.js"></script>
     <script>confetti.start()</script>
     <script>setTimeout(function(){confetti.stop();},3000)</script>
@@ -76,6 +87,10 @@
         <img id='wpi-logo' src='https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_BLK.png' alt='WPI Logo'/>
       </a>
       <h1 id='by-logo'>Information about Lauren Wasserman</h1>
+    </div>
+    <div id='animation-container'>
+      <div id='animation'>
+      </div>
     </div>
     <p>
       Hi, I'm Lauren and I am in the class of 2022.
@@ -124,6 +139,10 @@
         <td>A decent amount</td>
       </tr>
       <tr>
+        <th>Java:</th>
+        <td>A lot</td>
+      </tr>
+      <tr>
         <th>JavaScript:</th>
         <td>A decent amount</td>
       </tr>
@@ -146,3 +165,20 @@
     </table>
   </body>
 </html>
+<script>
+  var id = null;
+  function move() {
+    var elem = document.getElementById("animation");   
+    var pos = 0;
+    clearInterval(id);
+    id = setInterval(frame, 10);
+    function frame() {
+      if (pos == 900) {
+        clearInterval(id);
+      } else {
+        pos++; 
+        elem.style.left = pos + 'px'; 
+      }
+    }
+  }
+</script>
