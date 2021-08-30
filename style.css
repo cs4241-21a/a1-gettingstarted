@@ -1,0 +1,55 @@
+/*
+Color Pallette
+#FAE0D5
+#E3BEB6
+#FF8F85
+#E3C8B6
+#FBE3C9
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #E3C8B6;
+    font-size: 20px;
+}
+
+body {
+    background-color: #FAE0D5;
+    margin: 0px
+}
+
+.content {
+    margin:15px;
+}
+
+h1,h2 {
+    color: #FF8F85;
+}
+
+h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+td, th {
+    border: 1px solid orangered;
+    text-align: left;
+    padding: 8px;
+}
+
+#surprise {
+    position: absolute;
+}
+
+.footer {
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FBE3C9;
+    color: orangered;
+    text-align: center;
+}
