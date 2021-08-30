@@ -3,26 +3,195 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    background-color: #FAE7B1;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  h1 {
+    width: 27%;
+    background-color: #B1A5FA;
+    font-family: 'Bebas Neue', cursive;
+
+  }
+
+  h2 {
+    width: 11%;
+    background-color: #CE98D6;
+    font-family: 'Bebas Neue', cursive;;
+  }
+
+  p {
+    background-color: #EEB8B6;
+    font-size: 16px;
+ }
+
+ ul {
+     background-color: #D6A683;
+     border: 1px solid;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 20px;
+     width: 35%;
+ }
+
+
+ table {
+    width: 25%;
+ }
+ table, th, td {
+    background-color: #B1A5FA;
+    border: 1px solid black;
+    
+}
+
+
+img.align-right {
+    float: right;
+    margin-right: 100px;
+}
+
+img.medium {
+    width:  640px;
+    height: 480px;
+}
+
+#container {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background: red;
+    float: right;
+    margin-right: 50px;
+    margin-top: -50px;
+}
+
+#animation {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: yellow;
+}
+
+button.animation {
+    float: right;
+    margin-right: 350px;
+}
+    </style>
+    
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Ivan Martinovic</h1>
     <p>
-      [Self introduction]
+      Hello, my name is <b>Ivan</b>. I come from <b>Bosnia and Herzegovina</b> and I am currently a <b>junior</b> at <i>WPI</i>.
     </p>
     <p>
-      [Major and other information]
+      I am a <b>CS</b> major, class of <b>2023</b>.
     </p>
-    <p>
-      [Other things]
-    </p>
+    <div class = "container">
+      <div class = "animation">
+        
+      </div>
+    </div>
+    <div>
+      <p>
+        CS courses I have taken so far are:
+        <img src = "https://cdn.glitch.com/4d8d9e30-2171-43c9-a930-b34c3137ebfa%2Fcomputers-1227142.jpg?v=1630284514085" alt = "" title = "actual image of me doing CS 4241" class = "align-right medium">  
+        <ul>
+          <li>CS 1101 - Intro to program design</li>
+          <li>CS 2011 - Intro to machine organization and assembly language</li>
+          <li>CS 2022 - Discrete mathematics</li>
+          <li>CS 2102 - Object-oriented design concepts</li>
+          <li>CS 2223 - Algorithms</li>
+          <li>CS 2303 - Systems programming concepts</li>
+          <li>CS 3013 - Operating Systems</li>
+          <li>CS 3043 - Social implications of information processing</li>
+          <li>CS 3431 - Database Systems</li>
+          <li>CS 3516 - Computer Networks</li>
+          <li>CS 3733 - Software Engineering</li>
+          <li>CS 4513 - Distributed Computer Systems</li>
+        </ul>
+      </p>
+    <div>
 
-    <h2>Experience</h2>
+    <h2>Experience </h2>
     <p>
-      Working experience
+      
+      <table>
+        <thead>
+          <tr>
+            <th scope = "col"> Skill</th>
+            <th scope= "col" > Level </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>very little</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>a lot</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>very little</td>
+          </tr>
+          <tr>
+            <td>Ruby</td>
+            <td>none</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>some</td>
+          </tr>
+          <tr>
+            <td>unit testing</td>
+            <td>some</td>
+          </tr>
+        </tbody>
+      </table>
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div>
+      <h2>Other information</h2>
+      <button class = "animation" onClick = myAnimation()>Start animation</button>
+      <div id = "container">
+        <div id = "animation"></div>
+      </div>
+    </div>
+    <script>
+      function myAnimation() {
+        let id = null;
+        const elem = document.getElementById("animation");
+        let pos = 0;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if (pos == 90) {
+            clearInterval(id);
+          } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px'; 
+          }
+        }
+      } 
+    </script>
+
+    <p>
+      <ul>
+        <li>GitHub: <a href="https://github.com/imartinovic-dzaja">imartinovic-dzaja</a></li>
+        <li>Email: <a href="mailto: imartinovic@wpi.edu"> imartinovic@wpi.edu</a></li>
+      </ul>
+    </p>
+    <p>
+      <a href = "link.html"> Take me somewhere on this website</a>
+    </p>
   </body>
 </html>
