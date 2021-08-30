@@ -16,7 +16,6 @@ This project shows ...
   padding
 
 - **Add a Danny Devito button with JS change**: create a button that on clicks changes from one image of danny devito to the pokemon card
-- **Add a simple JavaScript animation of floating Danny Devito Chip**: I used a jpeg of Danny Devito to bounce around the page
 - **Add a table tag feturing information about class info**: I used the table tag to display language info and my class experience to display info
 - **Add images via image tag**: I used the image urls from my git repository to link from other sites to include about me slide and the danny images.
 - **Add link via link tag**: I used the link tag to add a link to my linkedin account
