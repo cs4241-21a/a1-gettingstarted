@@ -6,6 +6,8 @@ http://a1-lewasserman.glitch.me
 
 **Please reload the page to see my animation of a yellow circle moving to the right along the screen**
 
+Also, I added eslint as a dependency in the package.json. After this I ran "npm install --no-optional" which I perhaps should not have done as it created a lot of files. The website still works as it should, so I hope that this is okay.
+
 This project shows ...
 
 ## Technical Achievements
