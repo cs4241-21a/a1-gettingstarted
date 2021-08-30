@@ -1,28 +1,299 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vast+Shadow">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+        function remove_previous_courses(){
+          let modal = document.getElementById("myModal");
+
+          modal.style.display = "none";
+        }
+        
+        function remove_experience(){
+          let modal = document.getElementById("myModal2");
+
+          modal.style.display = "none";
+        }
+
+        // When the user clicks the button, open the modal 
+        function show_previous_courses() {
+        
+          // Get the modal
+          var modal = document.getElementById("myModal");
+
+          // Get the button that opens the modal
+          var btn = document.getElementById("myBtn");
+
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+        
+          modal.style.display = "block";
+        }
+
+
+
+      function show_experience() {
+        // Get the modal
+        var modal = document.getElementById("myModal2");
+  
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+    
+        modal.style.display = "block";
+      }
+
+    </script>
+    <style>
+
+      .material-icons { 
+        font-size: 85px; 
+      }
+
+      .name {
+        font-family: Vast Shadow;
+        font-size: 40px;
+      }
+      .circular--landscape {
+        display: inline-block;
+        position: relative;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+      .circular--landscape img {
+        width: 250px;
+        margin-top: -25px;
+      }
+
+      .text_color {
+        color: rgb(24, 59, 82);
+      }
+
+
+
+      /* Color Theme Swatches in RGBA */
+      .My-Color-Theme-1-rgba { color: rgba(187, 238, 238, 1); }
+      .My-Color-Theme-2-rgba { color: rgba(98, 182, 203, 1); }
+      .My-Color-Theme-3-rgba { color: rgba(27, 73, 101, 1); }
+      .My-Color-Theme-4-rgba { color: rgba(202, 233, 255, 1); }
+      .My-Color-Theme-5-rgba { color: rgba(95, 168, 211, 1); }
+
+      .center-screen {
+        text-align: center; 
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 3px;
+        background-color: rgba(27, 73, 101, 1); 
+        width: auto;
+      }
+
+      .center-screen h1 {
+        margin-top: 0px;
+      }
+      .center-screen p {
+        margin-top: -10px;
+      }
+  
+      .footer {
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center; 
+        background-color: rgba(27, 73, 101, 1); 
+        
+      }
+
+      .dot {
+        height: 150px;
+        width: 150px;
+        background-color: rgba(27, 73, 101, 1);;
+        border-radius: 50%;
+        display: inline-block;
+        margin-top: 35px;
+        text-align: center;
+        margin-left: 26.25%;
+      }
+
+      .dot:hover {
+        /* font-size: 150%; */
+        /* -webkit-animation: none; */
+        transition: all 500ms ease;
+        -webkit-transform: scale(1.4);
+        cursor: pointer;
+      }
+
+      .inner_circle {
+        height: 150px;  /* needs to be the same height as the circle's height (.dot height) */
+        width: 150px;   /* needs to be the same width as the circle's width (.dot width) */
+        /* display: flex; */
+        padding-top: 7px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* The Modal (background) */
+      .modal {
+        display: none; /* Hidden by default */
+        width: 100%;
+        height: 100%;
+
+        margin-top: -570px;
+        z-index: 1;
+        position: relative;
+        
+        align-content: center;
+      }
+
+      /* Modal Content */
+      .modal-content {
+        background-color: rgba(95, 168, 211, 1);
+        border: 1px solid rgba(202, 233, 255, 1);
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        font-family: Vast Shadow;
+        padding-inline-start: 50px;
+        padding-inline-end: 50px;
+      }
+
+      .modal-content ul{
+        margin-top: 100px;
+      }
+
+      a {
+        color:rgba(95, 168, 211, 1);
+      }         /* Unvisited link  */
+      a:visited {
+        color:rgba(95, 168, 211, 1);
+      } /* Visited link    */
+      a:hover,
+      a:active {
+        color:rgba(202, 233, 255, 1);
+      }  /* Mouse over link & Selected link   *
+
+ 
+
+    </style>
+
+    
+    <title>CS4241 Assignment 1</title>
+    
+  </head>
+  <body style="background-color:rgba(98, 182, 203, 1);">
+    
+
+    
+    <div class="center-screen">
+      <div class="circular--landscape">
+        <img src="Ashley Burke img.JPG"/>
+      </div>
+  
+      <h1 class="name" style="color:rgba(202, 233, 255, 1);">Ashley Burke</h1>
+      <p style="font-family: Vast Shadow; color: rgba(202, 233, 255, 1);">WPI class of 2023</p>
+      <p style="font-family: Vast Shadow; color: rgba(202, 233, 255, 1);">Computer Science Major</p>
+    </div>
+
+
+
+    <span id="myBtn" class="dot" style="float: left;" onclick="show_previous_courses()">
+      <div class="inner_circle">
+        <span class="material-icons">
+          school
+        </span>
+        <h2 style="color: rgba(187, 238, 238, 1); margin-top: -10px; font-family: Vast Shadow; font-size: 15px;">Previous Courses</h2>
+      </div>
+    </span>
+
+    <span class="dot" onclick="show_experience()">
+      <div class="inner_circle">
+        <span class="material-icons">
+          engineering
+        </span>
+        <h2 style="color: rgba(187, 238, 238, 1); margin-top: -5px; font-family: Vast Shadow; font-size: 15px;">Experience</h2>
+      </div>
+    </span>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal" onclick="remove_previous_courses()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <h2 style="text-align: center;">Previous Courses</h2>
+        <ul>
+          <li>CS1101: Introduction to Program Design</li>
+          <li>CS2011: Introduction to Machine Organization and Assembly Language</li>
+          <li>CS2022: Discrete Mathematics</li>
+          <li>CS2102: Object Oriented Design Concepts</li>
+          <li>CS2223: Algorithms</li>
+          <li>CS2303: System Programming Concepts</li>
+          <li>CS3013: Operating Systems</li>
+          <li>CS3043: Social Implications of Information Processing</li>
+          <li>CS3133: Foundations of Computer Science</li>
+          <li>CS3431: Database Systems 1</li>
+          <li>CS3516: Computer Networks</li>
+          <li>CS3733: Software Engineering</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- The Modal -->
+    <div id="myModal2" class="modal" onclick="remove_experience()">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+
+        <h2 style="text-align: center;">Experience</h2>
+        <table style="width:100%; margin-top: 50px;">
+          <tr>
+            <th>HTML</th>
+            <td>Some</td>
+          </tr>
+          <tr>
+            <th>CSS</th>
+            <td>Some</td>
+          </tr>
+          <tr>
+            <th>Java</th>
+            <td>A lot</td>
+          </tr>
+          <tr>
+            <th>JavaScript</th>
+            <td>Some</td>
+          </tr>
+          <tr>
+            <th>Ruby</th>
+            <td>None</td>
+          </tr>
+          <tr>
+            <th>Unit Testing</th>
+            <td>Some (JUnit)</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p><a href="https://www.linkedin.com/in/ashley-burke921/">linkedin.com/in/ashley-burke921</a></p>
+    </footer>
+
   </body>
 </html>
