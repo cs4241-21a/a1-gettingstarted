@@ -1,8 +1,8 @@
 {
-  "name": "cr-4241-simple-glitch",
-  "version": "0.1.0",
-  "description": "WPI CS 4241 first assignment",
-  "author": "Charlie Roberts",
+  "name": "a1-aamaxaa",
+  "version": "0.1.1",
+  "description": "WPI CS 4241 Assignment 1",
+  "author": "Maxine Shi",
   "scripts": {
     "start": "node server.js"
   }
