@@ -1,100 +1,16 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
+Joseph Scheufele
+http://a1-jcscheufele.glitch.me
 
-*DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
-
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great! 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
-you'll need skills with these tools throughout the rest of the course.
-
-Assignment details
----
-
-This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are two ways to do this:
-
-1. Fork this repo and clone it to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Glitch.
-2. Fork this repo and then import it directly to Glitch, use the Glitch editor to make changes, and then export your repo from Glitch back to GitHub.
-3. Same as #1, but instead of importing from Github to Glitch you just upload the files (or copy/paste) them directly to Glitch.
-
-## Option 1 - Clone to computer, push to Github, import to Glitch (recommended)
-
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-4. Complete some technical and/or design achievements (see below).
-5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
-
-6. Modify the README file according to the specification below.
-7. Commit and push all your changes to GitHub. 
-8. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-9. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-9. Create and submit a Pull Request to the original repo.
-
-## Option 2 - Fork repo and import to Glitch, edit on Glitch, and then export back to GitHub
-Most of these steps are the same as option 1, except that you being by creating a new project Glitch using this repo as a staring point (just choose New Project > Import from GitHub for this and then paste in the link to your repo). At the end, you can export your Glitch project to GitHub by [following these instructions](https://www.youtube.com/watch?time_continue=77&v=aWJFbtrgW4E&feature=emb_logo). *Note that the location of the projecct export feature in Glitch has moved from what they show in this video.* It's now located in Tools > Import and Export (tools is located in the bottom left of the Glitch editor).
-
-## Option 3 - Clone to computer, edit locally, push to GitHub, upload to Glitch
-This is the same as option 1, except that for step 6 (Deploy to Glitch) you simply upload each file to your Glitch repository (using New File > Upload a File).
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Achievements
----
-Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
-
-*Technical*
-1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
-
-*Design*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9936730811904746&context=L&vid=01WPI_INST:Default&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,Jon%20Duckett&offset=0) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
+This project shows my website created for CS 4241: Webware. Included in it are two html pages. The first, index.html, contains my name, majors, class year, the previous CS courses I have taken at WPI, my experience with specific technologies and methods related to webware, and a couple redirecting links. One link will send the user to a page, paint.html, where the user can draw on the screen with their mouse, pressing keys to toggle colors, and scroll the wheel to increase the stroke width. Paint.html also includes a citation at the bottom launching a new tab to send the user to the website for which paint.html was inspired from, there is also a link back to index.html, called 'Home.' Once back at the bottom of index.html, the other extra link sends the user to a new tab that displays the adobe color palette that is used throughout the website.
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: I created a few classes of elements to distinguish which sections of my website would have the color of the text changed. I also utilized the table, body and canvas elements along with the #pen id to control the size of the small pen image beside the link to my painting game. I also used a dedicated css style sheet rather than including the style directly into the html.
+
+- **Created a seperate page dedicated to drawing with the mouse**: I wrote paint.js and paint.html to display a second page where the user can draw with the mouse, they can press any key on the keyboard to toggle which of the colors from the adobe color palette I made. The user can also press a button at the top to alternate colors. Using the mouse wheel, the user can increase the width of the stroke from 1-100. Also included is a link to go home and a citation at the bottom refering to the website that I gained inspiration from. Although this is not an animation, I believe that this is similarly complex.
+
+- **Experimented with numerous other html tags**: I used the 'link' tag to refer to my css sheet, and google font. I used the 'button' tag on the paint.html page to toggle the stroke color. I used the 'cite' tag for my citation on paint.html. I used the 'a' tag to create links to the paint.html from index.html and vice versa. I also used the 'a' tag for displaying the adobe color palette in another tab, and for my citation. I used the 'table' tag for displaying my experience with technologies and methods on index.html. I used the 'canvas' tag to allow the user to draw on the paint.html page. WIth 5 tags that would amount to 5 extra points.
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Exo Font from Google Fonts**: I imported the font Exo from google fonts and implemented it across my website using the link tag.
+
+- **Created a color palette using color.adobe**: A link to the screenshot is included at the bottom of the website, it will open a new tab to display the image. I used the complimentary color wheel. Each color of the palette was used to color different sections of the text. Each color is also used in the paint.js script that allows the user to toggle what color they can use to paint the screen in paint.html.
