@@ -88,13 +88,32 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
 ---
 
-Charlie Roberts
+Alex Kinley
 http://a1-charlieroberts.glitch.me
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**: Added rules for the following selectors
+    - body
+    - .introduction
+    - .introduction h1
+    - .introduction p
+    - .information
+    - .information div
+    - .information div h2
+    - table
+    - td
+    - a
+- **Added a simple javascript animation to the page**: The text in the info boxes fades in when you load the page.
+- **Additional html tags**: 
+    - `<a></a>` Have links to a page with a website I made for my IQP, as well as the website of the company I interned at over the summer.
+    - `<table></table>` My experience with various technologies is given in a table
+        - this also involves the `<tr></tr>`, `<th></th>`, and `<td></td>` tags
+    - used the `<div></div>` tag in order to separate different sections of the page
+
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Ubuntu Font from Google Fonts**: I used Ubuntu as the font for the text on the page.
+- **Used a color pallet**: The color pallet for the page is shown below
+![](color_wheel.png)
