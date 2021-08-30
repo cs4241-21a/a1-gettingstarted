@@ -25,7 +25,7 @@ This project shows how to create a basic webpage using HTML/CSS/JavaScript. This
 
 - **Implemented constants for accessing color pallet**: Each of the colors that I created with my color wheel were saved in constants in my *body* CSS selector.
 
-- **Created animation with JavaScript**: Created a JS animation so that when a user hovers over my personal social media hyperlinks/images, it "jiggles" the animations by rotating them a few degrees back and forth. When the user stops hovering over the images, it then stops the animation. More information can be found in the code within *index.js*.
+- **Created animation with JavaScript**: Created a JS animation so that when a user hovers over my personal social media hyperlinks/images, it "jiggles" the animations by rotating them a few degrees back and forth. When the user stops hovering over the images, it then stops the animation. More information can be found in the code within *index.js*. ***DISCLAIMER:*** The animation appears to be buggy on mobile (which I doubt this will be tested on). When a link is clicked on a mobile device, the *onmouseout* or *onmouseleave* events are never triggered, and so the animation is never terminated.
 
 - **Used different HTML tags**: These extra tags are given further description for their use case below:
 
