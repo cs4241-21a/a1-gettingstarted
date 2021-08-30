@@ -1,4 +1,5 @@
 Adam Grabowski
+
 https://a1-argrabowski.glitch.me/
 
 This project shows my knowledge of web technologies such as HTML, CSS and other resources like Google Fonts and Adobe Color.
@@ -23,5 +24,4 @@ This project shows my knowledge of web technologies such as HTML, CSS and other 
 ## Design Achievements
 **Used the Orbitron Font from Google Fonts**: I used Orbitron as the font for the text on my site.
 
-**Used a Color Palette Created in Adobe Color**: I created a split complementary color palette for the text on my site shown below.
-![](color-palette.jpg)
+**Used a Color Palette Created in Adobe Color**: I created a split complementary color palette for the text on my site (see color-palette.jpg).
