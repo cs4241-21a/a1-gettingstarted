@@ -1,100 +1,43 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
-
-*DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
-
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to [Glitch](http://www.glitch.com/). 
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Glitch. 
-If you already know these, great! 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. Don't just get your website up and done, as
-you'll need skills with these tools throughout the rest of the course.
-
-Assignment details
+Readme
 ---
 
-This assignment requires that your website is both contained in a GitHub repository and hosted in Glitch. There are two ways to do this:
+Lauren Wasserman
+http://a1-lewasserman.glitch.me
 
-1. Fork this repo and clone it to your computer, make changes locally on your computer, push the repo onto GitHub, and then import your GitHub repo into Glitch.
-2. Fork this repo and then import it directly to Glitch, use the Glitch editor to make changes, and then export your repo from Glitch back to GitHub.
-3. Same as #1, but instead of importing from Github to Glitch you just upload the files (or copy/paste) them directly to Glitch.
+**Please reload the page to see my animation of a yellow circle moving to the right along the screen**
 
-## Option 1 - Clone to computer, push to Github, import to Glitch (recommended)
-
-1. Fork the starting project code in GitHub. This repo contains:
-    * the server code, `server.js`
-    * A starting `index.html` file that you will edit as described below
-    * A package.json file that helps configure Glitch
-    * This README
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-4. Complete some technical and/or design achievements (see below).
-5. Test your project to make sure that when someone goes to your main page, it displays correctly. You can do this locally by simply running `node server.js` from within the assignment directory.
-
-6. Modify the README file according to the specification below.
-7. Commit and push all your changes to GitHub. 
-8. Deploy your project to Glitch. You can do this by [importing the repo from GitHub](https://medium.com/glitch/import-code-from-anywhere-83fb60ea4875)
-9. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-9. Create and submit a Pull Request to the original repo.
-
-## Option 2 - Fork repo and import to Glitch, edit on Glitch, and then export back to GitHub
-Most of these steps are the same as option 1, except that you being by creating a new project Glitch using this repo as a staring point (just choose New Project > Import from GitHub for this and then paste in the link to your repo). At the end, you can export your Glitch project to GitHub by [following these instructions](https://www.youtube.com/watch?time_continue=77&v=aWJFbtrgW4E&feature=emb_logo). *Note that the location of the projecct export feature in Glitch has moved from what they show in this video.* It's now located in Tools > Import and Export (tools is located in the bottom left of the Glitch editor).
-
-## Option 3 - Clone to computer, edit locally, push to GitHub, upload to Glitch
-This is the same as option 1, except that for step 6 (Deploy to Glitch) you simply upload each file to your Glitch repository (using New File > Upload a File).
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Glitch often assigns your application a random name. To change it, click on the project dropdown menu in the upper left corner of Glitch. You will then see an additional text field displaying the project name in the resulting menu; click here to edit the name.
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Achievements
----
-Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
-
-*Technical*
-1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
-2. (5 points) Add a simple JavaScript animation to the page.
-3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
-
-*Design*
-1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9936730811904746&context=L&vid=01WPI_INST:Default&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,Jon%20Duckett&offset=0) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
+Also, I added eslint as a dependency in the package.json. After this I ran "npm install --no-optional" which I perhaps should not have done as it created a lot of files. The website still works as it should, so I hope that this is okay.
 
 This project shows ...
 
 ## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
+- **Styled page with CSS**:
+    1. Added rules for body tags to change the background color of the site.
+    2. Added rules for h1 and h2 tags to change the color of the text.
+    3. Added rules for p tags to change the color for the text, add padding to the left and make the font size slightly bigger than the rest of the text on the site.
+    4. Added rules for li tags to change the color of the text and increase the line height to add space between items.
+    5. Added rules for ul tags to add padding on the left so that the items in the list were indented into the page.
+    6. Added rules for dl tags to add padding on the left so that the items in the list were indented into the page.
+    7. Added rules for table, th, and td tags to add a solid boarder for the table and to set the color of that border. I added rules to th tags to set their background color, the color for the text, the width of the cells, and the line-height for the text. I also added rules to the td tags to set their background color, the color of the text, and to add padding to the left and the right of the text in the cells.
+    8. Added rules using an id selector (#quote) which controls for a span that contains a q and a cite tag to change the color of the text, the background color, the margin on the left of the span, the padding to the left and the right of the span, and the font-size for the text in the span.
+    9. Added rules using an id selector (#wpi-logo) which controsls an img tag to set the height and width of the image as well as to set it to display inline-block so that I can have it on the same line as the heading/title for my website.
+    10. Added rules using an id selector (#top-of-page) which controls a div that contains an a tag (which contains an img tag)  and a h1 tag. This sets the white-space to nowrap so that the items inside can be side-by-side. It also sets display to flex and align-items to center so that the items are vertically aligned to each other.
+    11. Added rules using an id selector (#by-logo) which controls the h1 tag that is to the right of the image on the page. These rules set the display to inline-block to allow it to be on the same line as the image and the padding on the left to allow for some more space between the h1 element and the image.
+    12. Added rules using a class selector (.list-heading) which controls the h3 list headings on the page. It sets the text to bold and changes the color of the text.
+    13. Added rules using an id selector (#animation-container) wihch controls a div tag which is the container for my animation of a moving circle. It makes the position of the container relative and sets the height such that there is enough room for the circle it holds.
+    14. Added rules using an id selector (#animation) which controls a div tag which contains a circle which is animated. The style rules set the border radius to allow the div to be in the shape of a circle, set the width and the height to the same value, set the background color for the circle, and set the position of the circle to be absolute.
+    15. Added root CSS variables for the colors in my color palette. I used these variables throughout my style rules to access my color palette.
+- **Used other HTML tags**:
+    1. img: I used an img tag to add an image of the WPI logo.
+    2. a: I used an a tag to link the WPI logo to the WPI website.
+    3. table: I used the table tag to contain my experience with the various languages.
+    4. span: I used a span tag to contain a q tag and a cite tag to add a background color for them both.
+    5. q: I used a q tag to add a quote.
+    6. cite: I used a cite tag to cite the quote that I added.
+- **Animations**:
+    1. I added a confetti animation that goes over the site when it is freshed for 3 seconds.
+    2. I added a dark yellow circle under the WPI logo and title of the page that slowly moves to 900px to the right whenever the page is loaded. It starts on the left of the page. To do this, I made a function which is called whenever the page is loaded. This function, moves the element to the right slowly pixel by pixel.
 
 ### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.
+- **Used the Montserrat Font from Google Fonts**: I used Montserrat as the font for the text in my site.
+- **Created and Used a Color Palette**: Used color.adobe.com to create a color palette which I used for my site.

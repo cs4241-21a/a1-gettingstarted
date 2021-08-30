@@ -3,26 +3,182 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+      :root {
+        --purple-dark: #564494;
+        --purple-med: #827EE0;
+        --purple-light: #ACA8FF;
+        --yellow-dark: #D1BB62;
+        --yelllow-light: #E0D7A8;
+      }
+      * {font-family: 'Montserrat', sans-serif}
+      body {background-color: var(--yelllow-light)}
+      h1, h2 {color: var(--purple-dark)}
+      p {
+        color: var(--purple-med);
+        padding-left: 20px;
+        font-size: 1.15em;
+      }
+      #quote {
+        color: var(--yellow-dark);
+        background-color: var(--purple-med);
+        margin-left: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1.15em;
+      }
+      .list-heading {
+        font-weight: bold;
+        color: var(--purple-dark)
+      }
+      li {
+        color: var(--purple-med);
+        line-height: 3ex;
+      }
+      ul {padding-left: 30px}
+      dl {padding-left: 20px}
+      table, th, td {border: 2px solid var(--purple-dark)}
+      th {
+        background-color: var(--purple-dark);
+        color: var(--purple-light);
+        width: 150px;
+        line-height: 3.5ex;
+      }
+      td {
+        background-color: var(--purple-light);
+        color: var(--purple-dark);
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      #wpi-logo {
+        width: 161px;
+        height: 124.4px;
+        display: inline-block;
+      }
+      #top-of-page {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+      }
+      #by-logo {
+        display: inline-block;
+        padding-left: 150px;
+      }
+      #animation-container {
+        position: relative;
+        height: 30px;
+      }
+      #animation {
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        background-color: var(--yellow-dark);
+        position: absolute;
+      }
+    </style>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+  <body onload='move()'>
+    <script src="https://www.wpromotions.eu/confetti.min.js"></script>
+    <script>confetti.start()</script>
+    <script>setTimeout(function(){confetti.stop();},3000)</script>
+    <div id='top-of-page'>
+      <a href='https://www.wpi.edu/'>
+        <img id='wpi-logo' src='https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_BLK.png' alt='WPI Logo'/>
+      </a>
+      <h1 id='by-logo'>Information about Lauren Wasserman</h1>
+    </div>
+    <div id='animation-container'>
+      <div id='animation'>
+      </div>
+    </div>
     <p>
-      [Self introduction]
+      Hi, I'm Lauren and I am in the class of 2022.
     </p>
     <p>
-      [Major and other information]
+      I am a computer science major and I am looking
+      into getting a minor in bioinformatics and
+      computational biology.
     </p>
-    <p>
-      [Other things]
-    </p>
+    <span id='quote'>
+      <q>Wisdom begins in wonder.</q>
+      <cite>-Socrates</cite>
+    </span>
+    <h3 class=list-heading>
+      CS Courses That I Have Taken:
+    </h3>
+    <ul>
+      <li>CS1101 Introduction to Program Design</li>
+      <li>CS2102 Object-Oriented Design Concepts</li>
+      <li>CS2011 Introduction to Machine Organization and Assembly</li>
+      <li>CS2303 Systems Programming Concepts</li>
+      <li>CS2022 Discrete Mathematics</li>
+      <li>CS2223 Algorithms</li>
+      <li>CS3013 Operating Systems</li>
+      <li>CS3041 Human-Computer Interaction</li>
+      <li>CS3133 Foundation of Computer Science</li>
+      <li>CS3431 Database Systems I</li>
+      <li>CS3516 Computer Networks</li>
+      <li>CS3733 Software Engineering</li>
+      <li>CS4341 Introduction to Artificial Intelligence</li>
+      <li>CS4342 Machine Learning</li>
+      <li>CS3043 Social Implications of Information Processing</li>
+    </ul>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <h3 class=list-heading>
+      Working experience with:
+    </h3>
+    <table>
+      <tr>
+        <th>HTML:</th>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <th>CSS:</th>
+        <td>A decent amount</td>
+      </tr>
+      <tr>
+        <th>Java:</th>
+        <td>A lot</td>
+      </tr>
+      <tr>
+        <th>JavaScript:</th>
+        <td>A decent amount</td>
+      </tr>
+      <tr>
+        <th>Ruby:</th>
+        <td>None</td>
+      </tr>
+      <tr>
+        <th>Python:</th>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <th>Unit Testing:</th>
+        <td>A decent amount</td>
+      </tr>
+      <tr>
+        <th>Key:</th>
+        <td>None, Some, A decent amount, A lot</td>
+      </tr>
+    </table>
   </body>
 </html>
+<script>
+  var id = null;
+  function move() {
+    var elem = document.getElementById("animation");   
+    var pos = 0;
+    clearInterval(id);
+    id = setInterval(frame, 10);
+    function frame() {
+      if (pos == 900) {
+        clearInterval(id);
+      } else {
+        pos++; 
+        elem.style.left = pos + 'px'; 
+      }
+    }
+  }
+</script>
