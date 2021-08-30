@@ -18,6 +18,7 @@ This project shows ...
 	- Changed the indent of the paragraph selector
 	- Centered the div element for the board at the bottom of the page
 - **I added a JS animation to the Page**: I added a square that bounces from the top left to the bottom right of the page on page load.
+	- I used some help from the following page as a basis and changed aspects to relearn: https://www.w3schools.com/howto/howto_js_animate.asp
 
 ### Design Achievements
 - **Used the Indie Flower and Annie Use Your Telescope Fonts from Google Fonts**: I used Indie Flower for the Headers and Annie Use Your Telescope for the rest of the text
