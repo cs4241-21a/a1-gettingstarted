@@ -4,36 +4,79 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+      :root {
+        --purple-dark: #564494;
+        --purple-med: #827EE0;
+        --purple-light: #ACA8FF;
+        --yellow-dark: #D1BB62;
+        --yelllow-light: #E0D7A8;
+      }
       * {font-family: 'Montserrat', sans-serif}
-      body {background-color: #E6CBB1}
-      h1, h2 {color: #120F7A}
-      p {color: #6664B5}
+      body {background-color: var(--yelllow-light)}
+      h1, h2 {color: var(--purple-dark)}
+      p {
+        color: var(--purple-med);
+        padding-left: 20px;
+        font-size: 1.15em;
+      }
+      #quote {
+        color: var(--yellow-dark);
+        background-color: var(--purple-med);
+        margin-left: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 1.15em;
+      }
       .list-heading {
         font-weight: bold;
-        color: #75ABE0;
+        color: var(--purple-dark)
       }
-      li {color: #6664B5}
+      li {
+        color: var(--purple-med);
+        line-height: 3ex;
+      }
       ul {padding-left: 30px}
-      li {line-height: 3ex}
       dl {padding-left: 20px}
-      table, th, td {border: 0.5px solid}
-      table {background-color: #CF8E6B}
+      table, th, td {border: 2px solid var(--purple-dark)}
       th {
-        background-color: #75ABE0;
-        color: #E6CBB1;
+        background-color: var(--purple-dark);
+        color: var(--purple-light);
         width: 100px;
         line-height: 3.5ex;
       }
       td {
-        background-color: #E6CBB1;
-        color: #CF8E6B;
-        width: 155px;
+        background-color: var(--purple-light);
+        color: var(--purple-dark);
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      #wpi-logo {
+        width: 161px;
+        height: 124.4px;
+        display: inline-block;
+      }
+      #top-of-page {
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+      }
+      #by-logo {
+        display: inline-block;
+        padding-left: 150px;
       }
     </style>
   </head>
   <body>
-    <h1>Information about Lauren Wasserman</h1>
+    <script src="https://www.wpromotions.eu/confetti.min.js"></script>
+    <script>confetti.start()</script>
+    <script>setTimeout(function(){confetti.stop();},3000)</script>
+    <div id='top-of-page'>
+      <a href='https://www.wpi.edu/'>
+        <img id='wpi-logo' src='https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_BLK.png' alt='WPI Logo'/>
+      </a>
+      <h1 id='by-logo'>Information about Lauren Wasserman</h1>
+    </div>
     <p>
       Hi, I'm Lauren and I am in the class of 2022.
     </p>
@@ -42,6 +85,10 @@
       into getting a minor in bioinformatics and
       computational biology.
     </p>
+    <span id='quote'>
+      <q>Wisdom begins in wonder.</q>
+      <cite>-Socrates</cite>
+    </span>
     <h3 class=list-heading>
       CS Courses That I Have Taken:
     </h3>
@@ -70,27 +117,31 @@
     <table>
       <tr>
         <th>HTML:</th>
-        <td>none, some, a lot</td>
+        <td>Some</td>
       </tr>
       <tr>
         <th>CSS:</th>
-        <td>none, some, a lot</td>
+        <td>A decent amount</td>
       </tr>
       <tr>
         <th>JavaScript:</th>
-        <td>none, some, a lot</td>
+        <td>A decent amount</td>
       </tr>
       <tr>
         <th>Ruby:</th>
-        <td>none, some, a lot</td>
+        <td>None</td>
       </tr>
       <tr>
         <th>Python:</th>
-        <td>none, some, a lot</td>
+        <td>Some</td>
       </tr>
       <tr>
         <th>Unit Testing:</th>
-        <td>none, some, a lot</td>
+        <td>A decent amount</td>
+      </tr>
+      <tr>
+        <th>Key:</th>
+        <td>None, Some, A decent amount, A lot</td>
       </tr>
     </table>
   </body>
