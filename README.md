@@ -6,7 +6,7 @@ This project demostrates that I remember the basic elements of html, css, and ja
 ## Technical Achievements:
 
 **1 - Style Rules:**
-    I'll be naming what I consider the most important style rules here (even though the style sheet has more than 5 rules).
+I'll be naming what I consider the most important style rules here (even though the style sheet has more than 5 rules).
     
     background-color:
         This is used for, of course, the background color, which changes depending on the location of the page. Used primarily for the body selector and the animation at the bottom.
@@ -24,12 +24,12 @@ This project demostrates that I remember the basic elements of html, css, and ja
         This is to stop the float style rules from causing parts of the bottom section to move into the top section.
 
 **2 - Javascript Animation:**
-    I've designed it so that depending on what section of the webpage you're viewing, it will change the color of the background and text. In order to accomplish this, on a scroll event, I took the current scroll position and the max scroll position in order to find a percentage, and then used that in order to do some rgb calculations. After that, I located the background color and text elements to change their colors.
+I've designed it so that depending on what section of the webpage you're viewing, it will change the color of the background and text. In order to accomplish this, on a scroll event, I took the current scroll position and the max scroll position in order to find a percentage, and then used that in order to do some rgb calculations. After that, I located the background color and text elements to change their colors.
 
-    Just in case that doesn't count as an animation, I made a small animation at the bottom of the page that simply bounces a square with the button toggle.
+Just in case that doesn't count as an animation, I made a small animation at the bottom of the page that simply bounces a square with the button toggle.
 
-**3 - Other HTML Tags**
-    First, lets go over what tags do not count for this catagory. I'm assuming all tags that are initally included do not count. These tags are: h1, h2, p, and ul/li. I'm also counting h3 -> h6 as well as any similarly functional tags.
+**3 - Other HTML Tags:**
+First, lets go over what tags do not count for this catagory. I'm assuming all tags that are initally included do not count. These tags are: h1, h2, p, and ul/li. I'm also counting h3 -> h6 as well as any similarly functional tags.
 
     table/tr/th/td:
         I'm putting all of these tags in one catagory, as they all relate with the same function of a table.
@@ -50,11 +50,11 @@ This project demostrates that I remember the basic elements of html, css, and ja
 ## Design Achievements:
 
 **1 - Color palette:**
-    *see file named Color_Palette.jpeg*
-    Two of the colors are used for the first color set, two others are used for the second color set where the animation switches between the two, and the final color is used for the borders of the table. Some of the colors are used for the small backup animation at the bottom. 
+*see file named Color_Palette.jpeg*
+Two of the colors are used for the first color set, two others are used for the second color set where the animation switches between the two, and the final color is used for the borders of the table. Some of the colors are used for the small backup animation at the bottom. 
 
 **2 - Google Font:**
-    From the linked google font, I chose Hina Mincho as the font for my site. For the Chinese characters (because why not), I chose Long Cang.
+From the linked google font, I chose Hina Mincho as the font for my site. For the Chinese characters (because why not), I chose Long Cang.
 
 
 ## Note: Old Readme Below
