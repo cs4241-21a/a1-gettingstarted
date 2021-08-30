@@ -2,27 +2,131 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie Flower|Annie Use Your Telescope">
     <meta charset="utf-8">
+    <style>
+      body{
+        background-color: #5411A8;
+      }
+      h1{
+        color: #E7DFF2;
+        font-family: 'Indie Flower';
+      }
+      h2{
+        color: #E7DFF2;
+        font-family: 'Indie Flower';
+        font-weight: bold;
+      }
+      h3{
+        color: #ADAC40;
+        font-family: 'Indie Flower';
+        text-decoration: underline;
+      }
+      p{
+        color: #FFFC38;
+        font-family: 'Annie Use Your Telescope';
+        font-size: 20px;
+        text-indent: 10px;
+      }
+      li{
+        color: #F5F38E;
+        font-family: 'Annie Use Your Telescope';
+        font-size: 18px;
+      }
+      #board{
+        width: 500px;
+        height: 500px;
+        position: relative;
+        background: black;
+        max-width:500px;
+        margin:auto;
+      }
+      #square{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: white;
+      }
+    </style>
+    <script>
+      function bounce() {
+        let id = null;
+        const elem = document.getElementById("square");   
+        let pos = 0;
+        let left = 0;
+        let mov = Math.floor((Math.random()*3)+1);
+        clearInterval(id);
+        id = setInterval(frame, 5);
+        function frame() {
+          if(pos >= 450 && !left){
+            left = 1;
+          }else if(pos <= 0 && left){
+            left = 0;
+          }else if(left){
+            pos -= mov;
+          }else{
+            pos += mov;
+          }
+          elem.style.top = pos + "px"; 
+          elem.style.left = pos + "px"; 
+      }
+    }
+  </script>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
+
+  <body onload="bounce()">
+    <h1>Information about Mike Rossetti</h1>
     <p>
-      [Self introduction]
+      I am currently a student at Worcestor Polytechnic Insitute and a part of the class of 2022.
     </p>
     <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+      I am majoring in computer science and minoring in business.
     </p>
 
     <h2>Experience</h2>
+    <h3>
+      Courses Completed
+    </h3>
+    <ul>
+      <li>CS 1102 - Introduction to Program Design</li>
+      <li>CS 2103 - Object-Oriented Design Concepts</li>
+      <li>CS 2011 - Introduction to Machine Organization and Assembly Language</li>
+      <li>CS 2223 - Algorithms</li>
+      <li>CS 2303 - Systems Programming Concepts</li>
+      <li>CS 3013 - Operating Systems</li>
+      <li>CS 3041 - Human computer Interaction</li>
+      <li>CS 3043 - Social Implications of Information Processing</li>
+      <li>CS 3431 - Database Systems 1</li>
+      <li>CS 3516 - Computer Networks</li>
+      <li>CS 4341 - Introduction to Artificial Intelligence </li>
+    </ul>
+    <h3>
+      Technology Experience
+    </h3>
     <p>
-      Working experience
+      A lot of experience:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>HTML</li>
     </ul>
+    <p>
+      Some experience:
+    </p>
+    <ul>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Unit Testing</li>
+    </ul>
+    <p>
+      Little to no experience:
+    </p>
+    <ul>
+      <li>Ruby</li>
+    </ul>
+    <div id="board">
+      <div id = "square"></div>
+    </div>
   </body>
 </html>
