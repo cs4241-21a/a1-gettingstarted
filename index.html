@@ -1,28 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        font-family: "Kaisei Decol", serif;
+        color: #2A76A8;
+        marging: 0;
+        background-color: #B8B8D4;
+        float: right;
+        width: 100%;
+      }
+      body {
+        height: 100%;
+        background-color: #B8B8D4;
+      }
+      p {
+        font-family: "Kaisei Decol", serif;
+        margin: 15px;
+        padding-left: 200px;
+      }
+      h3 {
+        padding-left: 10px;
+        font-family: "Kaisei Decol", serif;
+        fornt-size: 120%;
+      }
+      h4 {
+        padding-left: 15px;
+      }
+      dt {
+        font-family: "Kaisei Decol", serif;
+        padding-left: 5px;
+        padding-top: 5px;
+      }
+      ul {
+        font-family: "Kaisei Decol", serif;
+      }
+
+      #leftbox {
+        float: left;
+        background-color: #F59B82;
+        width: 100%;
+        height: 180px;
+      }
+      #rightbox {
+        float: left;
+        background-color: #F2B263;
+        width: 50%;
+        height: 280px;
+      }
+      #interest {
+        float: left;
+        background-color: #BBDAF4;
+        width: 50%;
+        height: 280px;
+      }
+      #image {
+        float: left;
+        width: 30%;
+        border-style: solid;
+        border-width: 10px;
+        border-color: #2A76A8;
+      }
+    </style>
+
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1>Information about Maria del Carmen Sacristan Benjet</h1>
+    <img
+      id="image"
+      src="https://cdn.glitch.com/fb2551c9-aee4-4639-b62c-9fd3b349769e%2Fhead%20shot%20Carmen.jpg?v=1630281809098.jpg"
+    />
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div id="leftbox">
+      <h3>
+        Working experience
+      </h3>
+      <ul>
+        <li>Software Engineer intern for AGMednet</li>
+        <li>Intern at Matrix Medical Devices</li>
+      </ul>
+    </div>
+
+    <div id="rightbox">
+      <h3>
+        Experience with the following technologies and methods
+      </h3>
+      <ul>
+        <li>
+          <label for="html">HTML</label>
+          <progress id="html" value="70" max="100" color="green"></progress>
+        </li>
+        <li>
+          <label for="css">CSS</label>
+          <progress id="css" value="70" max="100"></progress>
+        </li>
+        <li>
+          <label for="java">Java</label>
+          <progress id="java" value="100" max="100"></progress>
+        </li>
+        <li>
+          <label for="js">JavaScript</label>
+          <progress id="js" value="30" max="100"></progress>
+        </li>
+        <li>
+          <label for="ruby">Ruby</label>
+          <progress id="ruby" value="1" max="100"></progress>
+        </li>
+        <li>
+          <label for="python">Python</label>
+          <progress id="python" value="60" max="100"></progress>
+        </li>
+        <li>
+          <label for="ut">Untit tests</label>
+          <progress id="ut" value="90" max="100"></progress>
+        </li>
+      </ul>
+    </div>
+
+    <div id="interest">
+      <h3>
+        Class of 2022 CS major
+      </h3>
+      <h4>
+        Courses Taken
+      </h4>
+      <ul>
+        <li>
+          Algorithms, Object Oriented, Systems, Software Eng, Computer Graphics,
+          Networks, Machine Learning
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <p>
+        My pronouns are she/her. I grew up in Mexico city where I attended a
+        British school which taught Spanish and English in parallel. I came to
+        the US to pursue my education at wpi. Initially enrolling as an
+        engineering student but discovering my passion for cs.
+      </p>
+    </div>
   </body>
 </html>
