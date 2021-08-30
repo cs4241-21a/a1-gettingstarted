@@ -1,16 +1,27 @@
 
-/*
-    Colors:
-    Dark blue: #537CAD
-    Light Blue: #ADD2FF
-    Blue: #92C0FA
-    Dark Brown: #AD8742
-    Light Brown: #FAD591
-*/
+
+:root {
+    --dark-blue: #1878A8;
+    --light-blue: #57C7FF;
+    --blue: #3BB7F5;
+    --dark-brown: #A86007;
+    --light-brown: #F5A23B;
+}
 
 body {
-    background: #537CAD;
-    transition: background 2s;
+    -webkit-transition:background-color 1s ease;
+    -moz-transition:background-color 1s ease;
+    -o-transition:background-color 1s ease;
+    transition:background-color .1s ease;
+    background-color: var(--dark-blue);
+}
+
+.information,
+.language-experience,
+.class-experience,
+.introduction {
+    font-family: 'Source Code Pro', serif;
+    color: var(--dark-brown);
 }
 
 .course-table,
@@ -19,7 +30,7 @@ body {
     border-radius: 13px;
     margin: 25px 0;
     font-size: 0.9em;
-    font-family: sans-serif;
+    font-family: 'Source Code Pro', serif;
     text-align: center;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0,0,0, 0.15);
@@ -27,8 +38,8 @@ body {
 
 .course-table thead tr,
 .language-table thead tr {
-    background-color: #537CAD;
-    color: #FAD591;
+    background-color: var(--dark-blue);
+    color: var(--light-brown);
 }
 
 .course-table th,
@@ -41,8 +52,9 @@ body {
 .course-table tbody tr,
 .language-table tbody tr {
     border-bottom: 1px solid #dddddd;
+    color: var(--dark-brown);
 }
 
 body p {
-    color: "red"; 
+    color: "red";
 }
