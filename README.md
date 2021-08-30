@@ -1,6 +1,6 @@
 # A1 - Matthew Spofford
 
-<https://a1-matthewpofford.glitch.me>
+<https://a1-matthewspofford.glitch.me>
 
 This project shows how to create a basic webpage using HTML/CSS/JavaScript. This involved creating a basic HTML layout, stylizing it with some basic CSS attributes, as well as creating some basic functions/animations with Javascript.
 
