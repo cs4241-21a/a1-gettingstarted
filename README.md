@@ -6,7 +6,7 @@ This project shows Information about me and something I love: Impractical Weezer
 ## Technical Achievements
 - **Styled page with CSS**: 
     -Body: to give the site a background color and default font (mostly for h2)
-    -h1: to make the title stand out
+    -h1: to make the title stand out 
     -img: block so that it's on its own line
     -button: to make the button pretty and change the cursor when the mouse goes over it
     -p: give the paragraphs their own color from my pallet
