@@ -10,4 +10,4 @@ This project shows ...
 
 ### Design Achievements
 - **Used Google Fonts**: Changed the body font to Roboto from Google Fonts.
--**Used Adobe Color Wheel**: Used a color palette from color.adobe.com. Screenshot of color wheel used can be found in \images\adobeColorWheel.png
+-**Used Adobe Color Wheel**: Used a color palette from color.adobe.com. Screenshot of color wheel used: ![](images\adobeColorWheel.png)
