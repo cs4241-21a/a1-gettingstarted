@@ -1,0 +1,25 @@
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #2683E0;
+    color: #46DCFA;
+}
+
+h1 {
+    margin-bottom: 0;
+    color: #34E3C4;
+}
+
+h2 {
+    padding-top: 1em;
+    color: #34E3C4;
+}
+
+h3 {
+    color: #34E3C4;
+}
+
+h4 {
+    margin: 0;
+    color: #34E3C4;
+}
