@@ -70,12 +70,17 @@ Achievements
 Below are some suggested technical and design achievements. You can use these to help boost your grade up to an A and customize the assignment to your personal interests. These are recommended acheivements, but feel free to create/implement your own... just make sure you thoroughly describe what you did in your README and why it was challenging. ALL ACHIEVEMENTS MUST BE DESCRIBED IN YOUR README IN ORDER TO GET CREDIT FOR THEM.
 
 *Technical*
+1/5 valid rules. Rules for adding the font and the table borders? Not sure those should count. Rule for table column width is valid I think.
 1. (max 5 points) Style your page using CSS. Each style rule you apply will get you 1 extra point for a maximum of 5 points. Be sure to describe your style rules in your README.
+0/1
 2. (5 points) Add a simple JavaScript animation to the page.
+2/5 extra tags (table, script)
 3. (max 5 points) Experiment with other HTML tags (links, images, tables etc.) Each extra tag you use will get you 1 extra point for a maximum of 5 points. Be sure to describe the links you use in your README.
 
 *Design*
+0/1
 1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
+1/1 Google fonts being used!
 2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
 
 Resources

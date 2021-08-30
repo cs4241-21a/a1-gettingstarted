@@ -3,26 +3,142 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral&display=swap" rel="stylesheet">
+    <style>
+      title {
+        font-family: 'Spectral', serif;
+      }
+      h1 {
+        font-family: 'Spectral', serif;
+      }
+      h2 {
+        font-family: 'Spectral', serif;
+      }
+      p {
+        font-family: 'Spectral', serif;
+        font-size: 24px;
+
+      }
+      ul {
+        font-family: 'Spectral', serif;
+      }
+      
+      table, th, td {
+        border:1px solid black;
+        font-family: 'Spectral', serif;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Daniel Stusalitus</h1>
     <p>
-      [Self introduction]
+      Class of 2022
     </p>
     <p>
-      [Major and other information]
+      Computer Science Major
     </p>
     <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
+      Previous courses I have taken:
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>CS1102 - Accelerated Intro to Program Design</li>
+      <li>CS2011 - Intro-Machine Org and Assembly</li>
+      <li>CS2303 - Systems Programming Concepts</li>
+      <li>CS2223 - Algorithms</li>
+      <li>CS3431 - Database Systems I</li>
+      <li>CS3043 - Social Implications of Information Processing</li>
+      <li>CS3133 - Foundations of Computer Science</li>
+      <li>CS3013 - Operating Systems</li>
+      <li>CS3733 - Software Engineering</li>
+      <li>CS4432 - Database Systems II</li>
+      <li>CS3516 - Computer Networks</li>
     </ul>
+
+    <h2>Experience</h2>
+    <table id="expTable">
+      <tr>
+        <th onclick="sortColumn(0)" style="width:160px">Technology</th>
+        <th style="width:160px">Experience</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>Lots of experience</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Some</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Almost none</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>Some</td>
+      </tr>
+    </table>
   </body>
+
+  <script>
+    function sortColumn(n){
+      let table, rows, switching, i, row1, row2, shouldSwitch, dir, switchFlag = false;
+      table = document.getElementById("expTable");
+      switching = true;
+
+      dir = "A-Z";
+
+      while (switching) {
+
+        switching = false;
+        rows = table.rows;
+
+        for (i = 1; i < (rows.length - 1); i++) {
+
+          shouldSwitch = false;
+
+          row1 = rows[i].getElementsByTagName("TD")[n];
+          row2 = rows[i + 1].getElementsByTagName("TD")[n];
+
+          if (dir == "A-Z" && row1.innerHTML.toLowerCase() > row2.innerHTML.toLowerCase()) {
+
+            shouldSwitch = true;
+            break;
+
+          } else if (dir == "Z-A" && row1.innerHTML.toLowerCase() < row2.innerHTML.toLowerCase()) {
+
+            shouldSwitch = true;
+            break;
+
+          }
+        }
+
+        if (shouldSwitch) {
+
+          rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+          switching = true;
+          switchFlag = true;
+
+        } else if (!switchFlag && dir === "A-Z") {
+
+          dir = "Z-A";
+          switching = true;
+
+        }
+      }
+    }
+  </script>
 </html>
