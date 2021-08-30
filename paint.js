@@ -3,20 +3,29 @@ const ctx = canvas.getContext("2d");
 
 let strokeColor = '#226CA8'
 
+let lineWidth = 5
+
 let coord = { x: 0, y: 0 };
 
 let colors = ['#226CA8','#66BAFF','#4BA8F6','#A86D11', '#F5B249']
 
-let key = 1
+let colorkey = 1
+let widthkey = 5
 
 document.addEventListener("mousedown", start);
 document.addEventListener("mouseup", stop);
 window.addEventListener("resize", resize);
 document.addEventListener("keypress", cycleColor)
+document.addEventListener('wheel', cycleWidth)
 
 function cycleColor(){
-    strokeColor = colors[key % 5];
-    key++
+    strokeColor = colors[colorkey % 5];
+    colorkey++
+}
+
+function cycleWidth(){
+    lineWidth = widthkey%100 + 1;
+    widthkey++
 }
 
 function resize() {
@@ -43,7 +52,7 @@ function stop() {
 function draw(event) {
     document.addEventListener("keypress", cycleColor)
     ctx.beginPath();
-    ctx.lineWidth = 5;
+    ctx.lineWidth = lineWidth;
     ctx.lineCap = "round";
     ctx.strokeStyle = strokeColor;
     ctx.moveTo(coord.x, coord.y);
