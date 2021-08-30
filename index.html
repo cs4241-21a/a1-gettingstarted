@@ -1,28 +1,163 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <style>
+      body {
+        font-family: 'Kaisei HarunoUmi', serif;
+        background-color: #E65A78;
+      }
+      
+      h1 {
+        color: #7CE68D;
+        text-shadow: 3px 3px #CC65E6;
+      }
+      
+      h2 {
+        color: #EBD42F;
+        text-shadow: 3px 3px #8570E6;
+      }
+      
+      dl, ul {
+        font-family: 'Montserrat', sans-serif;
+      }
+      
+      .intro {
+        background-color: #CC65E6;
+      }
+      
+      .experience {
+         background-color: #8570E6
+      }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .column {
+        float: left;
+        width: 45%;
+        padding: 5px;
+      }
+
+      /* Clear floats after image containers */
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      
+      table, th, td {
+        border: 1px solid black;
+      }
+      
+    </style>
+    
+    <script type="text/javascript">
+      function changeBackground() {
+        document.getElementById("showtable").innerHTML = "I am looking forward to those classes!";
+      }
+    </script>
   </head>
+  
+  
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <h1>Information about Victoria Grasso</h1>
+    
+    <div class="intro">
+      <p>
+        Hi everyone! My name is Victoria and I am a senior at WPI (class of 2022)!
+      </p>
+      <p>
+        I am majoring is computer science and looking forward to taking this Webware class.
+      </p>
+      <p>
+        I love to play basketball, read, and travel! 
+        I went to Arizona this summer so here are some images of the amazing sights!
+      </p>
+    </div>
+      
+    <div class="row">
+      <div class="column">
+        <img src="https://cdn.glitch.com/c2f829ad-b395-464d-95c0-79ecd717cdaa%2FArizona.jpg?v=1630253936002" alt="Arizona">
+      </div>
+      <div class="column">
+        <img src="https://cdn.glitch.com/c2f829ad-b395-464d-95c0-79ecd717cdaa%2FArizonaSedona3.jpg?v=1630253926474" alt="Sedona">
+      </div>
+    </div>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+  
+    <div class="experience">
+      <p>
+        Previous computer science classes taken at WPI:
+      </p>
+      <dl>
+        <dt>Freshman Year</dt>
+        <dd>Introduction to Program Design</dd>
+        <dd>Object-Oriented Design Concepts</dd>
+        <dd>Systems Programming Concepts</dd>
+        <dd>Introduction to Machine Organization and Assembly</dd>
+        <dt>Sophmore Year</dt>
+        <dd>Discrete Mathematics</dd>
+        <dd>Database Systems I</dd>
+        <dd>Algorithms</dd>
+        <dd>Operating Systems</dd>
+        <dd>Software Engineering</dd>
+        <dt>Junior Year</dt>
+        <dd>Foundations of Computer Science</dd>
+        <dd>Social Implications of Computer Processing</dd>
+        <dd>Data Visualization</dd>
+        <dd>Machine Learning</dd>
+      </dl>
+    </div>
+    
+    <button type="button" onclick="changeBackground()">
+      Surprise!
+    </button>
+    
+    <div id="showtable" class="experience">
+      <table>
+        <tr>
+          <th>Current and Future CS classes</th>
+          <th>Term</th>
+        </tr>
+        <tr>
+          <td>Webware</td>
+          <td>A 21</td>
+        </tr>
+        <tr>
+          <td>Mobile and Ubiquitous Computing</td>
+          <td>A 21</td>
+        </tr>
+        <tr>
+          <td>Introduction to Artificial Intelligence</td>
+          <td>C 22</td>
+        </tr>
+      </table>
+    </div>
+  
+    <div class="experience">
+      <p>
+        Experience with the following technologies and methods:
+      </p>
+      <ul>
+        <li>HTML: some</li>
+        <li>CSS: some</li>
+        <li>Java: some</li>
+        <li>JavaScript: some</li>
+        <li>Ruby: none</li>
+        <li>Python: some</li>
+        <li>Unit Testing: some</li>
+      </ul>
+    </div>
+  
   </body>
 </html>
