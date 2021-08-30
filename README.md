@@ -5,7 +5,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 
 
 Ivan Martinovic
-http://a1-imartinovic-dzaja.glitch.me
+https://a1-imartinovic-dzaja.glitch.me
 
 This project shows some basic usages of git, GitHub, Glitch, HTML, CSS and JavaScript.
 
@@ -15,7 +15,7 @@ For most elements (body, h1, h2, p, ul, table) these rules include background co
 
 - **Added simple JavaScript animation**: when clicking on the button labeled "Start animation", a small JavaScript animation will play where the smaller yellow square will move diagonally inside the bigger red square. To achieve the animation, the container and animation elements were used.
 
-- **Experimented with other HTML tags**: Aside from the already provided tags, "<table>, <thead>, <tbody>, <tr>, <th>, <td>, <div>, <script></script>, <a>, <img> and <button>" tags were used
+- **Experimented with other HTML tags**: Aside from the already provided tags "table, thead, tbody, tr, th, td, div, script, a, img and button tags were used
 There were three different kinds of <li> tags used
 1) The <a> tag used for the github link is a from-website-to-website link. Meaning it leads from my website to github
 2) The <a> tag used for the email link is an email tag
