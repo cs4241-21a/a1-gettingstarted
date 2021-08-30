@@ -13,7 +13,7 @@ body {
     -moz-transition:background-color 1s ease;
     -o-transition:background-color 1s ease;
     transition:background-color .1s ease;
-    background-color: var(--dark-blue);
+    background-color: var(--blue);
 }
 
 .information,
@@ -23,6 +23,8 @@ body {
     font-family: 'Source Code Pro', serif;
     color: var(--dark-brown);
 }
+
+
 
 .course-table,
 .language-table {
@@ -38,6 +40,8 @@ body {
 
 .course-table thead tr,
 .language-table thead tr {
+    border-collapse: separate;
+    border-radius: 13px;
     background-color: var(--dark-blue);
     color: var(--light-brown);
 }
@@ -53,8 +57,4 @@ body {
 .language-table tbody tr {
     border-bottom: 1px solid #dddddd;
     color: var(--dark-brown);
-}
-
-body p {
-    color: "red";
 }
