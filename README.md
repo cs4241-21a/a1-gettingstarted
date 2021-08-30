@@ -16,12 +16,12 @@ For most elements (body, h1, h2, p, ul, table) these rules include background co
 - **Added simple JavaScript animation**: when clicking on the button labeled "Start animation", a small JavaScript animation will play where the smaller yellow square will move diagonally inside the bigger red square. To achieve the animation, the container and animation elements were used.
 
 - **Experimented with other HTML tags**: Aside from the already provided tags "table, thead, tbody, tr, th, td, div, script, a, img and button tags were used
-There were three different kinds of <li> tags used
-1) The <a> tag used for the github link is a from-website-to-website link. Meaning it leads from my website to github
-2) The <a> tag used for the email link is an email tag
-3) The <a> tag at the bottom of the webpage allows for navigation within my website (it uses a relative URL) 
+There were three different kinds of a tags used
+1) The a tag used for the github link is a from-website-to-website link. Meaning it leads from my website to github
+2) The a tag used for the email link is an email tag
+3) The a tag at the bottom of the webpage allows for navigation within my website (it uses a relative URL) 
 
 ### Design Achievements
-- **Used the Bebas Neue Font from Google Fonts**: I used Bebas Neue as the font for the header (<h1> and <h2>) text in my site.
+- **Used the Bebas Neue Font from Google Fonts**: I used Bebas Neue as the font for the header (h1 and h2 tags) text in my site.
 
-- **Created and used a color palette from color.adobe.com**: I used all 5 colors in the color palette for background of the <body>, <h1>, <h2>, <p> and <table> elements. The screenshot of the color palette is provided inside the images folder. 
+- **Created and used a color palette from color.adobe.com**: I used all 5 colors in the color palette for background of the body, h1, h2, p and table elements. The screenshot of the color palette is provided inside the images folder. 
