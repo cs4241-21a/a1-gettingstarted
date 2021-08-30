@@ -1,7 +1,7 @@
 Denver Blake
 https://a1-denver-blake.glitch.me
 
-
+Sorry about the lateness,I didn't realize the project was due before class, not 11:59 PM. I know there is no late policy but I hope I can still get some credit for this assignement since it is the first one. 
 
 ### Technical Achievements
 
