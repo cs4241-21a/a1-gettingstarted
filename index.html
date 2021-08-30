@@ -3,41 +3,85 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      body{
+        margin: 0px 0px 0px 0px;
+        font-family: Georgia;
+        color: #52335c;
+      }
+      h1{
+        font-style: italic;
+        font-weight: normal;
+        font-size: 2em;
+        color: #2c414f;
+        font-variant: small-caps;
+      }
+      em{
+        font-size: 1.1em;
+      }
+      h2{
+        font-style: italic;
+        font-weight: normal;
+        font-size: 1.4em;
+        color: #2c414f;
+        font-variant: small-caps;
+      }
+      div{
+        padding: 5px 10px 5px 20px;
+      }
+      .title{
+        background-color: #eeb8ff
+      }
+      .courses{
+        background-color: #b0abff
+      }
+      .experience{
+        background-color: #b0dfff
+      }
+      dt{
+        font-style: italic;
+      }
+      dd{
+        margin-bottom: 10px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Information about Niko Pelletier</h1>
-    <p>
-      Class of 2023
-    </p>
-    <p>
-      Computer Science major
-    </p>
-    <p>
-      Previous Computer Science Classes:
-    </p>
-    <!-- maybe use a table for this, detailing when I took the classes for part of technical achievements -->
-    <ul>
-      <li>CS 1102</li>
-      <li>CS 2102</li>
-      <li>CS 2303</li>
-      <li>CS 3373</li>
-      <li>CS 2022</li>
-      <li>CS 2223</li>
-      <li>CS 2011</li>
-      <li>CS 3013</li>
-      <li>CS 3043</li>
-    </ul>
+    <div class="title">
+      <h1>Information about Niko Pelletier</h1>
+      <p>
+        <em>Computer Science, Class of 2023</em>
+      </p>
+    </div>
+    
+    <div class="courses">
+      <h2>
+        Previous Computer Science Classes
+      </h2>
+      <ul>
+        <li>CS 1102</li>
+        <li>CS 2102</li>
+        <li>CS 2303</li>
+        <li>CS 3373</li>
+        <li>CS 2022</li>
+        <li>CS 2223</li>
+        <li>CS 2011</li>
+        <li>CS 3013</li>
+        <li>CS 3043</li>
+      </ul>
+    </div>
 
-    <h2>Experience</h2>
-    <!-- using dl *might* be a technical achievement -->
-    <dl>
-      <dt>HTML</dt> <dd>some</dd>
-      <dt>CSS</dt> <dd>some</dd>
-      <dt>Java</dt> <dd>a lot</dd>
-      <dt>JavaScript</dt> <dd>some</dd>
-      <dt>Ruby</dt> <dd>none</dd>
-      <dt>Python</dt> <dd>some</dd>
-      <dt>Unit testing</dt> <dd>some</dd>
-    </dl>
+    <div class="experience">
+      <h2>Experience</h2>
+      <dl>
+        <dt>HTML</dt> <dd>some</dd>
+        <dt>CSS</dt> <dd>some</dd>
+        <dt>Java</dt> <dd>a lot</dd>
+        <dt>JavaScript</dt> <dd>some</dd>
+        <dt>Ruby</dt> <dd>none</dd>
+        <dt>Python</dt> <dd>some</dd>
+        <dt>Unit testing</dt> <dd>some</dd>
+      </dl>
+    </div>
   </body>
 </html>
