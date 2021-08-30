@@ -1,28 +1,73 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+  <script>
+    let currColor = 'black'
+    window.onload = function () {
+      for (div of document.getElementsByTagName('div')) { div.style.backgroundColor = currColor }
+      setInterval(function () {
+        if (currColor === '#000000') {
+          currColor = '#f0f0f0'
+        }
+        else {
+          currColor = '#000000'
+        }
+        for (div of document.getElementsByTagName('div')) { div.style.backgroundColor = currColor }
+      }, 500)
+    }
+  </script>
+</head>
+
+<body>
+  <span>user@host:~$ dig btpeters</span>
+  <h1>Information about Ben Peters:</h1>
+  <p>
+    Class of 2023
+  </p>
+  <p>
+    Major: Computer Science
+  </p>
+  <p>
+    Prevoius CS Classes:
+  <ol start=0>
+    <li>CS 1102: Accelerated Introduction To Program Design</li>
+    <li>CS 2011: Introduction to Machine Organization and Assembly Language</li>
+    <li>CS 2103: Accelerated Object-Oriented Design Concepts</li>
+    <li>CS 2223: Algorithms</li>
+    <li>CS 2303: Systems Programing Concepts</li>
+    <li>CS 3013: Operating Systems</li>
+    <li>CS 3043: Social Impications of Information Processing</li>
+    <li>CS 3133: Foundations of Computer Science</li>
+    <li>CS 3516: Computer Networks</li>
+  </ol>
+  </p>
+
+  <h2>Experience</h2>
+  <ul>
+    <li>HTML: Some</li>
+    <li>CSS: Some</li>
+    <li>Java: A lot</li>
+    <li>JavaScript: None</li>
+    <li>Ruby: None</li>
+    <li>Python: A lot</li>
+    <li>unit testing: A lot</li>
+  </ul>
+  <p>
+    Working experience
+  </p>
+  <ul>
+    <li>WPI Network Opperations</li>
+  </ul>
+  <span>user@host:~$
+    <div>&nbsp;</div>
+  </span>
+</body>
+
 </html>
