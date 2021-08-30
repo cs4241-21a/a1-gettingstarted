@@ -4,31 +4,137 @@
 <head>
   <title>CS4241 Assignment 1</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="indexStyle.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+    body {
+      background-color: #3f3c43;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      color: white;
+    }
+
+    h1 {
+      color: #f2ceae;
+      font-family: 'Press Start 2P';
+    }
+
+    table {
+      background-color: #c298ad;
+      color: white;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      border: 5px #f58a8a;
+    }
+
+    th,
+    td {
+      background-color: #c298ad;
+      color: white;
+      font-size: 18px;
+      font-family: Arial, Helvetica, sans-serif;
+      width: 150px;
+      text-align: center;
+      border: 5px solid #f58a8a;
+      padding: 5px;
+    }
+
+    p {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      color: #f2ceae;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button {
+      color: #bf4158;
+      font-size: 18px;
+      font-family: 'Press Start 2P';
+      border: 5px solid #f58a8a;
+    }
+  </style>
+
+  <script type="text/javascript">
+
+    function pictureChangeOnClick() {
+      var dannyDorrito = "https://github.com/alexiscaira/a1-alexiscaira/blob/main/QkU6JGDRsrHl.jpeg?raw=true"
+      document.getElementById('orignalDanny').src = dannyDorrito.replace('90x90', '225x225');
+
+    }
+
+  </script>
 
 </head>
 
 <body>
   <h1>Information about Alexis Caira</h1>
-  <p>
-    Previous Classes: Foundations, Algos, AOOD & OOD, Social Imps, HCI, Soft Eng, Systems, Operating Systems, Data
-    Science 1/2
 
-    HTML - Alot
-    CSS - Alot
-    Java - Alot
-    JavaScript - Some
-    Ruby - None
-    Python - Alot
-    Unit Testing - Alot
   </p>
   <p>
     I am a computer science major (class of 2022!)
   </p>
+
   <p>
     I like to take naps, bake, and ride my Peleton. At WPI I am involved in Alpha Xi Delta as a sister and spirit chair
-    and I am also a Rho Gamma for recruitment this year.
+    and I am also a Rho Gamma for recruitment this year. Here's one of the about me slides I've made below.
   </p>
+
+  <a href="https://www.linkedin.com/in/acaira/">Visit my LinkedIn Here!</a>
+
+  <br>
+
+  </br>
+
+
+  <img src="https://github.com/alexiscaira/a1-alexiscaira/blob/main/alexis%20caira.png?raw=true" alt="HTML5 Icon">
+
+
+  <h2> Classes Taken at WPI </h2>
+
+  <table>
+    <td>Foundations</td>
+    <td>Algos</td>
+    <td>Advanced Object Oriented</td>
+    <td>Social Imps</td>
+    <td>HCI</td>
+    <td>Soft Eng</td>
+    <td>Operating Systems</td>
+  </table>
+
+  <br>
+
+  </br>
+
+  <h2> Language and Skill Level </h2>
+  <table>
+    <td>HTML</td>
+    <td>CSS</td>
+    <td>Java</td>
+    <td>JavaScript</td>
+    <td>Ruby</td>
+    <td>Python</td>
+    <td>Unit Testing</td>
+    <tr>
+      <td>Alot</td>
+      <td>Some/Alot</td>
+      <td>Alot</td>
+      <td>Some</td>
+      <td>None</td>
+      <td>Alot</td>
+      <td>Alot</td>
+    </tr>
+  </table>
+
+  <br>
+
+  </br>
 
   <h2>Experience</h2>
   <p>
@@ -38,10 +144,27 @@
     am pretty comfortable with it.
     We ran via Tomcat/Maven so I have working experience within that as well.
   </p>
-  <ul>
-    <li>IBM/Rational</li>
-    <li>WPI</li>
-  </ul>
+
+  <iframe width="1424" height="561" src="https://www.youtube.com/embed/2kWUbrx4EMw" title="YouTube video player"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+
+  <br>
+  </br>
+
+
+  <button onclick="pictureChangeOnClick() ">Change Danny</button>
+
+
+  <br>
+  </br>
+
+  <img id="orignalDanny"
+    src="https://github.com/alexiscaira/a1-alexiscaira/blob/main/74-746022_transparent-danny-devito-png-danny-devito-face-png.png?raw=true"
+    alt="" />
+
+
+
 </body>
 
 </html>
