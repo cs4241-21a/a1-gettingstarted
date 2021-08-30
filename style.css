@@ -1,0 +1,28 @@
+body {
+	font-family: "Trirong", serif;
+	background-color: lightgray;
+}
+h1 {
+	color: #FA5099;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+h2 {
+	color: #DE47D3;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+h3 {
+	color: #D15BF5;
+	margin-bottom: 0;
+}
+
+p {
+	color: #9247DE;
+}
+
+li {
+	color: #7650FA;
+}
