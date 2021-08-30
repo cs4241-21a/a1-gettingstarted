@@ -15,7 +15,7 @@ I created a website that displays information about me by utilizing different as
 -**Added JavaScript**: I added a Javascript function to be called on when a button is clicked. The function changes the table I had to a line of text.
 
 
-### Design Achievements
+## Design Achievements
 -**Used a color palette**: I used a color palette from color.adobe.com and implemented the 5 colors into my website. I added the colors to the text as well as backgrounds in the CSS.
 
 -**Used the Kaisei HarunoUmi and Montserrat Fonts from Google Fonts**: I used the Kaisei HarunoUmi font from Google Fonts throughout my website by adding it to the CSS rule for body. I also added the Montserrat font for the different kinds of lists I used.
