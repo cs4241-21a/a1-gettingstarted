@@ -1,9 +1,9 @@
 {
-  "name": "cr-4241-simple-glitch",
+  "name": "River Yan",
   "version": "0.1.0",
   "description": "WPI CS 4241 first assignment",
-  "author": "Charlie Roberts",
+  "author": "River Yan",
   "scripts": {
-    "start": "node server.js"
+  "start": "node server.js"
   }
 }
