@@ -4,7 +4,7 @@ Lia's Getting Started Repo
 Lia Davis
 http://a1-evans-notch.glitch.me
 
-This project shows ... stuff
+This project shows some basic information with a little style
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the body, h1-3 selectors.
@@ -13,3 +13,5 @@ This project shows ... stuff
 
 ### Design Achievements
 - **Used the Bungee Inline and Open Sans fonts from Google Fonts**: I used Bungee Inline as the font for the header tags in my site. I used Open Sans as the font for all other elements on the page (p and ul/li elements).
+- **Used the following Adobe color palette to ensure the page was accessible**:
+![Adobe Gradiant](adobe.png)
