@@ -8,4 +8,4 @@ This project shows ...
 
 ### Design Achievements
 - **Created and Implemented a Color Palette from Adobe**: I used the Adobe color palette editor to create the color palette with the colors: #FA0DBB, #C30BDE, #9301F5, #500BDE, and #1A0DFA. I used each of them in various html elements on the page. The p tag has #FA0DBB. The ul tag has by default #C30BDE. Every other li element in the ul tag has the color #500BDE. The h1 and h3 tags have the color #9301F5. Finally, the h2 tag has the color #1A0DFA. A screenshot of the color palette I used is included in this repo.
-- **Used the Roboto Mono Font from Google Fonts**: I used Roboto Mono as the font for the <h2> tag in my site.
+- **Used the Roboto Mono Font from Google Fonts**: I used Roboto Mono as the font for the h2 tag in my site.
