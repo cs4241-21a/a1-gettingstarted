@@ -1,0 +1,42 @@
+body {
+    font-family: 'Exo';
+}
+
+.first {
+    color: #226CA8
+}
+
+.second {
+    color: #66BAFF
+}
+
+.prevcourses {
+    color: #4BA8F6
+}
+
+.extras {
+    color: #A86D11
+}
+
+
+canvas {
+    width: 100vw;
+    height: 90vh;
+}
+
+#pen {
+    width:1em;
+    height:1em;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color: #A86D11
+}
+
+tr {
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
