@@ -4,7 +4,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 *DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
 
 
-Carlos Velasquez
+Carlos Velasquez https://a1-carlosavp23.glitch.me
 
 This project shows basic use of HTML, CSS, and JS to create a website that presents a little about me. 
 
