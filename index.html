@@ -3,26 +3,204 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karma:wght@300&display=swap" rel="stylesheet">
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <script src= "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <style>
+      #Logo {
+    position: absolute;
+    top: 15px;
+    left: 16px;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #7991A6;
+
+}
+
+
+h1{
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: 3px;
+}
+
+h2{
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #9EBDD9;
+    text-align: center;
+}
+
+
+p{
+    font-family: 'Karma', serif;
+    color: white;
+    
+}
+
+li{
+    font-family: 'Karma', serif;    
+    color: white;
+}
+
+
+.Cover-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Hero-photo.JPG");
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-bottom-style:solid;
+    border-bottom-width: 10px;
+    border-bottom-color: #414E59;
+  }
+  
+  .Cover-text {
+    text-align: left;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .container{
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: 50px auto;    
+
+  }
+
+  .container .box{
+      position: relative;
+      width: calc(400px - 30px);
+      height: calc(400px - 30px);
+      background: #264259;
+      float: left;
+      margin: 15px;
+      box-sizing: border-box;
+      overflow: hidden;
+      border-radius: 10px;
+      border-style: solid;
+      border-width: 5px;
+      border-color: #60A4DF;
+  }
+
+.container .box .title{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #264259;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.container .box:hover .title{
+    top:0;
+    left:20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.container .box .experience{
+    margin-top: 150px;
+    margin-left: 10%;
+}
+
+.container .box .courses{
+    margin-top: 170px;
+    margin-left: 10%;
+}
+
+.container .box .work{
+    margin-top: 200px;
+    margin-left: 10%;
+}
+    </style>
+
+    <script>
+function blink_text() {
+	$('.blink').fadeOut(1000);
+    $('.blink').fadeIn(1000);
+}
+setInterval(blink_text, 5000);
+
+    </script>
+
+  </head>
+
+
+
+  <body>
+
+    <div class="Cover-image">
+      <img src="Logo.png" id="Logo" width="50" > 
+
+      <div class="Cover-text">
+        <h1 >Hello! I'm Carlos</h1>
+        <p>A hard-working Salvadorean striving to make Mama and Papa proud!</p>
+        <p>Senior at WPI majoring in Computer Science with a minor in Interactive Media.
+        </p>
+      </div>
+    </div>
+
+    <div class= "container">
+      <div class= "box">
+        <div class = "title"><h2  class="blink">Experience</h2>
+        </div>
+        <div class= "experience">
+          <li> HTML - Competent</li>
+          <li> CSS - Competent</li>
+          <li> Java - Competent</li>
+          <li> JavaScript - Novice</li>
+          <li> Python - Novice</li>
+          <li> Unit Testing - Novice</li>
+        </div>
+
+      </div>
+
+
+
+      <div class= "box">
+        <div class = "title"><h2 class="blink">CS courses</h2>
+        </div>
+        <div class= "courses">
+          <li> CS 1101</li>
+          <li> CS 2102</li>
+          <li> CS 2301</li>
+          <li> CS 2223</li>
+          <li> CS 3133</li>
+          <li> CS 3733</li>
+          <li> CS 3041</li>
+        </div>
+
+      </div>
+
+      <div class= "box">
+        <div class = "title"><h2 class="blink">Relevant Work</h2>
+        </div>
+        <div class= "work">
+          <p>Software Engineering Intern - Change For Change
+          </p>
+        </div>
+      </div>
+
+    </div>
+
   </body>
 </html>
