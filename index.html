@@ -2,27 +2,141 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap">
     <meta charset="utf-8">
   </head>
+  
+  <script>
+      
+     let currentColor = '#2C2F33';
+      window.onload = function() {
+       document.body.style.backgroundColor = currentColor;
+        
+        setInterval( function() {
+          if (currentColor === '#2C2F33') {
+            currentColor = 'black';
+          } else {
+            currentColor = '#2C2F33';
+          }
+          document.body.style.backgroundColor = currentColor;
+        }, 800)
+     }
+                  
+    </script>
+  
+  <style>
+    body {
+      text-align: center;
+      //background-color: #2C2F33;
+      font-family: 'Merriweather', serif;
+    }
+    
+    img {
+      width: 150px;
+      
+    }
+    
+    p {
+      color: #F5F5F5;
+      margin-bottom: 20px;
+    }
+    
+    li {
+      color: #F5F5F5;
+      margin-bottom: 20px;
+      font-family: 'Merriweather', serif;
+    }
+    
+    table {
+      margin: auto;
+      font-family: 'Merriweather', serif;
+    }
+    
+    h1 {
+      color: #D4C8DE;
+      font-family: 'Sacramento', cursive;
+    }
+    
+    h2 {
+      color: #DED3C8;
+      margin-top: 50px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .experience {
+      font-weight: bold;
+      color: #FAF8E1;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .none {
+      text-decoration: line-through;
+    }
+    
+    .myname {
+      text-decoration: underline;
+    }
+  </style>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Steven Tran</h1>
+    <img src="https://lh3.googleusercontent.com/BRsTmavwjp8rFoV2F169Jd4qRfZcuvush8ob1Z49lfYG2AVkxKmNi14He3nJfCdC8lG9CJYLEg5g6-YwQw=s608-rw-no" alt="Steven-img">
     <p>
-      [Self introduction]
+      Hello! I am <span class="myname">Steven</span>. I am a Junior (Class of 2023)
     </p>
     <p>
-      [Major and other information]
+      I am a <a href="https://www.wpi.edu/academics/departments/computer-science">Computer Science</a> and <a href="https://www.wpi.edu/academics/departments/data-science">Data Science</a> double major.
     </p>
     <p>
-      [Other things]
+      I love building keyboards!
     </p>
 
     <h2>Experience</h2>
-    <p>
-      Working experience
+    <p class="experience">
+      Computer science courses taken at WPI
     </p>
+    <table>
+    <tbody>
+      <tr>
+        <td><table cellspacing="10">
+          <tr>
+            <td>
+              <ul>
+              <li>CS1101</li>
+              <li>CS2102</li>
+              <li>CS2303</li>
+              <li>CS2011</li> 
+              </ul>
+            </td>
+            <td>
+              <ul>
+              <li>CS2223</li>
+              <li>CS2022</li>
+              <li>CS3431</li>
+              <li>CS3013</li>
+              </ul>
+            </td>
+          </tr>
+        </table></td>
+      </tr>
+    </tbody>
+  </table>
+    <p class="experience">
+      Experience with technologies 
+    </p>
+    <table cellspacing="10">
+      <tr>
+        <td>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+      <li>HTML - some</li>
+      <li>CSS - some</li>
+      <li>Java - some</li>
+      <li>Javascript - some</li>
+      <li class="none">Ruby - none</li>
+      <li>Python - a lot</li>
+      <li class="none">unit testing - none</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>
