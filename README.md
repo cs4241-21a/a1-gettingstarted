@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 ===
 
 Kate Sincaglia
-http://a1-charlieroberts.glitch.me
+https://a1-ksincaglia.glitch.me
 
 This project shows several different technical and design achievements that I accomlished. 
 
@@ -15,4 +15,6 @@ For the main part of the project, I edited the html document to include the basi
 ### Design Achievements
 - **Used the Oxygen Font from Google Fonts**: I used Oxygen as the font for the primary copy text in my site. 
 - **Used an adobe color palette that I made for the color scheme**: I used a shades color palette that I made from adobe to design the coloring of my site. 
+
+![a1-colorpalette](https://user-images.githubusercontent.com/63319996/131287365-0730da20-b23b-4a2d-b8de-94983337ce32.png)
 
