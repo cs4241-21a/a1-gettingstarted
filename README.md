@@ -1,8 +1,8 @@
 Maylee Gagnon
-TODO add glitch link here
+https://a1-mgagnon.glitch.me
 
 
-This project shows ...
+This project shows: 
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules so that 
