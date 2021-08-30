@@ -29,14 +29,14 @@ I learned how to use HTML, CSS, and JavaScript together as well as refereshed my
 - **JavaScript Animation**: Added a button that displays an image and changes the button's color when clicked.
 
 - **Experiemented with HTML Tags**: Included the following HTML Tags:
-  - <link/>: For the Azeret Mono Extra-light 200 font from Google Fonts
-  - <style></style>: For CSS styling
-  - <script></script>: For the JavaScript image popup animation
-  - <img/>: For the headshot image, Brazilian flag gif, and LinkedIn, GitHub, and email buttons
-  - <button></button>: To create the button for the JavaScript animation
-  - <a></a>: To link the LinkedIn, GitHub, and email buttons
-  - <li></li>: For list of CS courses and past internship experience
-  - <br />: To fix spacing on website
+  - link: For the Azeret Mono Extra-light 200 font from Google Fonts
+  - style For CSS styling
+  - script: For the JavaScript image popup animation
+  - img: For the headshot image, Brazilian flag gif, and LinkedIn, GitHub, and email buttons
+  - button: To create the button for the JavaScript animation
+  - a: To link the LinkedIn, GitHub, and email buttons
+  - li: For list of CS courses and past internship experience
+  - br /: To fix spacing on website
 
 ### Design Achievements
 
@@ -45,4 +45,4 @@ I learned how to use HTML, CSS, and JavaScript together as well as refereshed my
 
 #### Challenges
 
-- **LinkedIn, GitHub, and email icons placement**: I couldn't figure out how to get those icons to permanently stay in place. Everytime you click the button and the flag pops up, everything below it moves down. In order to figure out the spacing I had to use a bunch of <br /> tags.
+- **LinkedIn, GitHub, and email icons placement**: I couldn't figure out how to get those icons to permanently stay in place. Everytime you click the button and the flag pops up, everything below it moves down. In order to figure out the spacing I had to use a bunch of br / tags.
