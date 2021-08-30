@@ -8,4 +8,4 @@ This project shows a basic website constructed using HTML and CSS, and gives a l
 
 ### Design Achievements
 - **Custom color palette using color.adobe.com**: Using color.adobe.com, I chose a color palate using the "complementary" option on the color picker. This provided the colors for both my background gradient as well as all the types of headers and for the list elements. See below for the screenshot of the color palette:
-![Color Pallette]("Adobe Color Wheel.png")
+[Color Pallette](adobecolorwheel.png)
