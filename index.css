@@ -1,0 +1,17 @@
+h1 {
+    color: rebeccapurple;
+}
+
+p {
+    background-color: green;
+    color: aqua;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    text-align: center;
+}
+
