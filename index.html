@@ -3,26 +3,48 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+  <body id="body">
+    <h1 id="header">Information about Ben Gelinas</h1>
+    <p id="desc">
+      Ben Gelinas, Class of 2024. I am a IMGD Tech (BS) / Computer Science Double Major. I am currently working on a game in my spare time.
     </p>
     <p>
-      [Major and other information]
+      Previous Computer Science courses taken:
     </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+    <ul id="classList">
+      <li>CS1101 - Intro to Program Design</li>
+      <li>CS2102 - Object Oriented Design Concepts</li>
+      <li>CS2303 - Systems Programming Concepts</li>
+      <li>CS2022 - Discrete Math</li>
+      <li>CS2223 - Algorithms</li>
+      <li>Currently enrolled in: CS4241 - Webware</li>
     </ul>
+    <img id="image1" src="/images/wendys.jpg" alt="Wendys Image">
+    <h2 id="header">Experience</h2>
+    <p>
+      Experiences with the following technologies and methods:
+      <ul id="expList">
+        <li>HTML - Some</li>
+        <li>CSS - Little to none</li>
+        <li>Java - A lot</li>
+        <li>JavaScript - Little to none</li>
+        <li>Ruby - None</li>
+        <li>Python - None</li>
+        <li>Unit Testing - Used frequently throughout previous courses at WPI.</li>
+      </ul>
+    </p>
+    <script src="checkbox.js"></script>
+    <label for="image1box">
+      <input type="checkbox" onchange="show_img('image1')" id="image1box" name="box1" value="Image">Click to show image
+    </label>
+    <br>
+    <label for="bodybox">
+      <input type="checkbox" onchange="darkMode()" id="bodybox" name="box2" value="body">Dark Mode
+    </label>
+    <br><br>
+    <a href="https://github.com/BenjaMenja">Click to go to my GitHub</a>
   </body>
 </html>
