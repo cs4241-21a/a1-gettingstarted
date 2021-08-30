@@ -1,6 +1,6 @@
 # Technical Achievements
 
-### I used some extra HTML tags to better format my information
+### I used some extra HTML tags to better format my information.
 - The `div` tag was used to separate the heading, the list of previous classes, and the
 experience. This then allowed me color each section differently using CSS classes
 - The `em` tag was used to create a subtitle that was distinct from the rest of the page.
