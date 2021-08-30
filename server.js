@@ -1,18 +1,40 @@
 const http = require('http'),
       fs   = require('fs'),
-      path = require('path'),
       port = 3000
 
 const server = http.createServer( function( request,response ) {
-  fs.readFile(__dirname + request.url, function (err,data) {
-    if (err) {
-      response.writeHead(404);
-      response.end(JSON.stringify(err));
-      return;
-    }
-    response.writeHead(200);
-    response.end(data);
-  });
+  switch( request.url ) {
+    case '/':
+      sendFile( response, 'index.html' )
+      break
+    case '/index.html':
+      sendFile( response, 'index.html' )
+      break
+    case '/paint.html':
+      sendFile( response, 'paint.html' )
+      break
+    case '/paint.js':
+      sendFile( response, 'paint.js' )
+      break
+    case '/styles.css':
+      sendFile( response, 'styles.css' )
+      break
+    case '/Images/blue_pen.jpg':
+      sendFile( response, 'Images/blue_pen.jpg' )
+      break
+    case '/Images/Colors.png':
+      sendFile( response, 'Images/Colors.png' )
+      break
+    default:
+      response.end( '404 Error: File Not Found' )
+  }
 })
 
 server.listen( process.env.PORT || port )
+
+const sendFile = function( response, filename ) {
+   fs.readFile( filename, function( err, content ) {
+     file = content
+     response.end( content, 'utf-8' )
+   })
+}

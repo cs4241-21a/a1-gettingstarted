@@ -40,3 +40,6 @@ tr {
     border-bottom: 1px solid black;
 }
 
+#paintnav {
+    row-gap: 100em
+}
