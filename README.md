@@ -4,6 +4,8 @@ Readme
 Lauren Wasserman
 http://a1-lewasserman.glitch.me
 
+**Please reload the page to see my animation of a yellow circle moving to the right along the screen**
+
 This project shows ...
 
 ## Technical Achievements
