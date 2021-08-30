@@ -1,28 +1,131 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/428381972545404928/881663935521095730/strawberry.gif" type="image/x-icon">
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+      body {
+        background-color: #520026;
+        color: #FFABD2;
+        font-family: 'Fredoka One', cursive;
+      }
+      h1 {color: #75F377}
+      h2 {color: #F04193}
+      ul {
+        list-style: none; /* Remove default bullets */
+      }
+      ul li::before {
+        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+        color: #F04193; /* Change the color */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-left: -1em; /* Also needed for space (tweak if needed) */
+      }
+      .zoom {
+        transition: transform .2s; /* Animation */
+      }
+
+      .zoom:hover {
+        transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+      #myFace {
+        height: 400px;
+        float: right;
+        top: 0;
+        padding: 7px;
+      }
+      #animButton {
+        float: right;
+        font-family: 'Fredoka One', cursive;
+        border: none;
+        color: #75F377;
+        background-color: #046705;
+      }
+      table, td {
+        border: 1px solid #75F377;
+        border-collapse: collapse;
+        padding: 5px;
+      }
+    </style>
+    <script>
+      let timer;
+      let turn = 0;
+      function turnOn() {
+        timer = setInterval(spin, 30);
+      }
+
+      function spin() {
+        let x = document.getElementById("myFace");
+        turn += 5;
+        x.style.transform = "rotate("+ turn +"deg)"
+      }
+    </script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <button id="animButton" type="button" onclick="turnOn()">Make Me Spin!</button>
+    <h1>Webware With Kiara Munz!</h1>
+    <img id="myFace" class="zoom" src="https://cdn.discordapp.com/attachments/428381972545404928/881643078878920704/thumbnail_IMG_2495.jpg" alt="me in some cool clothes :)"/>
     <p>
-      [Self introduction]
+      Hi! My name is Kiara Munz and I am majoring in computer science, minoring in IMGD, and hoping to graduate in 2023! I have been a moderately avid coder since freshman year of high school, so I have encountered a wide variety of code related things in my travels :) Outside of the coding world, I like neon colors, craft projects, and video games!
     </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
+    <h1>Experience</h1>
+    <h2>
       Working experience
-    </p>
+    </h2>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Senscio Systems - Intern - Summer 2018 - Did some basic web application work, but mostly helped with inventory grunt work</li>
+      <li>Tyndall Design - Summer 2019 & 2020 - Junior Engineer - Worked mostly on a Excel to Database converter with an associated web app. Also aided in general app and web design. </li>
+      <li>Hubspot - Intern - Summer 2021 - Worked extensively with Kafka workers, TQ2 queues, java backend object/logic design, and more for the Sandboxes team</li>
     </ul>
+    <h2>
+      Language experience
+    </h2>
+    <table>
+    <tbody>
+      <tr>
+        <td>HTML</td>
+        <td>Low</td>
+        <td>Took a class sophomore year in high school, didnt love it, I rely on W3Schools templates now.</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>Low</td>
+        <td>Took a class sophomore year in high school, I am definitely better at css than html!</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>High</td>
+        <td>Currently my preferred language due to high experience. Been coding in it since high school robotics.</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Medium</td>
+        <td>I have made discord bots, fitbit watch apps, and some minor web apps using javascript.</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>Low</td>
+        <td>I took an online class in it once a million years ago and i dont remember Any of it.</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Medium</td>
+        <td>Took a pretty extensive class freshman year high school. Mostly turtle stuff, but I have a goodhandle on the language.</td>
+      </tr>
+      <tr>
+        <td>Unit Testing</td>
+        <td>High</td>
+        <td>Many WPI classes and my most recent internship heavily relied on unit testing.</td>
+      </tr>
+    </tbody>
+    </table>
+    <p>
+      As a junior, I have also completed a lot of WPI classes: CS 1102 (Accelerated Racket), CS 2103 (Accelerated OO Design), CS 2303 (C & C++), CS 2022 (Discrete Math), CS 2223 (Algorithmns), CS 3133 (Foundations: Little Computer Logic Puzzles), CS 3733 (Software Engineering), CS 3431 (Databases 1), CS 2011 (Assembly), and CS 546 (Grad Human Computer Interaction). I also completed IMGD 1000 and IMGD 1001, which are both game design courses that heavily focus on user-centered design for both digital and tabletop environments!
+    </p>
   </body>
 </html>
