@@ -1,28 +1,158 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#flip").click(function() {
+          $("#panel").slideDown("slow");
+        });
+      });
+    </script>
+
+    <style>
+
+      body{
+        margin: 30px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(#A1241D,#611511,#E03228,#ED342B,#C72B24);
+      }
+
+      h1{
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        text-align:center;
+      }
+
+      li{
+        font-family: 'Oswald', sans-serif;
+        color: white;
+      }
+
+      p{
+        font-family: 'Oswald', sans-serif;
+        color: white;
+      }
+
+      h2 {
+        font-family: 'Oswald', sans-serif;
+        color: white;
+      }
+
+      img{
+        text-align:center
+      }
+
+      div{
+        color:white;
+        font-family: 'Oswald', sans-serif;
+        text-align:center;
+      }
+
+      #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        border: none;
+      }
+
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+      
+      a{
+        text-align: center;
+      }
+
+      <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    </style>
   </head>
+
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
+    <p style="text-align:center;">
+      <img
+        src="https://cdn.glitch.com/0263517b-5254-47ba-a71f-adf1e4d7d4ac%2Fvantine_linked_in_2620474.jpg?v=1630258075473"
+        width="300"
+        height="300"
+      />
     </p>
 
+    <h1>Information About River Yan</h1>
+
+    <p style="color:white;">
+      I'm a Senior ('22) here at WPI. My hobbies include playing basketball,
+      listening to music, and cooking.
+    </p>
+
+    <p style="color:white;">
+      Data Science & Computer Science Major
+    </p>
+
+    <p style="color:white;">
+      On campus I'm in Theta Chi Fraternity, Men's Club Basketball, and ODK
+      National Leadership Honor Society.
+    </p>
+
+    <div id="flip">Click to Show Me</div>
+    <div id="panel">
+      <img
+        src="https://cdn.glitch.com/0263517b-5254-47ba-a71f-adf1e4d7d4ac%2F4CD64F11-26C9-4FF0-8E91-61B7F20D1B4B.jpeg?v=1630259050585"
+        width="500"
+        height="350"
+        id="me"/>
+    </div>
+
     <h2>Experience</h2>
+
     <p>
       Working experience
     </p>
+
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>Data Science Engineering Intern at Fidelity Investments</li>
+      <li>Data Engineering Intern at Fidelity Investments</li>
+      <li>WPI Computer Lab Assistant</li>
     </ul>
+
+    <p>
+      Skills
+    </p>
+
+    <ul>
+      <li>Python: Very Experienced</li>
+      <li>HTML: Not Experienced</li>
+      <li>CSS: Not Experienced</li>
+      <li>Java: Experienced</li>
+      <li>JavaScript: Somewhat Experienced</li>
+      <li>Ruby: Not Experienced</li>
+      <li>Unit Testing: Experienced</li>
+    </ul>
+
+    <p>
+      Related Course Experience (In Order)
+    </p>
+    <ol>
+      <li>CS 1101: Introduction to Program Design</li>
+      <li>CS 2102: Object-Oriented Design Concepts</li>
+      <li>CS 2022: Discrete Mathematics</li>
+      <li>CS 2303: Systems Programming Concepts</li>
+      <li>CS 2223: Algorithms</li>
+      <li>CS 3431: Database Systems I</li>
+      <li>CS3013: Operating Systems</li>
+      <li>CS3733: Software Engineering</li>
+    </ol>
+
+      <a href="https://www.linkedin.com/in/river-yan-65369a17a/">
+        <img src="https://cdn.glitch.com/0263517b-5254-47ba-a71f-adf1e4d7d4ac%2Ficonmonstr-linkedin-3-240.png?v=1630289103642"
+             height = 50
+             width = 50/>
+      </a>
+    
   </body>
 </html>
