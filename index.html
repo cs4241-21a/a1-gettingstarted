@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     
     <style>
       body {
@@ -21,6 +22,10 @@
       h2 {
         color: #EBD42F;
         text-shadow: 3px 3px #8570E6;
+      }
+      
+      dl, ul {
+        font-family: 'Montserrat', sans-serif;
       }
       
       .intro {
@@ -49,8 +54,20 @@
         display: table;
       }
       
+      table, th, td {
+        border: 1px solid black;
+      }
+      
     </style>
+    
+    <script type="text/javascript">
+      function changeBackground() {
+        document.getElementById("showtable").innerHTML = "I am looking forward to those classes!";
+      }
+    </script>
   </head>
+  
+  
   <body>
     <h1>Information about Victoria Grasso</h1>
     
@@ -80,7 +97,7 @@
   
     <div class="experience">
       <p>
-        Previous and current computer science classes taken at WPI:
+        Previous computer science classes taken at WPI:
       </p>
       <dl>
         <dt>Freshman Year</dt>
@@ -99,10 +116,32 @@
         <dd>Social Implications of Computer Processing</dd>
         <dd>Data Visualization</dd>
         <dd>Machine Learning</dd>
-        <dt>Senior Year</dt>
-        <dd>Webware</dd>
-        <dd>Mobile and Ubiquitous Computing</dd>
       </dl>
+    </div>
+    
+    <button type="button" onclick="changeBackground()">
+      Surprise!
+    </button>
+    
+    <div id="showtable" class="experience">
+      <table>
+        <tr>
+          <th>Current and Future CS classes</th>
+          <th>Term</th>
+        </tr>
+        <tr>
+          <td>Webware</td>
+          <td>A 21</td>
+        </tr>
+        <tr>
+          <td>Mobile and Ubiquitous Computing</td>
+          <td>A 21</td>
+        </tr>
+        <tr>
+          <td>Introduction to Artificial Intelligence</td>
+          <td>C 22</td>
+        </tr>
+      </table>
     </div>
   
     <div class="experience">
