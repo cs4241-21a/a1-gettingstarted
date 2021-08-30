@@ -1,6 +1,67 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
-===
+Michael Lai
+http://a1-azinxtheonix.glitch.me
 
+This project demostrates that I remember the basic elements of html, css, and javascript, as well as some clever tricks to lead to more advanced techniques. Details can be found below.
+
+## Technical Achievements:
+
+**1 - Style Rules:**
+I'll be naming what I consider the most important style rules here (even though the style sheet has more than 5 rules).
+    
+    background-color:
+        This is used for, of course, the background color, which changes depending on the location of the page. Used primarily for the body selector and the animation at the bottom.
+
+    color:
+        Very similar to background-color, but instead it's used for the text. Used primarily for the .text selector.
+
+    font-family:
+        Helps to set the font of all the text in the page.
+
+    td/th -> padding:
+        This is to make sure there's enough space for the text in the table.
+
+    .titleArea::after -> *all the style rules under this*:
+        This is to stop the float style rules from causing parts of the bottom section to move into the top section.
+
+**2 - Javascript Animation:**
+I've designed it so that depending on what section of the webpage you're viewing, it will change the color of the background and text. In order to accomplish this, on a scroll event, I took the current scroll position and the max scroll position in order to find a percentage, and then used that in order to do some rgb calculations. After that, I located the background color and text elements to change their colors.
+
+Just in case that doesn't count as an animation, I made a small animation at the bottom of the page that simply bounces a square with the button toggle.
+
+**3 - Other HTML Tags:**
+First, lets go over what tags do not count for this catagory. I'm assuming all tags that are initally included do not count. These tags are: h1, h2, p, and ul/li. I'm also counting h3 -> h6 as well as any similarly functional tags.
+
+    table/tr/th/td:
+        I'm putting all of these tags in one catagory, as they all relate with the same function of a table.
+
+    a:
+        This is used for a link, which leads to something really disappointing. I can't directly describe the link, as it would ruin it, but from what I'm describing, the warning text before the link, and the modern internet, you could probably figure it out.
+
+    img:
+        This is for an image of myself.
+
+    video/source:
+        This is for a video. The tag looked interesting but I had no idea what to put in it, so I put a video of Gibby from iCarly hitting the floor.
+
+    audio:
+        This is for an audio file inserted into page. It's a cringe .wav file I had on my computer as a joke. I'm also slowly running out of interesting tags (with content) to use. Luckly, this is the 5th tag.
+
+
+## Design Achievements:
+
+**1 - Color palette:**
+*see file named Color_Palette.jpeg*
+Two of the colors are used for the first color set, two others are used for the second color set where the animation switches between the two, and the final color is used for the borders of the table. Some of the colors are used for the small backup animation at the bottom. 
+
+**2 - Google Font:**
+From the linked google font, I chose Hina Mincho as the font for my site. For the Chinese characters (because why not), I chose Long Cang.
+
+
+## Note: Old Readme Below
+
+---
+
+Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Glitch
 *DUE: Monday, August 30th by 11:59 AM (before the start of class!)*  
 
 This assignment is a "warm-up" exercise. 
@@ -76,7 +137,7 @@ Below are some suggested technical and design achievements. You can use these to
 
 *Design*
 1. (10 points) Create a color palette using [color.adobe.com](https://color.adobe.com). Use all the colors in the palette in your webpage by implementing the appropriate CSS. Add a small screenshot of the color wheel for your color palette to your repo.
-2. (5 points) Use a font from [Goolge Fonts](https://fonts.google.com) in your website.
+2. (5 points) Use a font from [Google Fonts](https://fonts.google.com) in your website.
 
 Resources
 ---
@@ -84,17 +145,3 @@ Resources
 If you need a JavaScript/HTML/CSS refresher, see [HTML & CSS](https://wpi.primo.exlibrisgroup.com/discovery/fulldisplay?docid=alma9936730811904746&context=L&vid=01WPI_INST:Default&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,Jon%20Duckett&offset=0) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
 
 If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the text below with your links and descriptions)
----
-
-Charlie Roberts
-http://a1-charlieroberts.glitch.me
-
-This project shows ...
-
-## Technical Achievements
-- **Styled page with CSS**: Added rules for the p, li, and a selectors...
-
-### Design Achievements
-- **Used the Roboto Font from Google Fonts**: I used Roboto as the font for the primary copy text in my site.

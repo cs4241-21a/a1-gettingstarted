@@ -3,26 +3,160 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Long+Cang&display=swap" rel="stylesheet"> 
+    <script src="colorchanger.js"></script>
   </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+ 
+
+  <body id="background" onscroll="changeColor()">
+    <div class="titleArea">
+      <span style="float: left;">
+        <img class="mainImage" src="Michaellai.jpg" alt="Michael Lai" width="240">
+        <h1 class="mainTitle text" style='margin-left:250px;'>Information about Michael Lai (<span class="chineseName text">赖智豪</span>)</h1>
+        <p class="text" style='margin-left:250px; font-size: 20px;'>Computer Science (Concentration in Cybersecurity) 2022</p>
+        <p class="text" style='margin-left:250px;'>Kind of a gamer, not gonna lie</p>
+        <p class="text" style='margin-left:250px;'>By the way, do not click this link:
+          <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">Right Here</a>
+        </p>
+        <br><br>
+        <div>
+          <button class="text" id="colorButton" style='margin-left:10px; float: left;' onclick="colorToggle()">Disable Color Change</button>
+          <span class="text" style='margin-left:10px;'>*just in case you can't read the bottom sections*</p>
+        </div>
+        
+      </span>
+      <span style="float: right;">
+        <p class="text">Play me</p>
+        <audio controls>
+          <source src="JohnWick.wav" type="audio/wav">
+        </audio>
+        <br>
+        <br>
+        <video width="320" height="240" controls>
+          <source src="Gibby.mp4" type="video/mp4">
+        </video>
+      </span>
+    </div>
+
+    <div class="experience">
+      <h2 class="text">Experience</h2>
+      <p class="text">*Also known as, the actual serious portion*</p>
+
+      <h3 class="text">Previous WPI CS Courses</h3>
+      <table class="text">
+        <tr>
+          <th>Course Number</th>
+          <th>Course Name</th>
+          <th>Grade</th>
+        </tr>
+        <tr>
+          <td>CS 1102</td>
+          <td>Accelerated Intro to Program Design</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>CS 2022</td>
+          <td>Discrete Mathematics</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <td>CS 2103</td>
+          <td>Accelerated Object-Oriented Design Concepts</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>CS 2011</td>
+          <td>Intro to Machine Organization and Assembly</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>CS 2303</td>
+          <td>Systems Programming Concepts</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>CS 2223</td>
+          <td>Algorithms</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>CS 3013</td>
+          <td>Operating Systems</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>CS 3733</td>
+          <td>Software Engineering</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>CS 3133</td>
+          <td>Foundations of Computer Science</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>CS 3516</td>
+          <td>Computer Networks</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>CS 3043</td>
+          <td>Social Implications of Information Processing</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>CS 4401</td>
+          <td>Software Security Engineering</td>
+          <td>B</td>
+        </tr>
+        <tr>
+          <td>CS 4515</td>
+          <td>Computer Architecture</td>
+          <td>A</td>
+        </tr>
+      </table>
+  
+      <h3 class="text">Experience with following technologies and methods</h3>
+      <table class="text">
+        <tr>
+          <td>HTML</td>
+          <td>A lot (but rusty)</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>A lot (but rusty)</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>Javascript</td>
+          <td>A lot (but rusty)</td>
+        </tr>
+        <tr>
+          <td>Ruby</td>
+          <td>None</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>A lot</td>
+        </tr>
+        <tr>
+          <td>Unit Testing</td>
+          <td>A lot</td>
+        </tr>
+      </table>
+    </div>
+
+    <br>
+    <button id="animationButton" onclick="animationToggle()">Start Animation</button>
+    <br><br>
+    <div id="animationContainer">
+      <div id="animationBox"></div>
+    </div>
   </body>
 </html>

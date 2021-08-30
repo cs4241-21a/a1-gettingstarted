@@ -1,0 +1,74 @@
+/*
+#fceaae (r: 252, g: 234, b:174) *background*
+#635527 (r: 99, g: 85, b:39) *text*
+#c9b79f
+#54c7d1 (r: 84, g: 199, b:209) *text*
+#aefced (r: 174, g: 252, b:237) *background*
+*/
+body {
+  background-color: #fceaae;
+}
+
+.text {
+  color: #635527;
+}
+
+table {
+  font-family: 'Hina Mincho', serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #c9b79f;
+  text-align: left;
+  padding: 8px;
+}
+
+h2, h3, p, span {
+  font-family: 'Hina Mincho', serif;
+}
+
+.mainTitle {
+  font-size: 32px;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: 'Hina Mincho', serif;
+}
+
+.chineseName {
+  font-size: 32px;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-family: 'Long Cang', cursive;
+}
+
+.titleArea::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.mainImage {
+  float:left;
+}
+
+#animationContainer {
+  width: 390px;
+  height: 245px;
+  position: relative;
+  background-color:#54c7d1
+}
+
+#animationBox {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #c9b79f;
+}
