@@ -1,7 +1,7 @@
 Qingbei Shang
 [https://a1-sukiyakiohno.glitch.me](https://a1-sukiyakiohno.glitch.me/)
 
-This project shows .a brief self-introduction, including my majors, year of class and some fun facts. Also, the projects concludeall the courses in WPI and what I learned from different projects.
+This project shows a brief self-introduction, including my majors, year of class and some fun facts. Also, the projects concludeall the courses in WPI and what I learned from different projects.
 
 ## Technical Achievements
 
