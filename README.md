@@ -1,7 +1,7 @@
 Andrew Kerekon
 https://a1-akerekon.glitch.me/
 
-This project shows ...
+This project shows a small, profile webpage about my interests and hobbies programmed in HTML, CSS, and JavaScript. 
 
 ## Technical Achievements
 - **Styled page with CSS**: Added rules for the a, h1, h2, table, th, td, ul, and button selectors, as well as rules for the center, iconImages, familyPhoto, colorWheel, colorButton, iconContainer, buttonContainer, and padRight classes for proper formatting, color scheme, and font usage. These were challenging as I needed to brush up on formatting, especially how to center images and text
