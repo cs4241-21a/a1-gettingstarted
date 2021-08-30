@@ -1,0 +1,28 @@
+#image1 {
+    width: 512px;
+    height: 384px;
+    float: right;
+    margin-right: 300px;
+    visibility: hidden;
+}
+
+#classList {
+    color: #EB1018
+}
+
+#expList {
+    color: #C733F2
+}
+
+#header {
+    color: #33BBF2
+}
+
+#desc {
+    color: #21ED8C
+}
+
+body {
+    background-color: #3C39DB;
+    font-family: Roboto;
+}
