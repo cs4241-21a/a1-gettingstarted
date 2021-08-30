@@ -23,9 +23,9 @@ function getAndSetMessageTable()
 		let msg_cell = row.insertCell(1);
 		let date_cell = row.insertCell(2);
 
-		name_cell.innerHTML = message.name;
-		msg_cell.innerHTML = message.msg;
-		date_cell.innerHTML = message.date;
+		name_cell.innerText = message.name;
+		msg_cell.innerText = message.msg;
+		date_cell.innerText = message.date;
 	});
 
 	// Insert table headers

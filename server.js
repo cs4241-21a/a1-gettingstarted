@@ -40,6 +40,10 @@ const server = http.createServer( function( request,response ) {
         sendFile(response, 'client.js');
         break;
 
+      case '/style.css':
+        sendFile(response, 'style.css');
+        break;
+
       case '/get_messages':
         handleGetMessages(request, response);
         break;
