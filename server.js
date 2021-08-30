@@ -11,7 +11,7 @@ const server = http.createServer( function( request,response ) {
       sendFile( response, 'index.html' )
       break
     default:
-      response.end( '404 Error: File Not Found' )
+      sendFile( response, '404.html' )
   }
 })
 
