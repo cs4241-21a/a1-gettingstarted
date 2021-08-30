@@ -2,7 +2,7 @@
 
 ### I used some extra HTML tags to better format my information.
 - The `div` tag was used to separate the heading, the list of previous classes, and the
-experience. This then allowed me color each section differently using CSS classes
+experience. This then allowed me color each section differently using CSS classes.
 - The `em` tag was used to create a subtitle that was distinct from the rest of the page.
 - The `dl`, `dt`, and `dd` tags were used to organize the various technologies and methods
 under Experience and my level of experience with each of them.
@@ -28,6 +28,6 @@ bit easier to determine which level of experience goes with with technology/meth
 # Design Achievements
 ### I created a color palette from Adobe's color palette creator.
 - I was going for some pastel-like colors, and I found Split Complementary to work well
-with what I had in mind. This resulted in a few low saturation, high brightness colors
-for the background, along with much darker and slightly more saturated colors for the text.
+with what I had in mind. I chose a few low saturation, high brightness colors for the
+background, along with some much darker and slightly more saturated colors for the text.
 - The picture of the color wheel is in `Color Palette.png`.
