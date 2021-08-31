@@ -3,26 +3,210 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <style>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #FF9ED8;
+      }
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      li {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      h2 {
+        font-family: "Montserrat", sans-serif;
+
+      }
+
+      #about {
+        position: relative;
+      }
+
+      #kylePic {
+        position: absolute;
+      }
+
+      img {
+        border-radius: 30px;
+      }
+
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+      }
+
+      /* Style the buttons that are used to open the tab content */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.5s;
+        background-color: #E352DC;
+        border-radius: 15px;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #DF5AFA;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #AB46E3;
+      }
+
+      /* Style the tab content */
+      .content {
+        display: none;
+        padding: 6px 12px;
+        background-color: #9B4EFB;
+        border-radius: 15px;
+      }
+    </style>
+    <script>
+    function openTab(evt, name) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tabbuttons");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(name).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+      var id = null;
+      function myMove() {
+        var elem = document.getElementById('kylePic');
+        var y = 300;
+        var x = 0;
+        let goRight = true;
+        let goDown = true;
+        clearInterval(id);
+        id = setInterval(frame, 10);
+        function frame() {
+
+          if (x < 0) {
+            goRight = true;
+          }
+
+          if (y < 300) {
+            goDown = true;
+          }
+
+          if (x > 500) {
+            goRight = false;
+          }
+
+          if (y > 600) {
+            goDown = false;
+          }
+
+          if (goRight) {
+            x++;
+          } else {
+            x--;
+          }
+
+          if (goDown) {
+            y++;
+          } else {
+            y--;
+          }
+
+          elem.style.left = x + 'px';
+          elem.style.bottom = y + 'px';
+        }
+      }
+    </script>
+  </head>
+  <body onload="myMove()">
+    <h1>Kyle McFatter</h1>
+    <div id="box">
+  </div>
+    <div class="tab">
+      <button class="tabbuttons" onclick="openTab(event, 'about')">About</button>
+      <button class="tabbuttons" onclick="openTab(event, 'info')">Details</button>
+      <button class="tabbuttons" onclick="openTab(event, 'courses')">Courses</button>
+      <button class="tabbuttons" onclick="openTab(event, 'experience')">Experience</button>
+      <button class="tabbuttons" onclick="openTab(event, 'other')">Other</button>
+    </div>
+    <div id="about" class="content">
+      <p>
+        Kyle is a cool guy who is really <a href="https://en.wikipedia.org/wiki/Cool_(aesthetic)">cool</a>.
+        When he is not doing super charitable actions or busting out sick dance moves,
+        he is only bowling strikes down at the local bowling alley. Also, he can do more pushups
+        than you can and his dad could like totally beat up your dad.
+      </p>
+    </div>
+    <div id="info" class="content">
+      <p>
+        <ul>
+          <li>Major: Computer Science</li>
+          <li>Class: 2023</li>
+        </ul>
+      </p>
+    </div>
+    <div id="courses" class="content">
+      <h6><i>(In order class was taken)</i></h6>
+      <p>
+        <ol>
+          <li>CS 1101: Intro to Program Design</li>
+          <li>CS 2102: Object-Oriented Design Concepts</li>
+          <li>CS 2303: Systems Programming Concepts</li>
+          <li>CS 2011: Intro to Machine Organization and Assembly Language</li>
+          <li>CS 3013: Operating Systems</li>
+          <li>CS 3516: Computer Networks</li>
+          <li>CS 3733: Software Engineering</li>
+          <li>CS 2022: Discrete Mathematics</li>
+          <li>CS 2223: Algorithms</li>
+        </ol>
+      </p>
+    </div>
+    <div id="experience" class="content">
+      <ul>
+        <li>HTML: Some, maybe a few years of loose experience</li>
+        <li>CSS: Some, I feel pretty comfortable with it but there may be more I don't know</li>
+        <li>Java: A lot</li>
+        <li>JavaScript: Some</li>
+        <li>Ruby: None</li>
+        <li>Python: A lot, in fact I taught it over the summer</li>
+        <li>Unit Testing: Some</li>
+      </ul>
+    </div>
+    <div id="other" class="content">
+      <p>
+        This class genuinely seems very enjoyable looking forward to the rest of it!
+      </p>
+    </div>
+
+    <div id="funbox">
+      <div id="kylePic">
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQHROZtbo_SQag/profile-displayphoto-shrink_200_200/0/1600215774068?e=1635379200&v=beta&t=xw7DVrXpqrkG9bOe6EuwNSMLW8sks_3YzKo2P3Gfqms"/>
+      </div>
+    </div>
   </body>
 </html>
