@@ -21,6 +21,12 @@ const server = http.createServer( function( request,response ) {
     case '/classnotes/8-26-21':
       sendFile(response, 'classnotes/8-26-21.html')
       break
+    case '/classnotes/8-30-21':
+      sendFile(response, 'classnotes/8-30-21.html')
+      break
+    case '/classnotes/9-2-21':
+      sendFile(response, 'classnotes/9-2-21.html')
+      break
     default:
       response.end( '404 Error: File Not Found' )
   }
