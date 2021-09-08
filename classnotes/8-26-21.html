@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8-82-21</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Class Notes 8-26-21</h1>
+    <a href=".">Return</a>
+    <h3>Create JS objects:</h3>
+    <code>{}</code>
+    <h3>Command to create object</h3>
+    <code>Object.create()</code>
+    <h3>Generally creating a object</h3>
+    <code><pre>
+    myPrototype = {
+        test: function() {
+            console.log( "This is a test")
+        }
+    }
+    </pre></code>
+    <p>Run function:</p>
+    <code>myPrototype.text()</code><br>
+    <code>response: This is a test</code>
+
+    <h3>Delegator</h3>
+    <code>delegator = Object.create(myPrototype)</code>
+    <p>Has access to prototype object methods</p>
+    <code>delegator.text()</code><br>
+    <code>response: This is a test</code>
+
+    <h3>Change object's prototpye</h3>
+    <code>delegator.__proto__ = { test3:1 }</code>
+
+    <h3>Define a function</h3>
+    <code><pre>
+        double = function(number) {
+            return number * 2
+        }
+
+        let n = 3
+        triple = function() {
+            n = n * 3
+            return n
+        }
+    </pre></code>
+    <p>The <code>triple</code> function has a side effect of modifying variables outside the scope of the function. <br>
+    JS isn't really a function programming language because it allows you to have side effects</p>
+
+    <h3>Closures</h3>
+    <p>Enable a function to have access to data inside the scope of another function (building chains of functions)</p>
+    <code><pre>
+        closure = function() {
+        let z = 0
+        return function() { return z }
+        }
+
+        myclosure = closure()
+
+        myclosure()
+        response: 0
+    </pre></code>
+
+    <h3>Function can have properties</h3>
+    <code>
+        myclosure.text = 3
+    </code>
+    <p>They basically act as objects</p>
+
+    <h3>NPM</h3>
+    <p>used to install JS packages</p>
+    <p><code>npx</code> allows you to run a package command without fulling importing and setting up the package</p>
+    <h3>Fun websites</h3>
+    <a href="wtfjs.com">wtfjs.com</a>
+
+
+</body>
+</html>

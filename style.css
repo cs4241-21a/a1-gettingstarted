@@ -1,0 +1,8 @@
+h1, h2, h3 {
+    font-family: 'Bungee Inline', cursive;
+}
+body, a {
+    background-color: #6202C3;
+    color: #02E7FF;
+    font-family: 'Open Sans', sans-serif;
+}
